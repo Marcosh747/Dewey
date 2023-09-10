@@ -90,7 +90,7 @@ header {
 
 /* Calcule a altura do conteúdo restante */
  main, .sessoes {
-    height: calc(100% - 75px); /* Subtrai a altura do cabeçalho */
+    height: calc(100% - 70px); /* Subtrai a altura do cabeçalho */
 }
 
 

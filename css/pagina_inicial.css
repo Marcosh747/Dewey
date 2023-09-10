@@ -1,6 +1,8 @@
 body {
   background: #8F9285;
   /* width: 100%; */
+  height: 98vh;
+  overflow: hidden;
 }
 
 body * {
@@ -11,6 +13,10 @@ header {
   display: flex;
   justify-content: center;
 
+}
+
+main{
+  height: 100%;
 }
 
 /* Ajusta o layout para telas menores em coluna */
@@ -31,18 +37,6 @@ header {
   width: 48px;
   height: 48px;
   position: relative;
-} */
-
-/* .container {
-  border-radius: 100px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
 } */
 
 

@@ -1,8 +1,5 @@
 body {
   background: #8F9285;
-  /* width: 100%; */
-  height: 95vh;
-  
 }
 
 body * {
@@ -15,9 +12,6 @@ header {
 
 }
 
-main{
-  height: 100%;
-}
 
 /* Ajusta o layout para telas menores em coluna */
 @media (max-width: 1000px) {
@@ -120,6 +114,9 @@ main{
 .android-grande-1 {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
 }
 
 .sessoes {
@@ -128,6 +125,7 @@ main{
   justify-content: center;
   /* flex-wrap: wrap; */
   gap: 15px;
+  margin-bottom: 80px;
 }
 
 section.feed1 {

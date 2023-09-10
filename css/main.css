@@ -27,6 +27,11 @@
     cursor: pointer;
 }
 
+@media (min-width: 1000px){
+.pagina_inicial {
+    overflow: hidden;
+}
+}
 
 .barra-superior {
     background: var(--m-3-sys-light-surface);

@@ -29,17 +29,36 @@
 
   <header>
 
-    <div class="barra-superior">
+      <div class="barra-superior">
 
-      <div class="icone-principal">
+        <div class="icone-principal">
+
+          <div class="container selecionado">
+
+            <button class="botoes menu-lateral" onclick="menu_lateral()">
+
+              <svg class="icones-menu-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
+                  fill="#45483D" />
+              </svg>
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="manchete-2">Dewey</div>
 
         <div class="container selecionado">
 
-          <button class="botoes menu-lateral" onclick="menu_lateral()">
+          <button class="botoes" onclick="perfil()">
 
-            <svg class="icones-menu-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM8.5 9.5C8.5 7.56 10.06 6 12 6C13.94 6 15.5 7.56 15.5 9.5C15.5 11.44 13.94 13 12 13C10.06 13 8.5 11.44 8.5 9.5Z"
                 fill="#45483D" />
             </svg>
 
@@ -47,247 +66,773 @@
 
         </div>
 
-      </div>
 
-      <div class="manchete-2">Dewey</div>
-
-      <div class="container selecionado">
-
-        <button class="botoes" onclick="perfil()">
-
-          <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM8.5 9.5C8.5 7.56 10.06 6 12 6C13.94 6 15.5 7.56 15.5 9.5C15.5 11.44 13.94 13 12 13C10.06 13 8.5 11.44 8.5 9.5Z"
-              fill="#45483D" />
-          </svg>
-
-        </button>
 
       </div>
 
+      <div class="conteiner_superior_econdido">
 
+        <div class="superior_econdido_menu">
 
-    </div>
+          <aside class="container-menuLateral"> <!-- MENU LATERAL -->
 
-    <div class="conteiner_superior_econdido">
+            <div class="navigation-drawer">
 
-      <div class="superior_econdido_menu">
-
-        <aside class="container-menuLateral"> <!-- MENU LATERAL -->
-
-          <div class="navigation-drawer">
-
-            <div class="headline">
-              <div class="title">Etec</div>
-            </div>
-
-            <div class="section-header-1">
-              <div class="left">
-                <div class="label">Dewey</div>
-              </div>
-            </div>
-
-            <div class="nav-item-1 selecionado">
-
-              <div class="conteiner-opcao">
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
-                </svg>
-
-                <div class="label3">For You</div>
-                <div class="badge-label-text2">100+</div>
-
-              </div>
-            </div>
-
-            <div class="nav-item-2 selecionado">
-
-              <div class="conteiner-opcao">
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm40-80h400L545-420 440-280l-65-87-95 127Zm-40 80v-640 640Zm200-360 100-60 100 60-100-60-100 60Z" />
-                </svg>
-
-                <div class="label3">Album</div>
-                <div class="badge-label-text2">100+</div>
-
+              <div class="headline">
+                <div class="title">Etec</div>
               </div>
 
-            </div>
-
-            <div class="nav-item-3 selecionado">
-
-              <div class="conteiner-opcao">
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
-                </svg>
-
-                <div class="label3">Turmas</div>
-                <div class="badge-label-text2">100+</div>
-
+              <div class="section-header-1">
+                <div class="left">
+                  <div class="label">Dewey</div>
+                </div>
               </div>
 
-            </div>
+              <div class="nav-item-1 selecionado">
 
-            <div class="nav-item-4 selecionado">
+                <div class="conteiner-opcao">
 
-              <div class="conteiner-opcao">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+                  </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z" />
-                </svg>
+                  <div class="label3">For You</div>
+                  <div class="badge-label-text2">100+</div>
 
-                <div class="label3">Biblioteca</div>
-                <div class="badge-label-text2">100+</div>
-
+                </div>
               </div>
 
-            </div>
+              <div class="nav-item-2 selecionado">
 
-            <svg class="divider-1" width="235" height="1" viewBox="0 0 235 1" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line x1="16" y1="0.500027" x2="219" y2="0.500027" stroke="#C5C8B9" />
-            </svg>
+                <div class="conteiner-opcao">
 
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm40-80h400L545-420 440-280l-65-87-95 127Zm-40 80v-640 640Zm200-360 100-60 100 60-100-60-100 60Z" />
+                  </svg>
 
-          </div>
-
-        </aside>
-
-      </div>
-
-
-      <div class="superior_econdido_perfil">
-
-        <div class="conteiner_perfil" id="conteiner_perfil"> <!-- PERFIL -->
-
-          <div class="perfil">
-
-            <div class="barra_superior_user">
-
-              <img class="picture" src="/Images/3d_avatar_21.png" alt="Foto de perfil ">
-
-              <div class="info-user">
-                <h3 class="nome_inteiro">Usuário não registrado</h3>
-                <h4 class="email">Gmail inválido</h4>
-              </div>
-
-
-            </div>
-
-            <div class="container_darkMode">
-
-              <p>Dark mode</p>
-
-              <label class="switch" for="modo_dark">
-                <input type="checkbox" id="modo_dark">
-                <span class="slider"></span>
-              </label>
-
-            </div>
-
-            <div class="container_logout">
-
-              <button onclick="logout()">
-
-                <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                  viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
-                </svg>
-
-                <span style="font-size: medium; font-family: 'Roboto', sans-serif;">
-                  Sair da conta
-                </span>
-
-              </button>
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
-
-
-    </div>
-
-  </header>
-
-
-
-
-  <main>
-
-    <div class="container-ola-usuario">
-      <h2 class="ola-usuario">Olá, Marcos.</h2>
-    </div>
-
-    <div class="android-grande-1">
-
-
-      <div class="sessoes">
-
-        <section class="feed1 scrool-vertical scrool-estilo"> <!-- CARROSEL -->
-
-          <div class="slide-container scrool-estilo">
-
-            <span class="slider-span" id="slider-span1"></span>
-            <span class="slider-span" id="slider-span2"></span>
-            <span class="slider-span" id="slider-span3"></span>
-
-            <div class="image-slider">
-              <div class="slides-div" id="slide-1">
-                <img src="/images/No Man's Sky.jpeg" alt="" class="img" id="img1">
-                <!-- <a href="#slider-span1" class="button" id="button-1"></a> -->
-              </div>
-              <div class="slides-div" id="slide-2">
-                <img src="/images/2.jpg" alt="" class="img" id="img2">
-                <!-- <a href="#slider-span2" class="button" id="button-2"></a> -->
-              </div>
-              <div class="slides-div" id="slide-3">
-                <img src="/images/3.jpg" alt="" class="img" id="img3">
-                <!-- <a href="#slider-span3" class="button" id="button-3"></a> -->
-              </div>
-            </div>
-          </div>
-
-
-          <section class="calendario"> <!-- CALENDARIO -->
-
-            <div class="type-day">
-
-              <div class="header">
-
-                <div class="label-and-date">
-
-                  <div class="supporting-text">Selecione a data</div>
-                  <div class="week-day-day">Agosto</div>
+                  <div class="label3">Album</div>
+                  <div class="badge-label-text2">100+</div>
 
                 </div>
 
-                <div class="icon-button">
+              </div>
 
-                  <div class="container selecionado">
+              <div class="nav-item-3 selecionado">
 
-                    <button class="botoes">
+                <div class="conteiner-opcao">
 
-                      <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                  </svg>
 
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M19.06 3.58988L20.41 4.93988C21.2 5.71988 21.2 6.98988 20.41 7.76988L7.18 20.9999H3V16.8199L13.4 6.40988L16.23 3.58988C17.01 2.80988 18.28 2.80988 19.06 3.58988ZM5 18.9999L6.41 19.0599L16.23 9.22988L14.82 7.81988L5 17.6399V18.9999Z"
-                          fill="#45483D" />
-                      </svg>
+                  <div class="label3">Turmas</div>
+                  <div class="badge-label-text2">100+</div>
+
+                </div>
+
+              </div>
+
+              <div class="nav-item-4 selecionado">
+
+                <div class="conteiner-opcao">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z" />
+                  </svg>
+
+                  <div class="label3">Biblioteca</div>
+                  <div class="badge-label-text2">100+</div>
+
+                </div>
+
+              </div>
+
+              <svg class="divider-1" width="235" height="1" viewBox="0 0 235 1" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="16" y1="0.500027" x2="219" y2="0.500027" stroke="#C5C8B9" />
+              </svg>
+
+
+            </div>
+
+          </aside>
+
+        </div>
+
+
+        <div class="superior_econdido_perfil">
+
+          <div class="conteiner_perfil" id="conteiner_perfil"> <!-- PERFIL -->
+
+            <div class="perfil">
+
+              <div class="barra_superior_user">
+
+                <img class="picture" src="/Images/3d_avatar_21.png" alt="Foto de perfil ">
+
+                <div class="info-user">
+                  <h3 class="nome_inteiro">Usuário não registrado</h3>
+                  <h4 class="email">Gmail inválido</h4>
+                </div>
+
+
+              </div>
+
+              <div class="container_darkMode">
+
+                <p>Dark mode</p>
+
+                <label class="switch" for="modo_dark">
+                  <input type="checkbox" id="modo_dark">
+                  <span class="slider"></span>
+                </label>
+
+              </div>
+
+              <div class="container_logout">
+
+                <button onclick="logout()">
+
+                  <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
+                  </svg>
+
+                  <span style="font-size: medium; font-family: 'Roboto', sans-serif;">
+                    Sair da conta
+                  </span>
+
+                </button>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+  </header>
+
+  <div class="container_principal">
+
+    <main>
+
+      <div class="container-ola-usuario">
+        <h2 class="ola-usuario">Olá, Marcos.</h2>
+      </div>
+
+      <div class="android-grande-1">
+
+        <div class="sessoes">
+
+          <section class="feed1 scrool-vertical scrool-estilo"> <!-- CARROSEL -->
+
+            <div class="slide-container scrool-estilo">
+
+              <span class="slider-span" id="slider-span1"></span>
+              <span class="slider-span" id="slider-span2"></span>
+              <span class="slider-span" id="slider-span3"></span>
+
+              <div class="image-slider">
+                <div class="slides-div" id="slide-1">
+                  <img src="/images/No Man's Sky.jpeg" alt="" class="img" id="img1">
+                  <!-- <a href="#slider-span1" class="button" id="button-1"></a> -->
+                </div>
+                <div class="slides-div" id="slide-2">
+                  <img src="/images/2.jpg" alt="" class="img" id="img2">
+                  <!-- <a href="#slider-span2" class="button" id="button-2"></a> -->
+                </div>
+                <div class="slides-div" id="slide-3">
+                  <img src="/images/3.jpg" alt="" class="img" id="img3">
+                  <!-- <a href="#slider-span3" class="button" id="button-3"></a> -->
+                </div>
+              </div>
+            </div>
+
+
+            <section class="calendario"> <!-- CALENDARIO -->
+
+              <div class="type-day">
+
+                <div class="header">
+
+                  <div class="label-and-date">
+
+                    <div class="supporting-text">Selecione a data</div>
+                    <div class="week-day-day">Agosto</div>
+
+                  </div>
+
+                  <div class="icon-button">
+
+                    <div class="container selecionado">
+
+                      <button class="botoes">
+
+                        <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.06 3.58988L20.41 4.93988C21.2 5.71988 21.2 6.98988 20.41 7.76988L7.18 20.9999H3V16.8199L13.4 6.40988L16.23 3.58988C17.01 2.80988 18.28 2.80988 19.06 3.58988ZM5 18.9999L6.41 19.0599L16.23 9.22988L14.82 7.81988L5 17.6399V18.9999Z"
+                            fill="#45483D" />
+                        </svg>
+
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="local-selection-row">
+
+                  <div class="building-blocks-menu-button selecionado">
+
+                    <div class="state-layer2">
+
+                      <select class="label-text ">
+                        <option value="">August 2023</option>
+                      </select>
+
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="controls">
+
+                    <div class="icon-button">
+
+                      <div class="container selecionado">
+
+                        <button class="botoes">
+
+                          <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z"
+                              fill="#45483D" />
+                          </svg>
+
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                    <div class="icon-button">
+
+                      <div class="container selecionado">
+
+                        <button class="botoes">
+
+                          <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z"
+                              fill="#45483D" />
+                          </svg>
+
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="local-calendar-grid">
+                  <div class="days-of-the-week">
+                    <div class="sunday">
+                      <div class="date">S</div>
+                    </div>
+                    <div class="monday">
+                      <div class="date">M</div>
+                    </div>
+                    <div class="tuesday">
+                      <div class="date">T</div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="date">W</div>
+                    </div>
+                    <div class="thursday">
+                      <div class="date">T</div>
+                    </div>
+                    <div class="friday">
+                      <div class="date">F</div>
+                    </div>
+                    <div class="saturday">
+                      <div class="date">S</div>
+                    </div>
+                  </div>
+                  <div class="week-1">
+                    <div class="sunday2"></div>
+                    <div class="monday2"></div>
+                    <div class="tuesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">1</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">2</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thursday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="friday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">4</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saturday">
+                      <div class="container3">
+                        <div class="state-layer4">
+                          <div class="date2">5</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="week-2">
+                    <div class="sunday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">6</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="monday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">7</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tuesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">8</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">9</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thursday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">10</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="friday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">11</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saturday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">12</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="week-3">
+                    <div class="sunday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">13</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="monday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">14</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tuesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">15</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">16</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thursday2">
+                      <div class="container4">
+                        <div class="state-layer3">
+                          <div class="date3">17</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="friday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">18</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saturday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">19</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="week-4">
+                    <div class="sunday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">20</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="monday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">21</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tuesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">22</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">23</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thursday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">24</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="friday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">25</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saturday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">26</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="week-5">
+                    <div class="sunday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">27</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="monday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">28</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tuesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">29</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wednesday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">30</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thursday">
+                      <div class="container2">
+                        <div class="state-layer3">
+                          <div class="date">31</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="friday2"></div>
+                    <div class="saturday2"></div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </section>
+
+          </section>
+
+          <section class="feed2 scrool-vertical scrool-estilo"> <!-- AVISOS -->
+
+            <div class="aviso">
+
+              <div class="card-state-layer-outlined">
+
+                <div class="header-aviso">
+
+                  <div class="content">
+
+                    <div class="monogram">
+
+                      <div class="background">
+                        <div class="initial">A</div>
+                      </div>
+
+                    </div>
+
+                    <div class="text">
+                      <div class="header2">Header</div>
+                      <a class="subhead" href="">Acessar</a>
+                    </div>
+
+                  </div>
+
+                  <div class="media">
+                    <img class="media2" src="/images/No Man's Sky.jpeg" />
+                  </div>
+
+                </div>
+
+              </div>
+
+              <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
+
+              <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
+
+              <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
+                saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
+                possimus? Delectus, rerum cupiditate?</p>
+
+              <hr>
+
+              <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
+            </div>
+
+            <div class="aviso">
+
+              <div class="card-state-layer-outlined">
+
+                <div class="header-aviso">
+
+                  <div class="content">
+
+                    <div class="monogram">
+
+                      <div class="background">
+                        <div class="initial">A</div>
+                      </div>
+
+                    </div>
+
+                    <div class="text">
+                      <div class="header2">Header</div>
+                      <a class="subhead" href="">Acessar</a>
+                    </div>
+
+                  </div>
+
+                  <div class="media">
+                    <img class="media2" src="/images/No Man's Sky.jpeg" />
+                  </div>
+
+                </div>
+
+              </div>
+
+              <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
+
+              <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
+
+              <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
+                saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
+                possimus? Delectus, rerum cupiditate?</p>
+
+              <hr>
+
+              <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
+            </div>
+
+            <div class="aviso">
+
+              <div class="card-state-layer-outlined">
+
+                <div class="header-aviso">
+
+                  <div class="content">
+
+                    <div class="monogram">
+
+                      <div class="background">
+                        <div class="initial">A</div>
+                      </div>
+
+                    </div>
+
+                    <div class="text">
+                      <div class="header2">Header</div>
+                      <a class="subhead" href="">Acessar</a>
+                    </div>
+
+                  </div>
+
+                  <div class="media">
+                    <img class="media2" src="/images/No Man's Sky.jpeg" />
+                  </div>
+
+                </div>
+
+              </div>
+
+              <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
+
+              <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
+
+              <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
+                saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
+                possimus? Delectus, rerum cupiditate?</p>
+
+              <hr>
+
+              <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
+            </div>
+
+          </section>
+
+          <section class="feed3 scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
+
+            <div class="container-de-conteudo">
+
+              <div class="conteudo-de-midia-e-texto">
+
+                <div class="cabecalho">
+
+                  <div class="conteudo">
+
+                    <div class="monograma">
+
+                      <div class="fundo">
+                        <div class="inicial">A</div>
+                      </div>
+
+                    </div>
+
+                    <div class="texto">
+
+                      <div class="cabecalho-2">Cabeçalho</div>
+                      <div class="subcabecalho">Subcabeçalho</div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="botao-de-icone">
+
+                    <div class="container selecionado">
+
+                      <button class="botoes">
+
+                        <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM10 18C10 16.9 10.9 16 12 16C13.1 16 14 16.9 14 18C14 19.1 13.1 20 12 20C10.9 20 10 19.1 10 18Z"
+                            fill="#75786C" />
+                        </svg>
+
+                      </button>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="midia">
+                  <img class="midia-2" src="/images/No Man's Sky.jpeg" />
+                </div>
+
+                <div class="conteudo-de-texto">
+
+                  <div>
+
+                    <div class="titulo">Título</div>
+                    <div class="subcabecalho-2">Subcabeçalho</div>
+
+                  </div>
+
+                  <div class="texto-de-suporte">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  </div>
+
+                  <div class="acoes">
+
+                    <button class="botao-secundario">
+
+                      <div class="camada-de-estado-3">
+                        <div class="texto-do-rotulo">Habilitado</div>
+                      </div>
+
+                    </button>
+
+                    <button class="botao-primario">
+
+                      <div class="camada-de-estado-3">
+                        <div class="texto-do-rotulo-2">Habilitado</div>
+                      </div>
 
                     </button>
 
@@ -296,568 +841,24 @@
                 </div>
 
               </div>
-
-              <div class="local-selection-row">
-
-                <div class="building-blocks-menu-button selecionado">
-
-                  <div class="state-layer2">
-
-                    <select class="label-text ">
-                      <option value="">August 2023</option>
-                    </select>
-
-
-
-                  </div>
-
-                </div>
-
-                <div class="controls">
-
-                  <div class="icon-button">
-
-                    <div class="container selecionado">
-
-                      <button class="botoes">
-
-                        <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z"
-                            fill="#45483D" />
-                        </svg>
-
-                      </button>
-
-                    </div>
-
-                  </div>
-
-                  <div class="icon-button">
-
-                    <div class="container selecionado">
-
-                      <button class="botoes">
-
-                        <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z"
-                            fill="#45483D" />
-                        </svg>
-
-                      </button>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="local-calendar-grid">
-                <div class="days-of-the-week">
-                  <div class="sunday">
-                    <div class="date">S</div>
-                  </div>
-                  <div class="monday">
-                    <div class="date">M</div>
-                  </div>
-                  <div class="tuesday">
-                    <div class="date">T</div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="date">W</div>
-                  </div>
-                  <div class="thursday">
-                    <div class="date">T</div>
-                  </div>
-                  <div class="friday">
-                    <div class="date">F</div>
-                  </div>
-                  <div class="saturday">
-                    <div class="date">S</div>
-                  </div>
-                </div>
-                <div class="week-1">
-                  <div class="sunday2"></div>
-                  <div class="monday2"></div>
-                  <div class="tuesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">1</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">2</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="thursday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">3</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">4</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="saturday">
-                    <div class="container3">
-                      <div class="state-layer4">
-                        <div class="date2">5</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="week-2">
-                  <div class="sunday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">6</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="monday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">7</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tuesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">8</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">9</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="thursday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">10</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">11</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="saturday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">12</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="week-3">
-                  <div class="sunday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">13</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="monday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">14</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tuesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">15</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">16</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="thursday2">
-                    <div class="container4">
-                      <div class="state-layer3">
-                        <div class="date3">17</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">18</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="saturday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">19</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="week-4">
-                  <div class="sunday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">20</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="monday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">21</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tuesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">22</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">23</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="thursday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">24</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">25</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="saturday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">26</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="week-5">
-                  <div class="sunday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">27</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="monday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">28</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tuesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">29</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wednesday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">30</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="thursday">
-                    <div class="container2">
-                      <div class="state-layer3">
-                        <div class="date">31</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friday2"></div>
-                  <div class="saturday2"></div>
-                </div>
-              </div>
-
 
             </div>
 
           </section>
 
-        </section>
-
-        <section class="feed2 scrool-vertical scrool-estilo"> <!-- AVISOS -->
-
-          <div class="aviso">
-
-            <div class="card-state-layer-outlined">
-
-              <div class="header-aviso">
-
-                <div class="content">
-
-                  <div class="monogram">
-
-                    <div class="background">
-                      <div class="initial">A</div>
-                    </div>
-
-                  </div>
-
-                  <div class="text">
-                    <div class="header2">Header</div>
-                    <a class="subhead" href="">Acessar</a>
-                  </div>
-
-                </div>
-
-                <div class="media">
-                  <img class="media2" src="/images/No Man's Sky.jpeg" />
-                </div>
-
-              </div>
-
-            </div>
-
-            <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
-
-            <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
-
-            <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
-              saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
-              possimus? Delectus, rerum cupiditate?</p>
-
-            <hr>
-
-            <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
-          </div>
-
-          <div class="aviso">
-
-            <div class="card-state-layer-outlined">
-
-              <div class="header-aviso">
-
-                <div class="content">
-
-                  <div class="monogram">
-
-                    <div class="background">
-                      <div class="initial">A</div>
-                    </div>
-
-                  </div>
-
-                  <div class="text">
-                    <div class="header2">Header</div>
-                    <a class="subhead" href="">Acessar</a>
-                  </div>
-
-                </div>
-
-                <div class="media">
-                  <img class="media2" src="/images/No Man's Sky.jpeg" />
-                </div>
-
-              </div>
-
-            </div>
-
-            <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
-
-            <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
-
-            <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
-              saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
-              possimus? Delectus, rerum cupiditate?</p>
-
-            <hr>
-
-            <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
-          </div>
-
-          <div class="aviso">
-
-            <div class="card-state-layer-outlined">
-
-              <div class="header-aviso">
-
-                <div class="content">
-
-                  <div class="monogram">
-
-                    <div class="background">
-                      <div class="initial">A</div>
-                    </div>
-
-                  </div>
-
-                  <div class="text">
-                    <div class="header2">Header</div>
-                    <a class="subhead" href="">Acessar</a>
-                  </div>
-
-                </div>
-
-                <div class="media">
-                  <img class="media2" src="/images/No Man's Sky.jpeg" />
-                </div>
-
-              </div>
-
-            </div>
-
-            <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
-
-            <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
-
-            <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
-              saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
-              possimus? Delectus, rerum cupiditate?</p>
-
-            <hr>
-
-            <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
-          </div>
-
-        </section>
-
-        <section class="feed3 scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
-
-          <div class="container-de-conteudo">
-
-            <div class="conteudo-de-midia-e-texto">
-
-              <div class="cabecalho">
-
-                <div class="conteudo">
-
-                  <div class="monograma">
-
-                    <div class="fundo">
-                      <div class="inicial">A</div>
-                    </div>
-
-                  </div>
-
-                  <div class="texto">
-
-                    <div class="cabecalho-2">Cabeçalho</div>
-                    <div class="subcabecalho">Subcabeçalho</div>
-
-                  </div>
-
-                </div>
-
-                <div class="botao-de-icone">
-
-                  <div class="container selecionado">
-
-                    <button class="botoes">
-
-                      <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM10 18C10 16.9 10.9 16 12 16C13.1 16 14 16.9 14 18C14 19.1 13.1 20 12 20C10.9 20 10 19.1 10 18Z"
-                          fill="#75786C" />
-                      </svg>
-
-                    </button>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="midia">
-                <img class="midia-2" src="/images/No Man's Sky.jpeg" />
-              </div>
-
-              <div class="conteudo-de-texto">
-
-                <div>
-
-                  <div class="titulo">Título</div>
-                  <div class="subcabecalho-2">Subcabeçalho</div>
-
-                </div>
-
-                <div class="texto-de-suporte">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-
-                <div class="acoes">
-
-                  <button class="botao-secundario">
-
-                    <div class="camada-de-estado-3">
-                      <div class="texto-do-rotulo">Habilitado</div>
-                    </div>
-
-                  </button>
-
-                  <button class="botao-primario">
-
-                    <div class="camada-de-estado-3">
-                      <div class="texto-do-rotulo-2">Habilitado</div>
-                    </div>
-
-                  </button>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
+        </div>
 
       </div>
 
-    </div>
+    </main>
 
-  </main>
+    <footer>
 
-  <footer>
+      <div class="fundoTransparente"></div>
 
-    <div class="fundoTransparente"></div>
+    </footer>
 
-  </footer>
+  </div>
 
 </body>
 

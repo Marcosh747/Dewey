@@ -18,6 +18,13 @@ header {
   .sessoes {
     flex-direction: column;
     align-items: center;
+    
+  }
+    
+  section.feed1,
+  section.feed2,
+  section.feed3{
+    overflow:inherit;
   }
 }
 
@@ -113,19 +120,16 @@ header {
 
 .android-grande-1 {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
-  height: 100vh;
-
+  height: 100%;
 }
 
 .sessoes {
   border-radius: var(--arredondamento-do-cantos);
   display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
   gap: 15px;
-  margin-bottom: 80px;
+  height: 100%;
 }
 
 section.feed1 {
@@ -136,23 +140,17 @@ section.feed1 {
 section.feed1,
 .feed3,
 .feed2 {
+
   box-sizing: border-box;
   padding: 15px;
   display: flex;
-
-  /* width: max-content; */
-  height: calc(100vh - 150px);
   border-radius: var(--arredondamento-do-cantos);
   flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-
-.feed1,
-.feed3,
-.feed2 {
   background: var(--m-3-sys-light-on-primary);
 }
+
 
 .carrossel {
   padding: 8px 0px 8px 0px;

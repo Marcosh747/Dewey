@@ -33,6 +33,19 @@
 }
 }
 
+.container_principal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
 .barra-superior {
     background: var(--m-3-sys-light-surface);
     border-radius: 28px;

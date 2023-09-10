@@ -14,17 +14,17 @@ header {
 
 
 /* Ajusta o layout para telas menores em coluna */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .sessoes {
     flex-direction: column;
     align-items: center;
-    
+
   }
-    
+
   section.feed1,
   section.feed2,
-  section.feed3{
-    overflow:inherit;
+  section.feed3 {
+    overflow: inherit;
   }
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .ola-usuario {
-  font: var(--m-3-title-large, 400 22px/28px "Roboto", sans-serif); 
+  font: var(--m-3-title-large, 400 22px/28px "Roboto", sans-serif);
   overflow: hidden;
   white-space: nowrap;
   font-size: 24px;
@@ -64,7 +64,7 @@ header {
 @keyframes aparecer {
   to {
     width: 50%;
-    
+
   }
 }
 
@@ -119,17 +119,15 @@ header {
 }
 
 .android-grande-1 {
-  position: relative;
-  /* overflow: hidden; */
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .sessoes {
   border-radius: var(--arredondamento-do-cantos);
   display: flex;
   gap: 15px;
-  height: 100%;
+
 }
 
 section.feed1 {
@@ -376,7 +374,7 @@ section.calendario {
   gap: 4px;
   align-items: flex-start;
   justify-content: flex-start;
-  width:max-content;
+  width: max-content;
   position: relative;
 }
 

@@ -33,18 +33,6 @@
 }
 }
 
-.container_principal{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 100vh;
-}
-
-main{
-    margin-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-}
 
 .barra-superior {
     background: var(--m-3-sys-light-surface);
@@ -90,6 +78,20 @@ main{
 }
 
 
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+/* Defina a altura da barra de cabeçalho (header) */
+header {
+    height: 50px; /* Defina a altura desejada */
+}
+
+/* Calcule a altura do conteúdo restante */
+ main, .android-grande-1, .sessoes {
+    height: calc(100% - 50px); /* Subtrai a altura do cabeçalho */
+}
 
 
 

@@ -14,7 +14,7 @@ header {
 
 
 /* Ajusta o layout para telas menores em coluna */
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
   .sessoes {
     flex-direction: column;
     align-items: center;

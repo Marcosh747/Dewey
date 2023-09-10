@@ -1,0 +1,102 @@
+body.dark {
+    background: var(--m-3-ref-neutral-neutral-12);
+}
+
+.dark .selecionado :hover {
+    background: var(--m-3-ref-secondary-secondary-24);
+    cursor: pointer;
+}
+
+
+
+.dark .icone path,.dark .conteiner-opcao svg,
+.dark .icones-menu-24-px path,
+.dark .icones-conta-circulo-preenchido-24-px path {
+    fill: var(--m-3-ref-secondary-secondary-95);
+}
+
+.dark .container-login , .dark .conteiner_titulo, .dark .navigation-drawer,
+.dark .barra-superior,
+.dark .feed1,
+.dark .feed2,
+.dark .feed3,
+.dark .conteiner_perfil, .dark option {
+    background: var(--m-3-ref-neutral-neutral-30);
+}
+
+
+.dark .entrada-texto-2, 
+.dark .cabecalho-2,
+.dark .week-day-day,
+.dark .subcabecalho,
+.dark .titulo,
+.dark .manchete-2,
+.dark .ola-usuario,
+.dark .nome_inteiro,
+.dark .email,
+.dark p,
+.dark span {
+    color: var(--m-3-sys-dark-on-surface);
+}
+
+.dark .selecionada,
+.dark .container-de-conteudo,
+.dark .container_darkMode,
+.dark .container_logout,
+.dark .aviso {
+    background: var(--m-3-ref-secondary-secondary-40);
+    border-color: var(--m-3-sys-dark-outline-variant);
+}
+
+
+
+.dark .data_hora_aviso,
+.dark .texto-de-suporte,
+.dark .subcabecalho-2,
+.dark .supporting-text,
+.dark .label-text,
+.dark .title,
+.dark .label3,
+.dark .label,
+.dark .badge-label-text2, .dark .rotulo-texto-2  {
+    color: var(--m-3-sys-dark-on-surface-variant);
+}
+
+
+
+.dark .header2,
+.dark .subhead,
+.dark .date {
+    color: var(--m-3-sys-dark-on-surface);
+}
+
+
+
+.dark .type-day,
+.dark .card-state-layer-outlined, .dark .media {
+    background: var(--m-3-sys-dark-surface-container-high);
+    border-color: var(--m-3-sys-dark-outline-variant);
+}
+
+.dark .botao-secundario {
+    border-color: var(--m-3-sys-dark-outline);
+}
+
+.dark .botao-primario {
+    background: var(--m-3-sys-dark-primary);
+}
+
+.dark .texto-do-rotulo-2,
+.dark .texto-do-rotulo {
+    color: var(--m-3-sys-dark-on-primary, #ffffff);
+}
+
+.dark .titulo-texto{
+    color: var(--m-3-ref-secondary-secondary-60);
+}
+
+
+
+.dark .campo-texto-2,.dark .botao-estendido  {
+    background: var(--m-3-sys-dark-surface-container-highest);
+}

@@ -1,0 +1,294 @@
+.container_principal * {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--m-3-sys-dark-outline, #8f9285);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+header h1{
+    width: 100%;
+    max-width: 480px;
+    border-radius: 28px;
+    background-color: #FBFAF2;
+    color: #466800;
+    display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    height: 100px;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    align-items: center;
+    justify-content: center;
+}
+.container_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 11px;
+    
+}
+
+.container-login {
+    background: var(--m-3-sys-light-surface-container-lowest, #ffffff);
+    border-radius: 28px;
+    padding: 40px 10px;
+
+    width: 100%;
+    /* Defina uma largura inicial em porcentagem */
+    max-width: 480px;
+    /* Defina uma largura máxima em pixels */
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo-texto {
+    color: var(--m-3-sys-light-primary, #466800);
+    text-align: center;
+    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
+    font-size: large;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.campo-texto {
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 0 20px;
+    width: 100%;
+    max-width: 390px;
+    height: 56px;
+    margin: 20px 0 50px;
+}
+
+option, .campo-texto-2{
+    background: var(--m-3-sys-light-surface-container-highest, #e4e3db);
+}
+
+.campo-texto-2 {
+    background: var(--m-3-sys-light-surface-container-highest, #e4e3db);
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.camada-estado {
+    border-radius: 4px 4px 0px 0px;
+    padding: 4px 0px 4px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    border: 0;
+    background: transparent;
+    
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    flex: 1;
+    height: 40px;
+    position: relative;
+}
+
+.rotulo-texto {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.rotulo-texto-2 {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: left;
+    font: var(--m-3-body-small, 400 12px/16px "Roboto", sans-serif);
+    position: relative;
+}
+
+.entrada-texto {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.entrada-texto-2 {
+    color: var(--m-3-sys-light-on-surface, #1b1c18);
+    text-align: left;
+    font: var(--m-3-body-large, 400 16px/24px "Roboto", sans-serif);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    width: 100%;
+}
+
+.icone-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.camada-estado-2 {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.icone {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.indicador-ativo {
+    border-style: solid;
+    border-color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    border-width: 1px 0 0 0;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+}
+
+.texto-suporte {
+    padding: 4px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.texto-suporte-2 {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: left;
+    font: var(--m-3-body-small, 400 12px/16px "Roboto", sans-serif);
+    position: relative;
+    flex: 1;
+}
+
+.area-avatar-3d {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 35px;
+}
+
+.avatar-3d {
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+.botao-estendido {
+    background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    border: 0;
+}
+
+.botao-estendido .camada-estado {
+    width: 100%;
+}
+
+.icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+
+
+
+.selecionado :hover {
+    background: var(--m-3-sys-light-secondary-container);
+    cursor: pointer;
+}

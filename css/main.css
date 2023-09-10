@@ -1,0 +1,667 @@
+.scrool-vertical {
+    overflow-x: hidden;
+}
+
+/* Estilizando a barra de rolagem */
+.scrool-estilo::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+
+    /* Largura da barra de rolagem */
+}
+
+.scrool-estilo::-webkit-scrollbar-thumb {
+    background-color: var(--m-3-sys-light-secondary);
+    /* Cor do "polegar" (a parte da barra que o usuário arrasta) */
+    border-radius: 5px;
+    /* Borda arredondada do polegar */
+}
+
+.scrool-estilo::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Cor da "trilha" (área da barra de rolagem que não está ocupada pelo polegar) */
+}
+
+.selecionado :hover {
+    background: var(--m-3-sys-light-secondary-container);
+    cursor: pointer;
+}
+
+
+.barra-superior {
+    background: var(--m-3-sys-light-surface);
+    border-radius: 28px;
+    padding: 8px 4px 8px 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.botoes {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.fundoTransparente {
+    display: none;
+
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+
+
+
+
+
+
+
+
+
+/* PERFIL */
+.conteiner_superior_econdido {
+    position: absolute;
+    width: 95.5%;
+    max-width: 800px;
+    display: flex;
+}
+
+.superior_econdido_menu,
+.superior_econdido_perfil {
+    display: flex;
+    flex: auto;
+
+}
+
+.superior_econdido_perfil {
+    justify-content: flex-end;
+
+}
+
+.superior_econdido_menu {
+    justify-content: flex-start;
+
+}
+
+.conteiner_perfil {
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    max-height: 0;
+    /* left: 100%; */
+    margin: 75px 0 0 0;
+    width: 100%;
+    max-width: 250px;
+    transition: opacity 0.1s ease 0.02s;
+    opacity: 0;
+    background: var(--m-3-sys-light-surface, #FBFAF2);
+    border-radius: var(--arredondamento-do-cantos);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.conteiner_perfil .perfil {
+    box-sizing: border-box;
+    height: 100%;
+
+    width: 100%;
+    padding: 13px 10px;
+}
+
+
+.info-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.perfil .barra_superior_user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+.barra_superior_user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.barra_superior_user h3 {
+    display: inline-block;
+    margin: 0;
+    margin-top: 13px;
+
+    text-overflow: ellipsis;
+    vertical-align: top;
+
+    overflow-wrap: anywhere;
+
+
+    font-weight: 500;
+
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #1f1f1f;
+}
+
+.barra_superior_user h4 {
+    display: inline-block;
+    margin: 0;
+
+    overflow-wrap: anywhere;
+
+
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.container_logout {
+    padding-left: 20px;
+
+    background-color: var(--m-3-ref-secondary-secondary-90);
+    border-radius: 0 0 20px 20px;
+}
+
+.container_darkMode {
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2px;
+    padding: 0 20px 0 20px;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    background: var(--m-3-ref-secondary-secondary-90);
+
+}
+
+.container_logout button,
+.container_darkMode button {
+    border-radius: var(--arredondamento-do-cantos);
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    cursor: pointer;
+    gap: 15px;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* BOTAO DARK MODE */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Estilize a caixa do switch */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilize a alavanca (ponteiro) do switch */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: var(--arredondamento-do-cantos);
+}
+
+/* Estilize a alavanca quando o switch estiver ativo (ligado) */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: var(--arredondamento-do-cantos);
+}
+
+/* Estilize o switch quando estiver ativado (ligado) */
+input:checked+.slider {
+    background: var(--m-3-sys-dark-on-secondary);
+}
+
+/* Estilize a alavanca (ponteiro) quando o switch estiver ativado (ligado) */
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Barra Lateral */
+/* MENU */
+aside {
+
+    margin-top: 75px;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    /* max-width: 360px; */
+    max-width: 0px;
+    transition: opacity 0.1s ease 0.02s;
+}
+
+.navigation-drawer {
+    background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 455px;
+    position: relative;
+    overflow: hidden;
+}
+
+.headline {
+    padding: 8px 8px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+}
+
+.title {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: left;
+    font: var(--m-3-title-small, 500 14px/20px "Roboto", sans-serif);
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-header-1 {
+    border-radius: 100px;
+    padding: 18px 16px 18px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: left;
+    position: relative;
+}
+
+.nav-item-1 {
+
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.conteiner-opcao {
+    padding: 16px 24px 16px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+
+.icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.label2 {
+    color: var(--m-3-sys-light-on-secondary-container, #161e0a);
+    text-align: left;
+    position: relative;
+    flex: 1;
+}
+
+.badge-label-text {
+    color: var(--m-3-sys-light-on-secondary-container, #161e0a);
+    text-align: right;
+    position: relative;
+}
+
+.nav-item-2 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon3 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.label3 {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: left;
+    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
+    position: relative;
+    flex: 1;
+}
+
+.badge-label-text2 {
+    color: var(--m-3-sys-light-on-surface-variant, #45483d);
+    text-align: right;
+    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
+    position: relative;
+}
+
+.nav-item-3 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon5 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-item-4 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon7 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.divider-1 {
+
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    transform: translate(0px, 0px);
+    overflow: visible;
+}
+
+
+.section-header-2 {
+    border-radius: 100px;
+    padding: 18px 16px 18px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item-5 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon9 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-item-6 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon11 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-item-7 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon13 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.divider-2 {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    transform: translate(0px, 0px);
+    overflow: visible;
+}
+
+.section-header-3 {
+    border-radius: 100px;
+    padding: 18px 16px 18px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item-8 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon15 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-item-9 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon17 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-item-10 {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon19 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}

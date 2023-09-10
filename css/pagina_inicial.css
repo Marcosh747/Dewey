@@ -10,8 +10,7 @@ body * {
 header {
   display: flex;
   justify-content: center;
-  height: 50px;
-  margin-top: 10px;
+  height: 71px;
 }
 
 
@@ -24,7 +23,7 @@ body {
 /* Calcule a altura do conteúdo restante */
 main,
 .sessoes {
-  height: calc(100% - 70px);
+  height: calc(100% - 75px);
 }
 
 main {

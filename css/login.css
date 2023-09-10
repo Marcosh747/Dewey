@@ -10,7 +10,7 @@ body {
 header{
     display: flex;
     justify-content: center;
-    padding: 28px;
+    padding: 0 0 28px;
 }
 header h1{
     width: 100%;

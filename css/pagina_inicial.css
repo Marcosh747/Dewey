@@ -13,7 +13,13 @@ header {
 
 }
 
-
+/* Ajusta o layout para telas menores em coluna */
+@media (max-width: 1000px) {
+  .sessoes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* .icone-principal {
   display: flex;

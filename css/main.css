@@ -10,6 +10,7 @@
     /* Largura da barra de rolagem */
 }
 
+
 .scrool-estilo::-webkit-scrollbar-thumb {
     background-color: var(--m-3-sys-light-secondary);
     /* Cor do "polegar" (a parte da barra que o usuário arrasta) */

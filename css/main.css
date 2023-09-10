@@ -10,7 +10,6 @@
     /* Largura da barra de rolagem */
 }
 
-
 .scrool-estilo::-webkit-scrollbar-thumb {
     background-color: var(--m-3-sys-light-secondary);
     /* Cor do "polegar" (a parte da barra que o usuário arrasta) */
@@ -112,8 +111,7 @@
     position: absolute;
     z-index: 5;
     max-height: 0;
-    /* left: 100%; */
-    margin: 75px 0 0 0;
+    margin: 80px 0 0 0;
     width: 100%;
     max-width: 250px;
     transition: opacity 0.1s ease 0.02s;
@@ -293,7 +291,7 @@ input:checked+.slider:before {
 /* MENU */
 aside {
 
-    margin-top: 75px;
+    margin-top: 80px;
     position: absolute;
     z-index: 5;
     opacity: 0;

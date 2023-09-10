@@ -1,5 +1,6 @@
 body {
   background: #8F9285;
+  
 }
 
 body * {
@@ -9,26 +10,43 @@ body * {
 header {
   display: flex;
   justify-content: center;
-
+  height: 50px;
 }
 
 
-/* Ajusta o layout para telas menores em coluna */
-@media (max-width: 1050px) {
-  .sessoes {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+html,
+body {
+  height: 100%;
+  padding: 0;
+}
 
-  
-  
-  section.feed1,
-  section.feed2,
-  section.feed3 {
-    overflow: inherit;
-    max-width: 100vh;
-  }
+/* Calcule a altura do conteúdo restante */
+main,
+.sessoes {
+  height: calc(100% - 70px);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagina_inicial * {
+  box-sizing: border-box;
 }
 
 /* .icone-principal {
@@ -42,8 +60,6 @@ header {
   height: 48px;
   position: relative;
 } */
-
-
 
 
 .container-ola-usuario {
@@ -124,24 +140,31 @@ header {
   border-radius: var(--arredondamento-do-cantos);
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-section.feed1{
+section.feed1 {
   width: 100%;
 }
 
 section.feed1,
 .feed3,
 .feed2 {
+  height: 100%;
   max-width: 480px;
+  min-width: 315px; /* Largura mínima das sections */
+  flex: 1; /* Cresce para ocupar o espaço disponível */
   box-sizing: border-box;
   padding: 15px;
+
+  gap: 15px;
   display: flex;
-  border-radius: var(--arredondamento-do-cantos);
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  
   background: var(--m-3-sys-light-on-primary);
+  border-radius: var(--arredondamento-do-cantos);
 }
 
 

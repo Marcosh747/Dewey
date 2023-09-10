@@ -18,13 +18,16 @@ header {
   .sessoes {
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
   }
 
+  
+  
   section.feed1,
   section.feed2,
   section.feed3 {
     overflow: inherit;
+    max-width: 100vh;
   }
 }
 
@@ -114,30 +117,23 @@ header {
   overflow: hidden;
 }
 
-.android-grande-1 * {
-  box-sizing: border-box;
-}
 
-.android-grande-1 {
 
-}
 
 .sessoes {
   border-radius: var(--arredondamento-do-cantos);
   display: flex;
   gap: 15px;
-  justify-content: center;
 }
 
-section.feed1 {
+section.feed1{
   width: 100%;
-  max-width: 520px;
 }
 
 section.feed1,
 .feed3,
 .feed2 {
-
+  max-width: 480px;
   box-sizing: border-box;
   padding: 15px;
   display: flex;

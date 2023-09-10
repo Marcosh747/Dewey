@@ -63,8 +63,7 @@ function perfil() {
 // SAIR DA CONTA
 function logout(){
   localStorage.removeItem('darkMode');
-  window.location.href = '/';
-  
+  window.location.href = '/'
 }
 
 

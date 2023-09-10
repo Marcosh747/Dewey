@@ -89,8 +89,8 @@ header {
 }
 
 /* Calcule a altura do conteúdo restante */
- main, .android-grande-1, .sessoes {
-    height: calc(100% - 50px); /* Subtrai a altura do cabeçalho */
+ main, .sessoes {
+    height: calc(100% - 75px); /* Subtrai a altura do cabeçalho */
 }
 
 

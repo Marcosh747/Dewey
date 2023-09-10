@@ -119,15 +119,14 @@ header {
 }
 
 .android-grande-1 {
-  display: flex;
-  justify-content: center;
+
 }
 
 .sessoes {
   border-radius: var(--arredondamento-do-cantos);
   display: flex;
   gap: 15px;
-
+  justify-content: center;
 }
 
 section.feed1 {

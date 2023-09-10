@@ -151,7 +151,8 @@ section.feed1 {
 section.feed1,
 .feed3,
 .feed2 {
-  height: 100%;
+  min-height: 400px;
+  max-height: 100%;
   max-width: 480px;
   min-width: 315px; /* Largura mínima das sections */
   flex: 1; /* Cresce para ocupar o espaço disponível */

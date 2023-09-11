@@ -4,7 +4,6 @@
 
 body {
     background: var(--m-3-sys-dark-outline, #8f9285);
-    overflow: hidden;
 }
 
 header{
@@ -46,7 +45,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 11px;
     
 }
 

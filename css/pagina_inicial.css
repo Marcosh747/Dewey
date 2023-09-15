@@ -33,6 +33,10 @@ body {
   .aviso{
     max-width: 480px;
   }
+
+  .container-de-conteudo{
+    max-width: 480px;
+  }
  
 }
 
@@ -892,7 +896,7 @@ img.img-aviso {
   position: relative;
   background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
   width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 
 .conteudo-de-midia-e-texto {

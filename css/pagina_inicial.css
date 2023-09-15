@@ -40,6 +40,10 @@ body {
   .container-de-conteudo{
     max-width: 480px;
   }
+
+  .aviso iframe {
+    height: 258px;
+  }
  
 }
 
@@ -50,9 +54,6 @@ body {
     align-items: center;
   }
 
-  .aviso iframe {
-    height: 500px
-  }
 }
 
 

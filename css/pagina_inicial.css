@@ -20,11 +20,26 @@ body {
   padding: 0;
 }
 
+
+@media (min-width: 1000px) {
+  .pagina_inicial, main {
+    height: calc(100% - 75px);
+  }
+
+ 
+}
+
+
+
+
+
+
+
 /* Calcule a altura do conteúdo restante */
-main,
+/* main,
 .sessoes {
   height: calc(100% - 75px);
-}
+} */
 
 main {
   display: flex;

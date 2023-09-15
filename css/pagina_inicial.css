@@ -24,9 +24,11 @@ body {
 @media (min-width: 990px) {
   .sessoes, main {
     height: calc(100% - 75px);
-    
   }
 
+  section.feed1, .feed3, .feed2 {
+    max-width: 480px
+  }
  
 }
 
@@ -174,7 +176,7 @@ section.feed1,
 .feed2 {
   min-height: 400px;
   max-height: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
   min-width: 315px; /* Largura mínima das sections */
   flex: 1; /* Cresce para ocupar o espaço disponível */
   box-sizing: border-box;

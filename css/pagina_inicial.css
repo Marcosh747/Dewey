@@ -30,6 +30,11 @@ body {
  
 }
 
+@media (max-width: 990px) {
+  .sessoes, main {
+    flex-direction: column;
+  }
+}
 
 
 

@@ -45,7 +45,7 @@
     border: none;
     border-radius: var(--arredondamento-do-cantos);
     font-size: 20px;
-    border: 1.7px solid  var(--cor-borda);
+    border: 1.7px solid  var(--m-3-sys-light-secondary-fixed);
 }
 
 .barra-superior {

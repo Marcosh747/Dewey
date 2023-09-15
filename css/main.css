@@ -27,7 +27,26 @@
     cursor: pointer;
 }
 
-
+#backToTop {
+    display: flex;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    
+    justify-content: center;
+    
+    align-items: center;
+    z-index: 2;
+    width: var(--largura-botao);
+    height: var(--altura-botao);
+    border: none;
+    border-radius: var(--arredondamento-do-cantos);
+    font-size: 20px;
+    border: 1.7px solid  var(--cor-borda);
+}
 
 .barra-superior {
     background: var(--m-3-sys-light-surface);

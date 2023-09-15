@@ -1173,7 +1173,7 @@ img.img-aviso {
   justify-content: center;
   align-items: center;
   transition: 1s;
-  left: 1%;
+  /* left: 1%; */
 }
 
 .slides-div {

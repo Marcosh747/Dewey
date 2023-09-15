@@ -22,7 +22,7 @@ body {
 
 
 @media (min-width: 1000px) {
-  .pagina_inicial, main {
+  .sessoes, main {
     height: calc(100% - 75px);
   }
 

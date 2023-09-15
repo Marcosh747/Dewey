@@ -29,6 +29,10 @@ body {
   section.feed1, .feed3, .feed2 {
     max-width: 480px
   }
+
+  .aviso{
+    max-width: 480px;
+  }
  
 }
 
@@ -325,7 +329,7 @@ section.calendario {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 
 }
 

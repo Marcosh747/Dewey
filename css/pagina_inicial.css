@@ -49,6 +49,10 @@ body {
     width: 100%;
     align-items: center;
   }
+
+  .aviso iframe {
+    height: 500px
+  }
 }
 
 

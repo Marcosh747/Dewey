@@ -39,7 +39,7 @@ body.dark {
     color: var(--m-3-sys-dark-on-surface);
 }
 
-.dark .selecionada,
+.dark #backToTop, .dark .selecionada,
 .dark .container-de-conteudo,
 .dark .container_darkMode,
 .dark .container_logout,

@@ -30,15 +30,56 @@ header {
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   padding: 0;
 }
 
+
+@media (min-width: 990px) {
+  html, body {
+    height: 100%;
+  }
+  .sessoes, main {
+    height: calc(100% - 75px);
+  }
+
+  section.feed1, .feed3, .feed2 {
+    max-width: 480px
+  }
+
+  .aviso{
+    max-width: 480px;
+  }
+
+  .container-de-conteudo{
+    max-width: 480px;
+  }
+
+  .aviso iframe {
+    height: 258px;
+  }
+ 
+}
+
+@media (max-width: 990px) {
+  .sessoes, main {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+
+
+
+
+
 /* Calcule a altura do conteúdo restante */
-main,
+/* main,
 .sessoes {
   height: calc(100% - 75px);
-}
+} */
 
 main {
   display: flex;
@@ -167,11 +208,17 @@ section.feed1,
 .feed2 {
   min-height: 400px;
   max-height: 100%;
+<<<<<<< HEAD
   max-width: 480px;
   min-width: 315px;
   /* Largura mínima das sections */
   flex: 1;
   /* Cresce para ocupar o espaço disponível */
+=======
+  /* max-width: 480px; */
+  min-width: 315px; /* Largura mínima das sections */
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+>>>>>>> 72df06f2fbd51c27761be8a5675c487c6d5185e4
   box-sizing: border-box;
   padding: 15px;
 
@@ -244,7 +291,7 @@ section.calendario {
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  max-width: 840px;
+  /* max-width: 840px; */
   position: relative;
   overflow: hidden;
 }
@@ -373,7 +420,7 @@ section.menu_conteiner_publi {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 
 }
 
@@ -513,8 +560,8 @@ img.media2 {
 }
 
 .aviso iframe {
-  height: 258px;
-  max-height: 345px;
+  /* height: 258px; */
+  /* max-height: 345px; */
   width: 100%;
 }
 
@@ -936,7 +983,7 @@ img.img-aviso {
   position: relative;
   background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
   width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 
 .conteudo-de-midia-e-texto {
@@ -1202,7 +1249,7 @@ img.img-aviso {
   justify-content: center;
   align-items: center;
   transition: 1s;
-  left: 1%;
+  /* left: 1%; */
 }
 
 .slides-div {

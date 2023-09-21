@@ -1,10 +1,10 @@
-
 /* Ajusta o layout para telas menores em coluna */
 @media (min-width: 1000px) {
   section.menu_conteiner_publi {
     display: none;
   }
 }
+
 @media (max-width: 1000px) {
   section.menu_conteiner_publi {
     display: inline-flex;
@@ -36,33 +36,41 @@ body {
 
 
 @media (min-width: 990px) {
-  html, body {
+
+  html,
+  body {
     height: 100%;
   }
-  .sessoes, main {
+
+  .sessoes,
+  main {
     height: calc(100% - 75px);
   }
 
-  section.feed1, .feed3, .feed2 {
+  section.feed1,
+  .feed3,
+  .feed2 {
     max-width: 480px
   }
 
-  .aviso{
+  .aviso {
     max-width: 480px;
   }
 
-  .container-de-conteudo{
+  .container-de-conteudo {
     max-width: 480px;
   }
 
   .aviso iframe {
     height: 258px;
   }
- 
+
 }
 
 @media (max-width: 990px) {
-  .sessoes, main {
+
+  .sessoes,
+  main {
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -208,17 +216,11 @@ section.feed1,
 .feed2 {
   min-height: 400px;
   max-height: 100%;
-<<<<<<< HEAD
-  max-width: 480px;
+  /* max-width: 480px; */
   min-width: 315px;
   /* Largura mínima das sections */
   flex: 1;
   /* Cresce para ocupar o espaço disponível */
-=======
-  /* max-width: 480px; */
-  min-width: 315px; /* Largura mínima das sections */
-  flex: 1; /* Cresce para ocupar o espaço disponível */
->>>>>>> 72df06f2fbd51c27761be8a5675c487c6d5185e4
   box-sizing: border-box;
   padding: 15px;
 
@@ -344,36 +346,38 @@ section.calendario {
 
 /* MENU */
 section.menu_conteiner_publi {
- 
+
   background: var(--m-3-sys-light-on-primary);
-  
-  
+
+
   justify-content: flex-end;
   width: 100%;
-  border-radius: 12px;
-  border: solid 1px var(--m-3-sys-light-outline-variant, #c5c8b9);
-  
-  max-width: 480px;
+  border-radius: 28px;
+  padding: 15px;
+
   min-width: 315px;
 }
 
-.menu_publi{
+.menu_publi {
   display: inline-flex;
+  align-items: center;
   width: 100%;
-  padding: 5px 5px 5px 15px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: solid 1px var(--m-3-sys-light-outline-variant, #c5c8b9);
   background: var(--m-3-sys-light-surface-container-high);
 }
 
 
 .menu-publicaoes {
-  list-style: none;
-  padding: 0;
+
+
   white-space: nowrap;
   width: max-content;
   gap: 10px;
   width: 100%;
   justify-content: space-evenly;
-  margin: 0;
+
   display: inline-flex;
 }
 
@@ -387,12 +391,13 @@ section.menu_conteiner_publi {
 
 
 .menu-item.selected {
-  
+
   background: var(--m-3-sys-light-secondary-container);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
   /* Cor de destaque para a opção selecionada */
 }
 
-.criar_post{
+.criar_post {
   border-radius: 50%;
   background: var(--m-3-sys-light-secondary-container);
 }

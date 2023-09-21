@@ -1,3 +1,4 @@
+// Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
 function selecionarOpcao(element) {
     const menuItems = document.querySelectorAll('.menu-item');
 
@@ -10,13 +11,12 @@ function selecionarOpcao(element) {
     element.classList.add('selected');
 
     // Mostra/Esconde os elementos com base na opção selecionada
-    const conteinerFeedAvisos = document.getElementById('conteiner_feed_avisos');
-    const conteinerFeed2 = document.getElementById('conteiner_feed_2');
+    const conteinerFeedAvisos = document.getElementById('feed2');
+    const conteinerFeed2 = document.getElementById('feed3');
 
     if (element.textContent === 'Avisos' && window.innerWidth >= 1000) {
         conteinerFeedAvisos.style.display = 'flex';
         conteinerFeed2.style.display = 'flex';
-
     } else if (element.textContent === 'Avisos') {
         conteinerFeedAvisos.style.display = 'flex';
         conteinerFeed2.style.display = 'none';
@@ -25,3 +25,4 @@ function selecionarOpcao(element) {
         conteinerFeed2.style.display = 'flex';
     }
 }
+

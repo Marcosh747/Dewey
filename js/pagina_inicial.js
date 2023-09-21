@@ -1,3 +1,18 @@
+
+// Verifica a largura da janela quando a página é carregada
+if (window.location.pathname === '/public/professor/pagina_inicial.html') {
+    window.addEventListener('load', function () {
+        selecionarOpcao(document.querySelector('.menu-item'));
+
+
+    });
+
+    window.addEventListener('resize', function () {
+        selecionarOpcao(document.querySelector('.menu-item'));
+
+    });
+}
+
 // Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
 function selecionarOpcao(element) {
     const menuItems = document.querySelectorAll('.menu-item');
@@ -14,7 +29,7 @@ function selecionarOpcao(element) {
     const conteinerFeedAvisos = document.getElementById('feed2');
     const conteinerFeed2 = document.getElementById('feed3');
 
-    if (element.textContent === 'Avisos' && window.innerWidth >= 1000) {
+    if (element.textContent === 'Avisos' && window.innerWidth >= 990) {
         conteinerFeedAvisos.style.display = 'flex';
         conteinerFeed2.style.display = 'flex';
     } else if (element.textContent === 'Avisos') {
@@ -25,4 +40,5 @@ function selecionarOpcao(element) {
         conteinerFeed2.style.display = 'flex';
     }
 }
+
 

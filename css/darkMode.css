@@ -17,9 +17,7 @@ body.dark {
 
 .dark .container-login , .dark .conteiner_titulo, .dark .navigation-drawer,
 .dark .barra-superior,
-.dark .feed1,
-.dark .feed2,
-.dark .feed3,
+.dark .estilo-blocos,
 .dark .conteiner_perfil, .dark option {
     background: var(--m-3-ref-neutral-neutral-30);
 }
@@ -39,7 +37,7 @@ body.dark {
     color: var(--m-3-sys-dark-on-surface);
 }
 
-.dark #backToTop, .dark .selecionada,
+.dark .menu-item, .dark .selecionada,
 .dark .container-de-conteudo,
 .dark .container_darkMode,
 .dark .container_logout,
@@ -48,7 +46,13 @@ body.dark {
     border-color: var(--m-3-sys-dark-outline-variant);
 }
 
+.dark .criar_post, .dark #backToTop{
+    background: var(--m-3-ref-secondary-secondary-70);
+}
 
+.dark .selected{
+    background: var(--m-3-ref-tertiary-tertiary-35); 
+}
 
 .dark .data_hora_aviso,
 .dark .texto-de-suporte,
@@ -72,7 +76,7 @@ body.dark {
 
 
 
-.dark .type-day,
+.dark .menu_section, .dark .type-day,
 .dark .card-state-layer-outlined, .dark .media {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
@@ -100,3 +104,4 @@ body.dark {
 .dark .campo-texto-2,.dark .botao-estendido  {
     background: var(--m-3-sys-dark-surface-container-highest);
 }
+

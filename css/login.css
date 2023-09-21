@@ -35,7 +35,8 @@ header h1{
 
 
 main{
-    height: 98vh;
+    /* height: 98vh; */
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;

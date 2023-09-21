@@ -37,7 +37,7 @@
     border-radius: var(--arredondamento-do-cantos);
 
     border: 1.7px solid var(--m-3-sys-light-secondary-fixed);
-    
+    background-color: var(--m-3-ref-neutral-neutral-98);
 }
 
 .barra-superior {

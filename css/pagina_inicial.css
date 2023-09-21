@@ -658,6 +658,7 @@ img.img-aviso {
 .label-text {
   background-color: transparent;
   border: 0;
+  outline: 0;
   color: var(--m-3-sys-light-on-surface-variant, #45483d);
   text-align: center;
   font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);

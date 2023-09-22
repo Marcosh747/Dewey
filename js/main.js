@@ -70,6 +70,11 @@ function acessar_album (){
   window.location.href = '/public/album.html';
 }
 
+// PAGINA INICIAL
+function acessar_pagina_inicial (){
+  window.location.href = '/public/pagina_inicial.html';
+}
+
 
 // Função para rolar suavemente até o topo da página
 // Define a função scrollToTop fora do escopo DOMContentLoaded

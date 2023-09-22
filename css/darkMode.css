@@ -71,7 +71,7 @@ body.dark {
 
 
 
-.dark .header2,
+.dark .citacao_do_dia, .dark .header2,
 .dark .subhead,
 .dark .date {
     color: var(--m-3-sys-dark-on-surface);

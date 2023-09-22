@@ -103,5 +103,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function acessar_album (){
-  window.location.href = './public/album.html';
+  window.location.href = '/public/album.html';
 }

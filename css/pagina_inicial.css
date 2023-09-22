@@ -528,13 +528,14 @@ ul .speech.active{
 .aviso {
   padding: 10px;
   background: var(--m-3-sys-light-secondary-container);
+  border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
   border-radius: 12px;
 
   gap: 15px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* max-width: 480px; */
+
 
 }
 
@@ -660,9 +661,12 @@ ul .speech.active{
 
   align-items: center;
 
+  overflow: hidden;
+  border-radius: 12px;
+
 }
 
-img.media2,
+
 .aviso iframe,
 img.img-aviso {
   border-radius: 12px;

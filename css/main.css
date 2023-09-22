@@ -249,12 +249,13 @@ body {
 .container_darkMode {
     border-radius: 20px 20px 0 0;
     margin-bottom: 2px;
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
     width: 100%;
-    justify-content: space-between;
     display: inline-flex;
     align-items: center;
     background: var(--m-3-ref-secondary-secondary-90);
+    justify-content: space-around;
+
 
 }
 

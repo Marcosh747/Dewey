@@ -30,7 +30,6 @@ function menu_lateral() {
 
 
 // PERFIL
-
 function perfil() {
   const fundo = document.querySelector('.fundoTransparente');
   const perfil = document.getElementsByClassName("conteiner_perfil")[0];
@@ -66,7 +65,10 @@ function logout(){
   window.location.href = '/'
 }
 
-
+// PAGINA ALBUM
+function acessar_album (){
+  window.location.href = '/public/album.html';
+}
 
 
 // Função para rolar suavemente até o topo da página
@@ -101,7 +103,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-function acessar_album (){
-  window.location.href = '/public/album.html';
-}

@@ -22,6 +22,31 @@
     /* Cor da "trilha" (área da barra de rolagem que não está ocupada pelo polegar) */
 }
 
+
+body {
+    background: #8F9285;
+
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 71px;
+}
+
+
+html,
+body {
+    /* height: 100%; */
+    padding: 0;
+}
+
+
+
 .selecionado :hover {
     background: var(--m-3-sys-light-secondary-container);
     cursor: pointer;
@@ -54,6 +79,25 @@
     margin-top: 10px;
 }
 
+.manchete-2 {
+    color: var(--m-3-sys-light-on-surface);
+    text-align: center;
+    font: var(--m-3-title-large, 400 22px/28px "Roboto", sans-serif);
+    position: relative;
+    flex: 1;
+}
+
+.container {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
 
 .botoes {
     padding: 8px;
@@ -206,12 +250,13 @@
 .container_darkMode {
     border-radius: 20px 20px 0 0;
     margin-bottom: 2px;
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
     width: 100%;
-    justify-content: space-between;
     display: inline-flex;
     align-items: center;
     background: var(--m-3-ref-secondary-secondary-90);
+    justify-content: space-around;
+
 
 }
 
@@ -291,7 +336,10 @@ input:checked+.slider:before {
 
 
 
-
+.estilo-blocos {
+    background: var(--m-3-sys-light-on-primary);
+    border-radius: var(--arredondamento-do-cantos);
+  }
 
 
 

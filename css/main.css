@@ -87,6 +87,18 @@ body {
     flex: 1;
 }
 
+.container {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
 .botoes {
     padding: 8px;
     display: flex;

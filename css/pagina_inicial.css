@@ -120,13 +120,7 @@ main {
   }
 }
 
-.manchete-2 {
-  color: var(--m-3-sys-light-on-surface);
-  text-align: center;
-  font: var(--m-3-title-large, 400 22px/28px "Roboto", sans-serif);
-  position: relative;
-  flex: 1;
-}
+
 
 
 

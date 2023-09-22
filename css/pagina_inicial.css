@@ -414,7 +414,8 @@ section.menu_conteiner_publi {
   border-radius: 28px;
   padding: 10px;
   /* box-shadow: 0 12px 35px rgba(0,0,0,0.1); */
-  border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
+  border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
+
 }
 .wrapper h2, .conteiner_citacao :where(i, span){
   color: #202842;

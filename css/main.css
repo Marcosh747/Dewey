@@ -196,11 +196,12 @@
 
 
 .container_logout {
-    padding-left: 20px;
-
+    
+    overflow: hidden;
     background-color: var(--m-3-ref-secondary-secondary-90);
     border-radius: 0 0 20px 20px;
 }
+
 
 .container_darkMode {
     border-radius: 20px 20px 0 0;
@@ -214,11 +215,10 @@
 
 }
 
-.container_logout button,
-.container_darkMode button {
+.container_logout button{
     border-radius: var(--arredondamento-do-cantos);
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 20px;
     border: 0;
     cursor: pointer;
     gap: 15px;

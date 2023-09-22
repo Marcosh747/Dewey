@@ -382,7 +382,6 @@ section.menu_conteiner_publi {
   padding: 5px 10px;
   border-radius: 10px;
   border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
-
   cursor: pointer;
   width: min-content;
 }
@@ -717,7 +716,7 @@ img.img-aviso {
   position: relative;
 }
 
-.date {
+.dia {
   color: var(--m-3-sys-light-on-surface, #1b1c18);
   text-align: center;
   font: var(--m-3-body-large, 400 16px/24px "Roboto", sans-serif);

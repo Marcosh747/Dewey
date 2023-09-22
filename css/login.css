@@ -16,7 +16,7 @@ header h1{
     width: 100%;
     max-width: 480px;
     border-radius: 28px;
-    background-color: #FBFAF2;
+    background: var(--m-3-sys-light-surface-container-lowest, #ffffff);
     color: #466800;
     display: flex;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

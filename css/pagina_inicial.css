@@ -410,13 +410,13 @@ section.menu_conteiner_publi {
 
 .wrapper{
   width: 100%;
-  background: var(--cor-fundo-principal);
-  border-radius: 15px;
+  background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
+  border-radius: 28px;
   padding: 10px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.1);
   border: 1px solid var(--cor-borda);
 }
-.wrapper h1, .content :where(i, span){
+.wrapper h1, .conteiner_citacao :where(i, span){
   color: #202842;
 }
 .wrapper h1{
@@ -425,11 +425,11 @@ section.menu_conteiner_publi {
   font-weight: 600;
   text-align: center;
 }
-.wrapper .content{
+.wrapper .conteiner_citacao{
   padding: 15px;
   
 }
-.content .quote-area{
+.conteiner_citacao .quote-area{
   
   display: flex;
   width: 100%;
@@ -452,7 +452,7 @@ section.menu_conteiner_publi {
   text-align: center;
   
 }
-.content .author{
+.conteiner_citacao .author{
   display: flex;
   font-size: 18px;
   margin-top: 20px;
@@ -560,7 +560,7 @@ ul .speech.active{
 }
 
 
-.content-container {
+.conteiner_citacao-container {
   border-radius: 12px;
   border-style: solid;
   border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);

@@ -79,7 +79,7 @@ body.dark {
 
 
 
-.dark .menu_section, .dark .type-day,
+.dark .citacao,.dark .menu_section, .dark .type-day,
 .dark .card-state-layer-outlined, .dark .media {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);

@@ -416,10 +416,10 @@ section.menu_conteiner_publi {
   box-shadow: 0 12px 35px rgba(0,0,0,0.1);
   border: 1px solid var(--cor-borda);
 }
-.wrapper h1, .conteiner_citacao :where(i, span){
+.wrapper h2, .conteiner_citacao :where(i, span){
   color: #202842;
 }
-.wrapper h1{
+.wrapper h2{
   
   font-size: 35px;
   font-weight: 600;

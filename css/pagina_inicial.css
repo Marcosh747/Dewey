@@ -165,10 +165,7 @@ section.feed1 {
   width: 100%;
 }
 
-.estilo-blocos {
-  background: var(--m-3-sys-light-on-primary);
-  border-radius: var(--arredondamento-do-cantos);
-}
+
 
 section.feed1,
 .feed3,

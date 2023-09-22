@@ -336,7 +336,10 @@ input:checked+.slider:before {
 
 
 
-
+.estilo-blocos {
+    background: var(--m-3-sys-light-on-primary);
+    border-radius: var(--arredondamento-do-cantos);
+  }
 
 
 

@@ -25,80 +25,27 @@
 
 body {
     background: #8F9285;
-  
-  }
-  
-  body * {
+
+}
+
+body * {
     font-family: 'Roboto', sans-serif;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     justify-content: center;
     height: 71px;
-  }
-  
-  
-  html,
-  body {
+}
+
+
+html,
+body {
     /* height: 100%; */
     padding: 0;
-  }
-  
-  
-  @media (min-width: 990px) {
-  
-    html,
-    body {
-      height: 100%;
-    }
-  
-    .sessoes,
-    main {
-      height: calc(100% - 78px);
-    }
-  
-    section.menu_conteiner_publi {
-      display: none;
-    }
-  
-    section.feed1,
-    .feed3,
-    .feed2 {
-      max-width: 480px
-    }
-  
-    .aviso {
-      max-width: 480px;
-    }
-  
-    .container-de-conteudo {
-      max-width: 480px;
-    }
-  
-    .aviso iframe {
-      height: 258px;
-    }
-  
-  }
-  
-  @media (max-width: 991px) {
-  
-    .sessoes,
-    main {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-  
-    section.menu_conteiner_publi {
-      display: inline-flex;
-    }
-  
-    section.feed3 {
-      display: none;
-    }
-  }
+}
+
+
 
 .selecionado :hover {
     background: var(--m-3-sys-light-secondary-container);

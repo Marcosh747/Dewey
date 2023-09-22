@@ -97,3 +97,11 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollToTop(500); // 500ms para a rolagem suave
   });
 });
+
+
+
+
+
+function acessar_album (){
+  window.location.href = 'public/album.html';
+}

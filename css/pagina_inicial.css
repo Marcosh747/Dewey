@@ -397,7 +397,7 @@ section.menu_conteiner_publi {
 }
 
 .criar_post {
-
+  border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
   background: var(--m-3-sys-light-secondary-container);
 }
 

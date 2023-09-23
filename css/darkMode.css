@@ -37,7 +37,7 @@ body.dark {
     color: var(--m-3-sys-dark-on-surface);
 }
 
-.dark .criar_post, .dark .menu-item, .dark .selecionada,
+.dark .fechar_novo_post, .dark .container_label,.dark .criar_post, .dark .menu-item, .dark .selecionada,
 .dark .container-de-conteudo,
 .dark .container_darkMode,
 .dark .container_logout,
@@ -79,8 +79,7 @@ body.dark {
 
 
 
-.dark .citacao,.dark .menu_section, .dark .type-day,
-.dark .card-state-layer-outlined, .dark .media {
+.dark .estilo-conteiner-secundario {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

@@ -1583,8 +1583,6 @@
 }
 
 
-
-
   #documento-preview{
     padding: 15px;
     display: none;
@@ -1662,4 +1660,9 @@
     border-radius: 12px;
     display: flex;
     background: var(--m-3-ref-secondary-secondary-80);
+  }
+
+  .conteiner_sumit{
+    width: 100%;
+    margin-bottom: 15px;
   }

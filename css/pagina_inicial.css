@@ -234,43 +234,24 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
+
+
+
+
+
+
+
+
+
+
 
   /* CALENDARIO */
-
-  .type-day {
-    background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
-    border-radius: 28px;
-    display: flex;
-    flex-direction: column;
-    /* gap: 0px; */
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    /* max-width: 840px; */
-    position: relative;
-    overflow: hidden;
-  }
-
-  .header {
-    border-style: solid;
-    border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
-    border-width: 0px 0px 1px 0px;
-    padding: 16px 12px 12px 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: flex-end;
-    justify-content: space-between;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-  }
-
   .label-and-date {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
     flex: 1;
@@ -286,14 +267,118 @@
     height: 16px;
   }
 
-  .week-day-day {
+  .calendario {
+    background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  
+    position: relative;
+
+  }
+
+  .cabecalho_calendario {
+    border-style: solid;
+    border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
+    border-width: 0px 0px 1px 0px;
+    padding: 16px 12px 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .mes {
     color: var(--m-3-sys-light-on-surface, #1b1c18);
     text-align: left;
     font: var(--m-3-headline-large, 400 32px/40px "Roboto", sans-serif);
     position: relative;
     align-self: stretch;
     height: 40px;
+
   }
+
+  .conteiner_selecao {
+    padding: 4px 12px 4px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+
+  }
+
+  .conteiner_main_calendario {
+    padding: 0px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .dias-da-semana {
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 0px; */
+    align-items: flex-start;
+    align-self: stretch;
+    /* flex-shrink: 0; */
+    height: 48px;
+    /* position: relative; */
+    justify-content: center;
+  }
+
+  .dias-da-semana div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+  }
+
+  .dias_do_calendario {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+  }
+
+
+  .data-atual .container2 {
+    background: var(--m-3-sys-light-primary, #466800);
+    color: var(--m-3-sys-light-on-primary, #ffffff);
+    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
+  }
+
+  .container2:hover {
+    border-radius: 100px;
+    border: 1px solid var(--m-3-sys-light-primary, #466800);
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -707,40 +792,6 @@
   }
 
 
-  .local-selection-row {
-    padding: 4px 12px 4px 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-  }
-
-  .building-blocks-menu-button {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-  }
-
-  .state-layer2 {
-    border-radius: 100px;
-    padding: 10px 4px 10px 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
-  }
-
   .label-text {
     background-color: transparent;
     border: 0;
@@ -765,140 +816,8 @@
   }
 
 
-  .local-calendar-grid {
-    padding: 0px 12px 0px 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-  }
 
-  .days-of-the-week {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
 
-  .sunday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .dia {
-    color: var(--m-3-sys-light-on-surface, #1b1c18);
-    text-align: center;
-    font: var(--m-3-body-large, 400 16px/24px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .monday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .tuesday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .wednesday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .thursday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .friday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .saturday {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .week-1 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
-
-  .sunday2 {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
-
-  .monday2 {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
 
   .container2 {
     border-radius: 100px;
@@ -914,153 +833,20 @@
     overflow: hidden;
   }
 
-  .state-layer3 {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    position: relative;
-  }
 
-  .container3 {
-    border-radius: 100px;
-    border-style: solid;
-    border-color: var(--m-3-sys-light-primary, #466800);
-    border-width: 1px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    overflow: hidden;
-  }
 
-  .state-layer4 {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    position: relative;
-  }
 
-  .date2 {
-    color: var(--m-3-sys-light-primary, #466800);
-    text-align: center;
-    font: var(--m-3-body-large, 400 16px/24px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .week-2 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
 
-  .week-3 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
 
-  .thursday2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
 
-  .container4 {
-    background: var(--m-3-sys-light-primary, #466800);
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    overflow: hidden;
-  }
 
-  .date3 {
-    color: var(--m-3-sys-light-on-primary, #ffffff);
-    text-align: center;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .week-4 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
 
-  .week-5 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 48px;
-    position: relative;
-  }
 
-  .friday2 {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
 
-  .saturday2 {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
+
+
 
   .container-de-conteudo {
     border-radius: 12px;
@@ -1447,8 +1233,8 @@
 
     display: none;
     position: fixed;
-    z-index: 10;
-    /* valor alto para sobrepor outros elementos */
+    z-index: 2;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -1465,18 +1251,7 @@
   .conteiner_fundo_novo_post.active {
     /* Estilos após a seleção do arquivo */
     display: flex;
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    /* valor alto para sobrepor outros elementos */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .conteiner_fundo_novo_post .conteiner_fechar_post {
@@ -1487,7 +1262,7 @@
     align-items: flex-end;
   }
 
-.conteiner_suspenso_criar{
+  .conteiner_suspenso_criar {
     right: 25px;
     overflow: hidden;
     position: absolute;
@@ -1501,39 +1276,43 @@
     background: var(--m-3-sys-light-surface, #FBFAF2);
     border-radius: var(--arredondamento-do-cantos);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-}
+  }
 
-.escolhas_criar{
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 13px 10px;
-}
+  .escolhas_criar {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 13px 10px;
+  }
 
-.container_aviso, .container_atividade{
-  overflow: hidden;
-  margin-bottom: 2px;
-  /* padding: 0 20px 0 20px; */
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  background: var(--m-3-ref-secondary-secondary-90);
-  justify-content: space-around;
-}
-.container_aviso{
-  border-radius: 20px 20px 0 0;
-}
-.container_atividade{
-  border-radius: 0 0 20px 20px;
-}
+  .container_aviso,
+  .container_atividade {
+    overflow: hidden;
+    margin-bottom: 2px;
+    /* padding: 0 20px 0 20px; */
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background: var(--m-3-ref-secondary-secondary-90);
+    justify-content: space-around;
+  }
 
-.container_aviso button, .container_atividade button{
-  width: 100%;
-  padding: 12px;
-  background: transparent;
-  border: 0;
-  text-align: center;
-}
+  .container_aviso {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .container_atividade {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .container_aviso button,
+  .container_atividade button {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 0;
+    text-align: center;
+  }
 
 
   .conteiner_card_criar {
@@ -1571,19 +1350,19 @@
     align-items: center;
     transition: 1s;
     overflow: auto;
-}
+  }
 
-.imagem-preview {
-  flex: 1;
-  width: 240px;
-  height: 300px;
-  transition: 0.5s;
-  object-fit: cover;
-  border-radius: 12px;
-}
+  .imagem-preview {
+    flex: 1;
+    width: 240px;
+    height: 300px;
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 
 
-  #documento-preview{
+  #documento-preview {
     padding: 15px;
     display: none;
   }
@@ -1653,7 +1432,7 @@
   }
 
 
-  
+
 
   .container_label {
     padding: 8px 15px;
@@ -1662,7 +1441,35 @@
     background: var(--m-3-ref-secondary-secondary-80);
   }
 
-  .conteiner_sumit{
+  .conteiner_sumit {
     width: 100%;
     margin-bottom: 15px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

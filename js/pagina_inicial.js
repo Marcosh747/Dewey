@@ -47,68 +47,68 @@ function selecionarOpcao(element) {
 
 
 // CALENDARIO
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
 
-    const daysTag = document.querySelector(".dia"),
-        currentDate = document.querySelector(".data-atual"),
-        prevNextIcon = document.querySelectorAll(".ícones span");
+//     const daysTag = document.querySelector(".dia"),
+//         currentDate = document.querySelector(".data-atual"),
+//         prevNextIcon = document.querySelectorAll(".ícones span");
 
-    // obtendo a nova data, ano atual e mês atual
-    let date = new Date(),
-        currYear = date.getFullYear(),
-        currMonth = date.getMonth();
+//     // obtendo a nova data, ano atual e mês atual
+//     let date = new Date(),
+//         currYear = date.getFullYear(),
+//         currMonth = date.getMonth();
 
-    // armazenando o nome completo de todos os meses em um array
-    const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+//     // armazenando o nome completo de todos os meses em um array
+//     const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
-    const renderCalendar = () => {
-        let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
-            lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
-            lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
-            lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
-        let liTag = "";
+//     const renderCalendar = () => {
+//         let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
+//             lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
+//             lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
+//             lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+//         let liTag = "";
 
-        for (let i = firstDayofMonth; i > 0; i--) {
-            liTag += `<li class="inativo">${lastDateofLastMonth - i + 1}</li>`;
-        }
+//         for (let i = firstDayofMonth; i > 0; i--) {
+//             liTag += `<li class="inativo">${lastDateofLastMonth - i + 1}</li>`;
+//         }
 
-        for (let i = 1; i <= lastDateofMonth; i++) {
-            // adicionando a classe "ativo" ao li se o dia atual, mês e ano coincidirem
-            let isToday = i === date.getDate() && currMonth === new Date().getMonth() &&
-                currYear === new Date().getFullYear() ? "ativo" : "";
-            liTag += `<li class="${isToday}">${i}</li>`;
-        }
+//         for (let i = 1; i <= lastDateofMonth; i++) {
+//             // adicionando a classe "ativo" ao li se o dia atual, mês e ano coincidirem
+//             let isToday = i === date.getDate() && currMonth === new Date().getMonth() &&
+//                 currYear === new Date().getFullYear() ? "ativo" : "";
+//             liTag += `<li class="${isToday}">${i}</li>`;
+//         }
 
-        for (let i = lastDayofMonth; i < 6; i++) {
-            liTag += `<li class="inativo">${i - lastDayofMonth + 1}</li>`;
-        }
-        currentDate.innerText = `${months[currMonth]} ${currYear}`; // definindo o texto da data atual com o mês e ano atual
-        daysTag.innerHTML = liTag;
-    };
+//         for (let i = lastDayofMonth; i < 6; i++) {
+//             liTag += `<li class="inativo">${i - lastDayofMonth + 1}</li>`;
+//         }
+//         currentDate.innerText = `${months[currMonth]} ${currYear}`; // definindo o texto da data atual com o mês e ano atual
+//         daysTag.innerHTML = liTag;
+//     };
 
-    renderCalendar();
+//     renderCalendar();
 
-    prevNextIcon.forEach(icon => {
-        // obtendo os ícones de anterior e próximo
-        icon.addEventListener("click", () => {
-            // adicionando evento de clique em ambos os ícones
-            // se o ícone clicado for o ícone anterior, decrementa o mês atual em 1, caso contrário, incrementa em 1
-            currMonth = icon.id === "anterior" ? currMonth - 1 : currMonth + 1;
+//     prevNextIcon.forEach(icon => {
+//         // obtendo os ícones de anterior e próximo
+//         icon.addEventListener("click", () => {
+//             // adicionando evento de clique em ambos os ícones
+//             // se o ícone clicado for o ícone anterior, decrementa o mês atual em 1, caso contrário, incrementa em 1
+//             currMonth = icon.id === "anterior" ? currMonth - 1 : currMonth + 1;
 
-            if (currMonth < 0 || currMonth > 11) {
-                // se o mês atual for menor que 0 ou maior que 11
-                // cria uma nova data com o ano e mês atual e define como valor da variável date
-                date = new Date(currYear, currMonth, new Date().getDate());
-                currYear = date.getFullYear(); // atualiza o ano atual com o ano da nova data
-                currMonth = date.getMonth(); // atualiza o mês atual com o mês da nova data
-            } else {
-                date = new Date(); // define a data atual como valor da variável date
-            }
-            renderCalendar(); // chama a função renderCalendar
-        });
-    });
+//             if (currMonth < 0 || currMonth > 11) {
+//                 // se o mês atual for menor que 0 ou maior que 11
+//                 // cria uma nova data com o ano e mês atual e define como valor da variável date
+//                 date = new Date(currYear, currMonth, new Date().getDate());
+//                 currYear = date.getFullYear(); // atualiza o ano atual com o ano da nova data
+//                 currMonth = date.getMonth(); // atualiza o mês atual com o mês da nova data
+//             } else {
+//                 date = new Date(); // define a data atual como valor da variável date
+//             }
+//             renderCalendar(); // chama a função renderCalendar
+//         });
+//     });
 
-});
+// });
 
 
 
@@ -231,4 +231,93 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+// calendario
+document.addEventListener('DOMContentLoaded', function () {
+    let calendario = document.querySelector('.calendario');
+    const meses = calendario.querySelector('.mes');
+    const voltarMes = document.querySelector('#voltarMes'); // Botão Anterior
+    const proximoMes = document.querySelector('#proximoMes'); // Botão Próximo
+    const diaAtual = document.querySelector('.reiniciar'); // Botão reiniciar
+
+    const nomes_meses = [
+        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+    ];
+
+    EAnoBissexto = (ano) => {
+        return (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0);
+    };
+
+    getDiasFevereiro = (ano) => {
+        return EAnoBissexto(ano) ? 29 : 28;
+    };
+
+    gerarCalendario = (mes, ano) => {
+        let diasDoCalendario = calendario.querySelector('.dias_do_calendario');
+
+        let dias_do_mes = [31, getDiasFevereiro(ano), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        diasDoCalendario.innerHTML = '';
+
+        let mesAtual = `${nomes_meses[mes]} ${ano}`;
+        meses.innerHTML = mesAtual;
+
+        // Obter o primeiro dia do mês
+        let primeiro_dia = new Date(ano, mes, 1);
+
+        for (let i = 0; i <= dias_do_mes[mes] + primeiro_dia.getDay() - 1; i++) {
+            let dia = document.createElement('div');
+            if (i >= primeiro_dia.getDay()) {
+                dia.classList.add('dia-do-calendario-hover', 'semana-5');
+                let numeroDia = i - primeiro_dia.getDay() + 1;
+                dia.innerHTML = `
+                    <div class="container2">
+                        <div class="camada-estado3">
+                            <div class="data">${numeroDia}</div>
+                        </div>
+                    </div>
+                `;
+                let dataAtual = new Date();
+                if (numeroDia === dataAtual.getDate() && ano === dataAtual.getFullYear() && mes === dataAtual.getMonth()) {
+                    dia.classList.add('data-atual');
+                }
+            }
+            diasDoCalendario.appendChild(dia);
+        }
+    };
+
+    let dataAtual = new Date();
+    let mes_atual = { valor: dataAtual.getMonth() };
+    let ano_atual = { valor: dataAtual.getFullYear() };
+    gerarCalendario(mes_atual.valor, ano_atual.valor);
+
+    // Ouvinte de evento para o botão anterior
+    voltarMes.addEventListener('click', () => {
+        mes_atual.valor--;
+        if (mes_atual.valor < 0) {
+            mes_atual.valor = 11;
+            ano_atual.valor--;
+        }
+        gerarCalendario(mes_atual.valor, ano_atual.valor);
+    });
+
+    // Ouvinte de evento para o botão próximo
+    proximoMes.addEventListener('click', () => {
+        mes_atual.valor++;
+        if (mes_atual.valor > 11) {
+            mes_atual.valor = 0;
+            ano_atual.valor++;
+        }
+        gerarCalendario(mes_atual.valor, ano_atual.valor);
+    });
+
+    // Ouvinte de evento para o botão reiniciar
+    diaAtual.addEventListener('click', () => {
+        let dataAtual = new Date();
+        mes_atual.valor = dataAtual.getMonth();
+        ano_atual.valor = dataAtual.getFullYear();
+        gerarCalendario(mes_atual.valor, ano_atual.valor);
+    });
+});
 

@@ -113,10 +113,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // NOVO POST
-function criar_post() {
+function toggleElementVisibility(element, displayValue = 'block') {
+    const computedStyle = window.getComputedStyle(element);
 
+    if (computedStyle.opacity === "0") {
+        element.style.maxHeight = "326px";
+        element.style.opacity = "1";
+        element.style.display = displayValue;
+    } else {
+        element.style.maxHeight = "0px";
+        element.style.opacity = "0";
+        element.style.display = 'none';
+    }
+}
+
+function criar_post() {
+    const fundo = document.querySelector('.fundoTransparente');
+    const suspenso_criar = document.querySelector(".conteiner_suspenso_criar");
+
+    toggleElementVisibility(suspenso_criar, 'flex');
+
+    fundo.addEventListener('click', () => {
+        toggleElementVisibility(suspenso_criar);
+    });
+}
+
+function criar_atividade() {
+    const suspenso_criar = document.querySelector(".conteiner_suspenso_criar");
     const conteiner_fundo_novo_post = document.querySelector('.conteiner_fundo_novo_post');
     conteiner_fundo_novo_post.classList.add('active');
+
+    toggleElementVisibility(suspenso_criar, 'flex');
 }
 
 function fechar_post() {

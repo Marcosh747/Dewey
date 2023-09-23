@@ -677,6 +677,28 @@
 
             </button>
 
+
+          </div>
+
+          <div class="conteiner_suspenso_criar estilo-blocos" id=""> <!-- SELECÇAO DE CRIAÇÃO -->
+
+            <div class="escolhas_criar">
+
+              <div class="container_aviso selecionado">
+
+                <button class="cabecalho-2">Aviso</button>
+
+              </div>
+
+              <div class="container_atividade selecionado ">
+
+                <button class="cabecalho-2" onclick="criar_atividade()">Atividade</button>
+
+              </div>
+
+            </div>
+
+
           </div>
         </nav>
 
@@ -729,15 +751,6 @@
 
                 </div>
 
-
-                
-
-
-
-
-                
-
-
               </div>
 
 
@@ -784,26 +797,29 @@
 
               <div class="conteiner_descricao_card">
 
-                <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
-                  placeholder="Título" autocapitalize="on">
 
-                <div class="listaTurmas">
+
+                <div class="conteiner_input">
 
                   <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
 
 
-                  <select class="SelectTurma estilo-conteiner-secundario">
+                  <select id="turmas" class="SelectTurma estilo-conteiner-secundario">
 
                   </select>
 
                 </div>
 
+                <div class="conteiner_input">
+                  <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
+
+                  <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="date"
+                    id="sub_titulo_criar">
+                </div>
 
 
-                <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="text"
-                  id="sub_titulo_criar" autocapitalize="on" placeholder="Sub-Título">
-
-
+                <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
+                  placeholder="Título" autocapitalize="on">
 
                 <textarea class="scrool-estilo texto-de-suporte descricao-criar estilo-conteiner-secundario" name=""
                   id="descricao-criar" rows="5" placeholder="Descrição" minlength="10" maxlength="500"></textarea>

@@ -37,7 +37,7 @@ body.dark {
     color: var(--m-3-sys-dark-on-surface);
 }
 
-.dark .fechar_novo_post, .dark .container_label,.dark .criar_post, .dark .menu-item, .dark .selecionada,
+.dark .container_atividade, .dark .container_aviso, .dark .fechar_novo_post, .dark .container_label,.dark .criar_post, .dark .menu-item, .dark .selecionada,
 .dark .container-de-conteudo,
 .dark .container_darkMode,
 .dark .container_logout,

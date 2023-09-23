@@ -649,6 +649,7 @@
     /* height: 258px; */
     /* max-height: 345px; */
     width: 100%;
+    height: calc(100vh - 470px);
   }
 
   img.img-aviso {

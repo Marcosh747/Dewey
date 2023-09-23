@@ -226,18 +226,53 @@
 
   <main>
 
-    <div class="container">
+    <div class="conteiner-flutuante">
 
-      <button id="backToTop" class="botoes">
+      <div class="conteiner_suspenso_criar2 estilo-blocos"> <!-- SELECÇAO DE CRIAÇÃO -->
 
-        <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-          viewBox="0 -960 960 960" width="24">
-          <path fill="#45483D" d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" />
-        </svg>
+        <div class="escolhas_criar">
 
-      </button>
+          <div class="container_aviso selecionado">
+
+            <button class="cabecalho-2">Aviso</button>
+
+          </div>
+
+          <div class="container_atividade selecionado ">
+
+            <button class="cabecalho-2" onclick="criar_atividade()">Atividade</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="fab-elevation-override selecionado">
+        <div class="fab" onclick="criar_post()">
+          <div class="state-layer">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 13H13V20H11V13H4V11H11V4H13V11H20V13Z" fill="#161E0A" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <button id="backToTop" class="botoes">
+
+          <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
+            viewBox="0 -960 960 960" width="24">
+            <path fill="#45483D" d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" />
+          </svg>
+
+        </button>
+
+      </div>
 
     </div>
+
 
     <div class="container-ola-usuario">
       <h2 class="ola-usuario">Olá, Marcos.</h2>
@@ -271,356 +306,6 @@
 
         <section class="calendario"> <!-- CALENDARIO -->
 
-          <!-- <div class="type-day estilo-conteiner-secundario">
-
-            <div class="header">
-
-              <div class="label-and-date">
-
-                <div class="supporting-text">Selecione a data</div>
-                <div class="week-day-day">Agosto</div>
-
-              </div>
-
-              <div class="icon-button">
-
-                <div class="container selecionado">
-
-                  <button class="botoes">
-
-                    <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.06 3.58988L20.41 4.93988C21.2 5.71988 21.2 6.98988 20.41 7.76988L7.18 20.9999H3V16.8199L13.4 6.40988L16.23 3.58988C17.01 2.80988 18.28 2.80988 19.06 3.58988ZM5 18.9999L6.41 19.0599L16.23 9.22988L14.82 7.81988L5 17.6399V18.9999Z"
-                        fill="#45483D" />
-                    </svg>
-
-                  </button>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="conteiner_selecao">
-
-              <div class="building-blocks-menu-button selecionado">
-
-                <div class="state-layer2 ">
-
-                  <select class="label-text ">
-                    <option value="">August 2023</option>
-                  </select>
-
-
-
-                </div>
-
-              </div>
-
-              <div class="controls">
-
-                <div class="icon-button">
-
-                  <div class="container selecionado">
-
-                    <button class="botoes">
-
-                      <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z"
-                          fill="#45483D" />
-                      </svg>
-
-                    </button>
-
-                  </div>
-
-                </div>
-
-                <div class="icon-button">
-
-                  <div class="container selecionado">
-
-                    <button class="botoes">
-
-                      <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z"
-                          fill="#45483D" />
-                      </svg>
-
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="local-calendar-grid">
-              <div class="days-of-the-week">
-                <div class="sunday">
-                  <div class="date">S</div>
-                </div>
-                <div class="monday">
-                  <div class="date">M</div>
-                </div>
-                <div class="tuesday">
-                  <div class="date">T</div>
-                </div>
-                <div class="wednesday">
-                  <div class="date">W</div>
-                </div>
-                <div class="thursday">
-                  <div class="date">T</div>
-                </div>
-                <div class="friday">
-                  <div class="date">F</div>
-                </div>
-                <div class="saturday">
-                  <div class="date">S</div>
-                </div>
-              </div>
-              <div class="week-1">
-                <div class="sunday2"></div>
-                <div class="monday2"></div>
-                <div class="tuesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wednesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">2</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="thursday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">3</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="friday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">4</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="saturday">
-                  <div class="container3">
-                    <div class="state-layer4">
-                      <div class="date2">5</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="week-2">
-                <div class="sunday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">6</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="monday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">7</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tuesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">8</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wednesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">9</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="thursday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="friday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">11</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="saturday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">12</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="week-3">
-                <div class="sunday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">13</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="monday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">14</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tuesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">15</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wednesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">16</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="thursday2">
-                  <div class="container4">
-                    <div class="state-layer3">
-                      <div class="date3">17</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="friday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">18</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="saturday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">19</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="week-4">
-                <div class="sunday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">20</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="monday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">21</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tuesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">22</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wednesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">23</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="thursday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">24</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="friday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">25</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="saturday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">26</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="week-5">
-                <div class="sunday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">27</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="monday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">28</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tuesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">29</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wednesday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">30</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="thursday">
-                  <div class="container2">
-                    <div class="state-layer3">
-                      <div class="date">31</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="friday2"></div>
-                <div class="saturday2"></div>
-              </div>
-            </div>
-
-
-          </div> -->
 
           <div class="calendario">
 
@@ -792,164 +477,166 @@
         </nav>
 
 
-        <div class="conteiner_fundo_novo_post">
 
-          <div class="conteiner_fechar_post">
 
-            <div class="container selecionado fechar_novo_post">
+      </section>
 
-              <button class="botoes " onclick="fechar_post()">
+      <div class="conteiner_fundo_novo_post">
 
-                <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                  viewBox="0 -960 960 960" width="24">
-                  <path
-                    d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                </svg>
+        <div class="conteiner_fechar_post">
 
-              </button>
+          <div class="container selecionado fechar_novo_post">
 
-            </div>
+            <button class="botoes " onclick="fechar_post()">
 
+              <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
+                viewBox="0 -960 960 960" width="24">
+                <path
+                  d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
+              </svg>
+
+            </button>
 
           </div>
 
 
-          <div class="conteiner_card_criar estilo-blocos scrool-estilo">
-
-            <div class="midia_e_texto ">
-
-              <div class="barra_superior">
-
-                <img class="avatar_publi" src="/Images/3d_avatar_21.png" alt="Foto de perfil">
-
-                <h2 class="header2 usuario_name_da_publi">Usuário não registrado</h2>
+        </div>
 
 
+        <div class="conteiner_card_criar estilo-blocos scrool-estilo">
 
-                <div class="botoes selecionado ">
+          <div class="midia_e_texto ">
 
-                  <label for="documento-post" class="container container_label">
+            <div class="barra_superior">
+
+              <img class="avatar_publi" src="/Images/3d_avatar_21.png" alt="Foto de perfil">
+
+              <h2 class="header2 usuario_name_da_publi">Usuário não registrado</h2>
+
+
+
+              <div class="botoes selecionado ">
+
+                <label for="documento-post" class="container container_label">
+
+                  <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 -960 960 960" width="24">
+                    <path
+                      d="M440-160v-326L336-382l-56-58 200-200 200 200-56 58-104-104v326h-80ZM160-600v-120q0-33 23.5-56.5T240-800h480q33 0 56.5 23.5T800-720v120h-80v-120H240v120h-80Z" />
+                  </svg>
+
+                </label>
+
+              </div>
+
+            </div>
+
+
+            <form id="post-formulario">
+
+              <div class="midia-criar">
+
+                <input class="input_escondido" type="file" id="documento-post" name="img">
+
+                <div id="imagem-preview" class="scrool-estilo">
+
+                </div>
+
+                <div id="documento-preview">
+
+                  <div class="card-state-layer-outlined estilo-conteiner-secundario">
+
+                    <div class="header-aviso">
+
+                      <div class="content">
+
+                        <div class="monogram">
+
+                          <div class="background">
+                            <div class="initial">A</div>
+                          </div>
+
+                        </div>
+
+                        <div class="text">
+                          <div class="header2">Header</div>
+                          <a class="subhead" href="">Acessar</a>
+                        </div>
+
+                      </div>
+
+                      <div class="media estilo-conteiner-secundario">
+                        <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="conteiner_descricao_card">
+
+                <div class="conteiner_input">
+
+                  <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
+
+
+                  <select id="turmas" class="SelectTurma estilo-conteiner-secundario">
+
+                  </select>
+
+                </div>
+
+                <div class="conteiner_input">
+                  <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
+
+                  <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="date"
+                    id="sub_titulo_criar">
+                </div>
+
+
+                <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
+                  placeholder="Título" autocapitalize="on">
+
+                <textarea class="scrool-estilo texto-de-suporte descricao-criar estilo-conteiner-secundario" name=""
+                  id="descricao-criar" rows="5" placeholder="Descrição" minlength="10" maxlength="500"></textarea>
+
+
+              </div>
+
+
+              <div class="conteiner_sumit">
+
+                <div class="container selecionado">
+
+                  <label for="enviar-post" class="container container_label">
 
                     <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
                       viewBox="0 -960 960 960" width="24">
                       <path
-                        d="M440-160v-326L336-382l-56-58 200-200 200 200-56 58-104-104v326h-80ZM160-600v-120q0-33 23.5-56.5T240-800h480q33 0 56.5 23.5T800-720v120h-80v-120H240v120h-80Z" />
+                        d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
                     </svg>
 
                   </label>
+
+                  <input class="input_escondido" id="enviar-post" type="submit">
+
 
                 </div>
 
               </div>
 
-
-              <form id="post-formulario">
-
-                <div class="midia-criar">
-
-                  <input class="input_escondido" type="file" id="documento-post" name="img">
-
-                  <div id="imagem-preview" class="scrool-estilo">
-
-                  </div>
-
-                  <div id="documento-preview">
-
-                    <div class="card-state-layer-outlined estilo-conteiner-secundario">
-
-                      <div class="header-aviso">
-
-                        <div class="content">
-
-                          <div class="monogram">
-
-                            <div class="background">
-                              <div class="initial">A</div>
-                            </div>
-
-                          </div>
-
-                          <div class="text">
-                            <div class="header2">Header</div>
-                            <a class="subhead" href="">Acessar</a>
-                          </div>
-
-                        </div>
-
-                        <div class="media estilo-conteiner-secundario">
-                          <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-
-
-                </div>
-
-
-                <div class="conteiner_descricao_card">
-
-                  <div class="conteiner_input">
-
-                    <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
-
-
-                    <select id="turmas" class="SelectTurma estilo-conteiner-secundario">
-
-                    </select>
-
-                  </div>
-
-                  <div class="conteiner_input">
-                    <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
-
-                    <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="date"
-                      id="sub_titulo_criar">
-                  </div>
-
-
-                  <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
-                    placeholder="Título" autocapitalize="on">
-
-                  <textarea class="scrool-estilo texto-de-suporte descricao-criar estilo-conteiner-secundario" name=""
-                    id="descricao-criar" rows="5" placeholder="Descrição" minlength="10" maxlength="500"></textarea>
-
-
-                </div>
-
-
-                <div class="conteiner_sumit">
-
-                  <div class="container selecionado">
-
-                    <label for="enviar-post" class="container container_label">
-
-                      <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                        viewBox="0 -960 960 960" width="24">
-                        <path
-                          d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
-                      </svg>
-
-                    </label>
-
-                    <input class="input_escondido" id="enviar-post" type="submit">
-
-
-                  </div>
-
-                </div>
-
-              </form>
-
-            </div>
+            </form>
 
           </div>
 
         </div>
 
-      </section>
+      </div>
 
       <section id="feed2" class="feed2 estilo-blocos scrool-vertical scrool-estilo"> <!-- AVISOS -->
 

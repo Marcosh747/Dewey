@@ -50,6 +50,9 @@
     section.feed3 {
       display: none;
     }
+
+    
+
   }
 
 
@@ -275,7 +278,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-  
+
     position: relative;
 
   }
@@ -341,7 +344,7 @@
     justify-content: center;
   }
 
-  
+
   .dias-da-semana div {
     display: flex;
     flex-direction: row;
@@ -1461,16 +1464,64 @@
 
 
 
+  .fab-elevation-override {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fab {
+    background: var(--m-3-sys-light-secondary-container, #dde6c6);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: var(--m-3-elevation-light-3-box-shadow,
+        0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+        0px 4px 8px 3px rgba(0, 0, 0, 0.15));
+    overflow: hidden;
+  }
+
+  .state-layer {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
 
 
+.conteiner_suspenso_criar2{
+  right: 0;
+  bottom: 60px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  max-height: 0;
 
-
-
-
-
-
-
-
-
-
-
+  width: 150px;
+  transition: opacity 0.1s ease 0.02s;
+  opacity: 0;
+  box-shadow: var(--m-3-elevation-light-3-box-shadow,
+  0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 4px 8px 3px rgba(0, 0, 0, 0.15));
+}

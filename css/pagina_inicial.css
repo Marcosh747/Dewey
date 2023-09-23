@@ -1551,7 +1551,7 @@
   }
 
 
-  .conteiner_card_criar input[type="file"] {
+  .input_escondido {
     display: none;
   }
 
@@ -1563,12 +1563,26 @@
 
   }
 
-
   #imagem-preview {
-    width: 100%;
-    max-height: 500px;
-    border-radius: 5px;
-  }
+    gap: 15px;
+    display: flex;
+    padding: 0 4px 4px 4px;
+    align-items: center;
+    transition: 1s;
+    overflow: auto;
+}
+
+.imagem-preview {
+  flex: 1;
+  width: 240px;
+  height: 300px;
+  transition: 0.5s;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
 
   #documento-preview{
     padding: 15px;

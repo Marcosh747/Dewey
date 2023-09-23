@@ -149,7 +149,84 @@ function criar_atividade() {
 function fechar_post() {
     const conteiner_fundo_novo_post = document.querySelector('.conteiner_fundo_novo_post');
     conteiner_fundo_novo_post.classList.remove('active');
+
+    // Limpar os campos do formulário
+    const formulario = document.getElementById('post-formulario');
+    formulario.reset();
+
+    // Limpar as imagens
+    const imagemPreviewDiv = document.getElementById('imagem-preview');
+    imagemPreviewDiv.innerHTML = '';
 }
+
+
+// ENVIO DE POST
+document.addEventListener('DOMContentLoaded', function () {
+    const formulario = document.getElementById('post-formulario');
+
+    formulario.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+
+        // Crie um objeto para armazenar os dados do formulário
+        const dadosDoFormulario = {
+            turma: document.getElementById('turmas').value,
+            dataFinalEntrega: document.getElementById('sub_titulo_criar').value,
+            titulo: document.getElementById('titulo-criar').value,
+            descricao: document.getElementById('descricao-criar').value,
+            imagens: []
+        };
+
+        // Coleta as imagens selecionadas
+        const imagensSelecionadas = document.querySelectorAll('.imagem-preview');
+        imagensSelecionadas.forEach(function (imagem) {
+            dadosDoFormulario.imagens.push(imagem.src);
+        });
+
+        // Faça algo com os dados, como exibi-los no console
+        console.log(dadosDoFormulario);
+
+        // Você pode enviar esses dados para o servidor ou realizar outras ações aqui
+    });
+});
+
+
+// ESCOLHA DE IMAGEM DO POST
+document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('documento-post');
+    const imagemPreviewDiv = document.getElementById('imagem-preview');
+
+    fileInput.addEventListener('change', function () {
+        const files = fileInput.files;
+
+        // Verifique o número atual de imagens exibidas
+        const imagensExibidas = imagemPreviewDiv.querySelectorAll('.imagem-preview').length;
+        const limiteDeImagens = 4;
+
+        if (imagensExibidas + files.length > limiteDeImagens) {
+            alert('Você pode adicionar no máximo 4 imagens.');
+            fileInput.value = ''; // Limpa o input file
+            return;
+        }
+
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    const newImage = document.createElement('img');
+                    newImage.className = 'imagem-preview';
+                    newImage.src = event.target.result;
+                    imagemPreviewDiv.appendChild(newImage);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Limpa o input file após o upload das imagens
+        fileInput.value = '';
+    });
+});
 
 
 

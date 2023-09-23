@@ -680,7 +680,7 @@
 
           </div>
 
-          <div class="conteiner_suspenso_criar estilo-blocos" id=""> <!-- SELECÇAO DE CRIAÇÃO -->
+          <div class="conteiner_suspenso_criar estilo-blocos"> <!-- SELECÇAO DE CRIAÇÃO -->
 
             <div class="escolhas_criar">
 
@@ -735,7 +735,7 @@
 
                 <h2 class="header2 usuario_name_da_publi">Usuário não registrado</h2>
 
-                <input type="file" id="documento-post" name="img">
+
 
                 <div class="botoes selecionado ">
 
@@ -754,99 +754,103 @@
               </div>
 
 
+              <form id="post-formulario">
 
-              <div class="midia-criar">
+                <div class="midia-criar">
 
-                <img id="imagem-preview" src="" alt="">
+                  <input class="input_escondido" type="file" id="documento-post" name="img">
 
-                <div id="documento-preview">
+                  <div id="imagem-preview" class="scrool-estilo">
 
-                  <div class="card-state-layer-outlined estilo-conteiner-secundario">
+                  </div>
 
-                    <div class="header-aviso">
+                  <div id="documento-preview">
 
-                      <div class="content">
+                    <div class="card-state-layer-outlined estilo-conteiner-secundario">
 
-                        <div class="monogram">
+                      <div class="header-aviso">
 
-                          <div class="background">
-                            <div class="initial">A</div>
+                        <div class="content">
+
+                          <div class="monogram">
+
+                            <div class="background">
+                              <div class="initial">A</div>
+                            </div>
+
+                          </div>
+
+                          <div class="text">
+                            <div class="header2">Header</div>
+                            <a class="subhead" href="">Acessar</a>
                           </div>
 
                         </div>
 
-                        <div class="text">
-                          <div class="header2">Header</div>
-                          <a class="subhead" href="">Acessar</a>
+                        <div class="media estilo-conteiner-secundario">
+                          <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
                         </div>
 
                       </div>
 
-                      <div class="media estilo-conteiner-secundario">
-                        <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
-                      </div>
-
                     </div>
+                  </div>
+
+
+                </div>
+
+
+                <div class="conteiner_descricao_card">
+
+                  <div class="conteiner_input">
+
+                    <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
+
+
+                    <select id="turmas" class="SelectTurma estilo-conteiner-secundario">
+
+                    </select>
 
                   </div>
+
+                  <div class="conteiner_input">
+                    <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
+
+                    <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="date"
+                      id="sub_titulo_criar">
+                  </div>
+
+
+                  <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
+                    placeholder="Título" autocapitalize="on">
+
+                  <textarea class="scrool-estilo texto-de-suporte descricao-criar estilo-conteiner-secundario" name=""
+                    id="descricao-criar" rows="5" placeholder="Descrição" minlength="10" maxlength="500"></textarea>
+
+
                 </div>
 
 
-              </div>
-
-
-              <div class="conteiner_descricao_card">
+                <div class=" botoes selecionado">
 
 
 
-                <div class="conteiner_input">
+                  <label for="enviar-post" class="container container_label">
 
-                  <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
+                    <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
+                      viewBox="0 -960 960 960" width="24">
+                      <path
+                        d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                    </svg>
+
+                  </label>
 
 
-                  <select id="turmas" class="SelectTurma estilo-conteiner-secundario">
+                  <input class="input_escondido" id="enviar-post" type="submit">
 
-                  </select>
 
                 </div>
-
-                <div class="conteiner_input">
-                  <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
-
-                  <input class="texto-de-suporte estilo-conteiner-secundario sub_titulo_criar" type="date"
-                    id="sub_titulo_criar">
-                </div>
-
-
-                <input class="texto-de-suporte estilo-conteiner-secundario titulo-criar" type="text" id="titulo-criar"
-                  placeholder="Título" autocapitalize="on">
-
-                <textarea class="scrool-estilo texto-de-suporte descricao-criar estilo-conteiner-secundario" name=""
-                  id="descricao-criar" rows="5" placeholder="Descrição" minlength="10" maxlength="500"></textarea>
-
-
-              </div>
-
-
-              <div class=" botoes selecionado">
-
-
-
-                <label for="" class="container container_label">
-
-                  <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                    viewBox="0 -960 960 960" width="24">
-                    <path
-                      d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
-                  </svg>
-
-                </label>
-
-
-
-
-              </div>
-
+              </form>
             </div>
 
           </div>

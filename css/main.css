@@ -170,25 +170,13 @@ body {
 
 .conteiner_perfil {
 
-    display: flex;
-    position: absolute;
-    z-index: 5;
-    max-height: 0;
-    margin: 80px 0 0 0;
-    width: 100%;
-    max-width: 250px;
-    opacity: 0;
     background: var(--m-3-sys-light-surface, #FBFAF2);
     border-radius: var(--arredondamento-do-cantos);
-    transition: opacity 0.2s ease 0.04s;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 
 .conteiner_perfil .perfil {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 13px 10px;
+    height: min-content;
 }
 
 
@@ -246,36 +234,35 @@ body {
 
 
 .container_logout {
-    
-    overflow: hidden;
-    background-color: var(--m-3-ref-secondary-secondary-90);
     border-radius: 0 0 20px 20px;
 }
 
 
-.container_darkMode {
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 2px;
-    /* padding: 0 20px 0 20px; */
+.container_darkMode, .container_logout {
+    overflow: hidden;
     width: 100%;
     display: inline-flex;
     align-items: center;
-    background: var(--m-3-ref-secondary-secondary-90);
+    background: var(--m-3-sys-light-secondary-container);
     justify-content: space-around;
+}
 
-
+.container_darkMode{
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2px;
 }
 
 .container_logout button{
-    border-radius: var(--arredondamento-do-cantos);
     width: 100%;
-    padding: 10px 20px;
+    padding: 12px;
+    background: transparent;
     border: 0;
+    text-align: center;
+    padding: 10px 15px;
     cursor: pointer;
     gap: 15px;
     display: inline-flex;
     align-items: center;
-    background-color: transparent;
 }
 
 /* BOTAO DARK MODE */
@@ -354,7 +341,7 @@ input:checked+.slider:before {
 
 /* Barra Lateral */
 /* MENU */
-aside {
+aside.container-menuLateral, .conteiner_perfil{
 
     margin-top: 80px;
     position: absolute;
@@ -366,7 +353,7 @@ aside {
     transition: opacity 0.2s ease 0.04s;
 }
 
-.navigation-drawer {
+.navigation-drawer, .perfil  {
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 16px;

@@ -1,6 +1,5 @@
 // MENU LATERAL
 function menu_lateral() {
-  const fundo = document.querySelector('.fundoTransparente');
   const aside = document.getElementsByClassName("container-menuLateral")[0];
 
   var computedStyle = window.getComputedStyle(aside);
@@ -32,9 +31,10 @@ function toggleElementVisibility(element, displayValue = 'block') {
   const fundo = document.querySelector('.fundoTransparente');
 
   if (computedStyle.opacity === "0") {
+      element.style.display = displayValue;
       element.style.maxHeight = "326px";
       element.style.opacity = "1";
-      element.style.display = displayValue;
+      
       fundo.style.display = 'flex';
   } else {
       element.style.maxHeight = "0px";

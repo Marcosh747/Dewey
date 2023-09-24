@@ -22,7 +22,7 @@ body.dark {
     background: var(--m-3-ref-neutral-neutral-30);
 }
 
-
+.dark .calendario,
 .dark .entrada-texto-2, 
 .dark .cabecalho-2,
 .dark .subcabecalho,
@@ -78,7 +78,7 @@ body.dark {
 
 
 
-.dark .bottom-sheet, .dark .estilo-conteiner-secundario {
+.dark .calendario,.dark .bottom-sheet, .dark .estilo-conteiner-secundario {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

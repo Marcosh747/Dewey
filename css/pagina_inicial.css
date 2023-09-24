@@ -51,6 +51,9 @@
       display: none;
     }
 
+    .fab-elevation-override {
+      display: none;
+    }
     
 
   }
@@ -1145,7 +1148,7 @@
     transition: 0.5s;
     object-fit: cover;
     border-radius: 28px;
-    z-index: 1;
+
   }
 
 
@@ -1466,13 +1469,9 @@
 
   .fab-elevation-override {
     border-radius: 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
+
     flex-shrink: 0;
-    position: relative;
+ 
     overflow: hidden;
   }
 

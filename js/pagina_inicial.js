@@ -50,24 +50,36 @@ function selecionarOpcao(element) {
 
 
 // NOVO POST
-
-
-
 function criar_post() {
-    const fundo = document.querySelector('.fundoTransparente');
-    const suspenso_criar = document.querySelector(".conteiner_suspenso_criar");
-    const suspenso_criar2 = document.querySelector(".conteiner_suspenso_criar2");
-    const larguraDaTela = window.innerWidth;
 
-    const larguraMinimaParaMostrar = 990;
+    // Seleciona a div com id "variado"
+    const variadoDiv = document.getElementById("variado");
 
-    if (larguraDaTela > larguraMinimaParaMostrar) {
-        toggleElementVisibility(suspenso_criar2, 'flex');
+    // Limpa o conteúdo existente
+    variadoDiv.innerHTML = '';
 
-    } else {
-        toggleElementVisibility(suspenso_criar, 'flex');
-    }
+
+    // Cria um elemento div com a classe "conteiner_suspenso_criar estilo-blocos"
+    const conteinerSuspenso = document.createElement("div");
+    conteinerSuspenso.className = "escolhas_criar";
+
+    // Cria a estrutura interna
+    conteinerSuspenso.innerHTML = `
+      
+        <div class="container_aviso selecionado">
+          <button class="cabecalho-2">Aviso</button>
+        </div>
+        <div class="container_atividade selecionado">
+          <button class="cabecalho-2" onclick="criar_atividade()">Atividade</button>
+        </div>
+
+    `;
+
+    // Insere o elemento criado dentro de <div id="variado"></div>
+    variadoDiv.appendChild(conteinerSuspenso);
+    toggleModalExpand();
 }
+
 
 
 
@@ -78,7 +90,9 @@ function criar_atividade() {
     const conteiner_fundo_novo_post = document.querySelector('.conteiner_fundo_novo_post');
     conteiner_fundo_novo_post.classList.add('active');
 
+    descerContiner();
     toggleElementVisibility(suspenso_criar, 'flex');
+
 }
 
 function fechar_post() {

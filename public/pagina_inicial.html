@@ -226,30 +226,24 @@
 
   <main>
 
-    <div class="conteiner-flutuante">
-
-      <div class="conteiner_suspenso_criar2 estilo-blocos"> <!-- SELECÇAO DE CRIAÇÃO -->
-
-        <div class="escolhas_criar">
-
-          <div class="container_aviso selecionado">
-
-            <button class="cabecalho-2">Aviso</button>
-
-          </div>
-
-          <div class="container_atividade selecionado ">
-
-            <button class="cabecalho-2" onclick="criar_atividade()">Atividade</button>
-
-          </div>
-
+    <div class="modal-false">
+      <div class="bottom-sheet">
+        <div class="sheet-header">
+          <!-- if: showDragHandle -->
+          <div class="drag-handle"></div>
+          <!-- end if -->
         </div>
 
+        <div id="variado"></div>
       </div>
+    </div>
+
+    <div class="conteiner-flutuante">
+
+
 
       <div class="fab-elevation-override selecionado">
-        <div class="fab" onclick="criar_post()">
+        <div class="fab " onclick="criar_post()" id="expandButton">
           <div class="state-layer">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 13H13V20H11V13H4V11H11V4H13V11H20V13Z" fill="#161E0A" />

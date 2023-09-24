@@ -98,6 +98,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// CONTEINER CENTRAL 
+const expandButton = document.getElementById("expandButton");
+const modal = document.querySelector(".modal-false");
+
+function toggleModalExpand() {
+  if (!modal.classList.contains("modal-expand")) {
+    modal.classList.add("modal-expand");
+  } else {
+    modal.classList.remove("modal-expand");
+  }
+}
+
+
+
+
+
 
 
 

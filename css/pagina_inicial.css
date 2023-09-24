@@ -483,28 +483,28 @@
 
   }
 
-  .conteiner_citacao .quote-area {
+  .conteiner_citacao .textoCitacao-area {
 
     display: flex;
     width: 100%;
     justify-content: center;
   }
 
-  .quote-area i {
+  .textoCitacao-area i {
     font-size: 15px;
   }
 
-  .quote-area i:first-child {
+  .textoCitacao-area i:first-child {
     margin: 3px 10px 0 0;
   }
 
-  .quote-area i:last-child {
+  .textoCitacao-area i:last-child {
     display: flex;
     margin: 0 0 3px 10px;
     align-items: flex-end;
   }
 
-  .quote-area .quote {
+  .textoCitacao-area .textoCitacao {
     font-size: 22px;
 
     text-align: center;
@@ -555,7 +555,7 @@
     margin-left: 0;
   }
 
-  ul .speech.active {
+  ul .botaoFala.active {
     pointer-events: none;
   }
 
@@ -577,7 +577,8 @@
   }
 
   #proximaCitacao {
-    width: -webkit-fill-available;
+    width:100%;
+    padding: 0 15px;
   }
 
 

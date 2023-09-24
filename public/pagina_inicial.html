@@ -14,7 +14,8 @@
 
   <script src="/js/pagina_inicial.js"></script>
   <script src="/js/main.js" defer></script>
-  <script src="/js/dark_mode.js" defer></script>
+  <script src="/js/dark_mode.js"></script>
+  <script src="/js/citacao.js" defer></script>
 
 
 
@@ -401,27 +402,29 @@
         <div class="citacao estilo-conteiner-secundario">
           <h2 class="citacao_do_dia">Citação do dia</h2>
           <div class="conteiner_citacao">
-            <div class="quote-area">
-              <i class="fas fa-quote-left"></i>
-              <span class="quote">"Nunca desista porque você nunca sabe se a próxima tentativa será a que
+            <div class="textoCitacao-area">
+              <i class="fas fa-textoCitacao-left"></i>
+              <span class="textoCitacao">"Nunca desista porque você nunca sabe se a próxima tentativa será a que
                 funcionará."</span>
-              <i class="fas fa-quote-right"></i>
+              <i class="fas fa-textoCitacao-right"></i>
             </div>
             <div class="author">
               <span>_</span>
-              <span class="name">Mary Kay Ash</span>
+              <span class="nomeAutor">Mary Kay Ash</span>
             </div>
           </div>
           <div class="buttons">
             <div class="features">
               <ul>
-                <li class="speech"><i class="fas fa-volume-up"></i></li>
-                <li class="copy"><i class="fas fa-copy"></i></li>
-                <li class="twitter"><i class="fab fa-twitter"></i></li>
+                <li class="botaoFala"></li>
+                <li class="botaoCopia"></li>
+                <li class="twitter"></li>
               </ul>
-              <p id="proximaCitacao"></p>
+              
             </div>
           </div>
+          
+          <span class="subcabecalho" id="proximaCitacao"></span>
         </div>
 
       </section>

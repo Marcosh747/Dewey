@@ -28,7 +28,7 @@ async function buscarCitacaoAleatoria() {
 
 function exibirCitacao(citacao) {
   textoCitacao.innerText = `"${citacao.content}"`;
-  nomeAutor.innerText = citacao.author;
+  nomeAutor.innerText = `- ${citacao.author}`;
 }
 
 function salvarCitacaoNoLocalStorage(citacao) {

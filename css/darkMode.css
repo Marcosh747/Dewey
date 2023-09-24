@@ -78,7 +78,7 @@ body.dark {
 
 
 
-.dark .estilo-conteiner-secundario {
+.dark .bottom-sheet, .dark .estilo-conteiner-secundario {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

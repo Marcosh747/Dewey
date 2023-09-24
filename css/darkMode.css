@@ -1,6 +1,9 @@
 body.dark {
     background: var(--m-3-ref-neutral-neutral-12);
 }
+body.dark * {
+    color: var(--m-3-sys-dark-on-surface-variant);
+}
 
 .dark .selecionado :hover {
     background: var(--m-3-ref-secondary-secondary-24);
@@ -54,18 +57,6 @@ body.dark {
 
 .dark .menu-item.selected {
     background: var(--m-3-ref-tertiary-tertiary-35); 
-}
-
-.dark .data_hora_aviso,
-.dark .texto-de-suporte,
-.dark .subcabecalho-2,
-.dark .supporting-text,
-.dark .label-text,
-.dark .title,
-.dark .label3,
-.dark .label,
-.dark .badge-label-text2, .dark .rotulo-texto-2  {
-    color: var(--m-3-sys-dark-on-surface-variant);
 }
 
 

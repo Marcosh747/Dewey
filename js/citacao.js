@@ -89,15 +89,36 @@ function atualizarTempoReal() {
 
 botaoCopia.addEventListener("click", () => {
   navigator.clipboard.writeText(textoCitacao.innerText);
+  alert("Texto copiado com sucesso!")
 });
+
 
 botaoTwitter.addEventListener("click", () => {
   let urlTweet = `https://twitter.com/intent/tweet?text=${textoCitacao.innerText}`;
   window.open(urlTweet, "_blank");
 });
 
+botaoFala.addEventListener("click", () => {
+  const citacaoParaFalar = textoCitacao.innerText;
+  const autorParaFalar = nomeAutor.innerText;
+  const citacaoSpeak = new SpeechSynthesisUtterance(citacaoParaFalar);
+  const autorSpeak = new SpeechSynthesisUtterance(autorParaFalar);
+
+  // Verifica se a síntese de fala está disponível no navegador
+  if ('speechSynthesis' in window) {
+    synth.cancel(); // Cancela qualquer fala anterior
+    synth.speak(citacaoSpeak); // Fala a citação
+    synth.speak(autorSpeak); // Fala o autor
+  } else {
+    alert('A síntese de fala não é suportada neste navegador.');
+  }
+});
+
+
+
 // Chame carregarCitacaoDoLocalStorage ao carregar a página para exibir a citação do dia e o tempo até a próxima citação.
 carregarCitacaoDoLocalStorage();
 
 // Inicialize a atualização em tempo real do tempo restante a cada segundo (1000 ms)
 setInterval(atualizarTempoReal, 1000);
+

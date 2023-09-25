@@ -493,19 +493,20 @@
     justify-content: flex-end;
   }
 
-  .features ul {
-
-    display: flex;
-    padding: 0;
-    display: none;
+  .acoes_citacao{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    width:100%;
   }
 
   #proximaCitacao {
-    width:100%;
-    padding: 0 15px;
+    width: max-content;
+    
   }
 
-
+  
 
 
 

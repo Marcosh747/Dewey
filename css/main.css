@@ -30,6 +30,7 @@ body {
 
 body * {
     font-family: 'Roboto', sans-serif;
+    transition: all 300ms ease;
 }
 
 header {
@@ -53,11 +54,11 @@ body {
 }
 
 
-.conteiner-flutuante{
+.conteiner-flutuante {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 2; 
+    z-index: 2;
     display: flex;
     flex-direction: column;
 }
@@ -104,20 +105,19 @@ body {
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
+        border-color: var(--m-3-sys-dark-on-surface-variant);
 }
 
 .botoes {
     padding: 8px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    
+    border-radius: 50%;
 }
 
 
@@ -238,7 +238,8 @@ body {
 }
 
 
-.container_darkMode, .container_logout {
+.container_darkMode,
+.container_logout {
     overflow: hidden;
     width: 100%;
     display: inline-flex;
@@ -247,12 +248,12 @@ body {
     justify-content: space-around;
 }
 
-.container_darkMode{
+.container_darkMode {
     border-radius: 20px 20px 0 0;
     margin-bottom: 2px;
 }
 
-.container_logout button{
+.container_logout button {
     width: 100%;
     padding: 12px;
     background: transparent;
@@ -332,7 +333,7 @@ input:checked+.slider:before {
 .estilo-blocos {
     background: var(--m-3-sys-light-on-primary);
     border-radius: var(--arredondamento-do-cantos);
-  }
+}
 
 
 
@@ -341,7 +342,8 @@ input:checked+.slider:before {
 
 /* Barra Lateral */
 /* MENU */
-aside.container-menuLateral, .conteiner_perfil{
+aside.container-menuLateral,
+.conteiner_perfil {
 
     margin-top: 80px;
     position: absolute;
@@ -353,7 +355,8 @@ aside.container-menuLateral, .conteiner_perfil{
     transition: opacity 0.2s ease 0.04s;
 }
 
-.navigation-drawer, .perfil  {
+.navigation-drawer,
+.perfil {
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -728,52 +731,52 @@ aside.container-menuLateral, .conteiner_perfil{
 
 
 
-.modal-false {    
+.modal-false {
     position: fixed;
     bottom: 0;
     z-index: 1;
 
+    padding: 0 8px 0 8px;
     height: 0;
     overflow: hidden;
     max-width: 480px;
     width: 100%;
     transition: height 0.5s ease, height 0.5s ease;
     max-height: min-content;
-  }
-  
-  
-  
-  
+}
 
 
-  /* Adicione uma classe para ativar a animação */
-  .modal-expand {
+
+
+
+
+/* Adicione uma classe para ativar a animação */
+.modal-expand {
     height: 350px;
-  }
-  
-  .bottom-sheet {
+}
+
+.bottom-sheet {
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
     border-radius: 28px 28px 0px 0px;
     width: 100%;
     height: 100%;
- 
-    box-shadow: var(
-      --m-3-elevation-light-3-box-shadow,
-      0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-      0px 4px 8px 3px rgba(0, 0, 0, 0.15)
-    );
-    
-  }
-  .sheet-header {
+
+    box-shadow: var(--m-3-elevation-light-3-box-shadow,
+            0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+            0px 4px 8px 3px rgba(0, 0, 0, 0.15));
+
+}
+
+.sheet-header {
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
     justify-content: flex-start;
-  }
+}
 
-  .drag-handle {
+.drag-handle {
     background: var(--m-3-sys-light-outline, #75786c);
     border-radius: 100px;
     opacity: 0.4;
@@ -783,10 +786,9 @@ aside.container-menuLateral, .conteiner_perfil{
     position: relative;
     cursor: pointer;
     padding: 3px;
-    transition: transform 0.5s; 
-  }
-  
-  .drag-handle:hover {
+    transition: transform 0.5s;
+}
+
+.drag-handle:hover {
     transform: scale(1.5);
-  }
-  
+}

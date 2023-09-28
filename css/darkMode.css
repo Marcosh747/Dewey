@@ -19,7 +19,6 @@ body.dark * {
 }
 
 .dark .container-login , .dark .conteiner_titulo, .dark .navigation-drawer,
-.dark .barra-superior,
 .dark .estilo-blocos,
 .dark .perfil, .dark option {
     background: var(--m-3-ref-neutral-neutral-30);

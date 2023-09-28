@@ -75,7 +75,6 @@ body {
 }
 
 .barra-superior {
-    background: var(--m-3-sys-light-surface);
     border-radius: 28px;
     padding: 8px 4px 8px 4px;
     display: flex;

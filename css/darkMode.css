@@ -67,7 +67,7 @@ body.dark * {
 
 
 
-.dark .calendario,.dark .bottom-sheet, .dark .estilo-conteiner-secundario {
+.dark .calendario,.dark .modal-false, .dark .estilo-conteiner-secundario {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

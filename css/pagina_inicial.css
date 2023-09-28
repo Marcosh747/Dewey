@@ -512,10 +512,13 @@
 
   .aviso {
     padding: 10px;
-    background: var(--m-3-sys-light-secondary-container);
-    border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
-    border-radius: 12px;
+    /* border-radius: ;
+    border-style: ;
+    border-color: ; */
 
+    border: 12px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
+    background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
+    border-radius: 12px;
     gap: 15px;
     display: flex;
     flex-direction: column;

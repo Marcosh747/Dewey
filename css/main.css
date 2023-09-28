@@ -357,7 +357,7 @@ aside.container-menuLateral,
 
 .navigation-drawer,
 .perfil {
-    background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
+
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
     padding: 12px;

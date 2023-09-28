@@ -444,10 +444,6 @@
     /* Cor de destaque para a opção selecionada */
   }
 
-  .criar_post {
-    border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
-    background: var(--m-3-ref-secondary-secondary-80);
-  }
 
 
 
@@ -502,7 +498,7 @@
   }
 
   #proximaCitacao {
-    width: max-content;
+    width: 100%;
     
   }
 

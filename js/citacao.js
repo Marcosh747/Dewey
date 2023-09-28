@@ -3,7 +3,7 @@ const textoCitacao = document.querySelector(".textoCitacao"),
   nomeAutor = document.querySelector(".nomeAutor"),
   botaoFala = document.querySelector(".botaoFala"),
   botaoCopia = document.querySelector(".botaoCopia"),
-  botaoTwitter = document.querySelector(".twitter"),
+  // botaoTwitter = document.querySelector(".twitter"),
   synth = speechSynthesis;
 
 let tempoAteProximaCitacao = 0; // Variável para armazenar o tempo restante até a próxima citação
@@ -93,10 +93,10 @@ botaoCopia.addEventListener("click", () => {
 });
 
 
-botaoTwitter.addEventListener("click", () => {
-  let urlTweet = `https://twitter.com/intent/tweet?text=${textoCitacao.innerText}`;
-  window.open(urlTweet, "_blank");
-});
+// botaoTwitter.addEventListener("click", () => {
+//   let urlTweet = `https://twitter.com/intent/tweet?text=${textoCitacao.innerText}`;
+//   window.open(urlTweet, "_blank");
+// });
 
 botaoFala.addEventListener("click", () => {
   const citacaoParaFalar = textoCitacao.innerText;

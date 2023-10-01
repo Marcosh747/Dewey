@@ -89,7 +89,8 @@ function atualizarTempoReal() {
 
 botaoCopia.addEventListener("click", () => {
   navigator.clipboard.writeText(textoCitacao.innerText);
-  alert("Texto copiado com sucesso!")
+
+  createPopup("Citação copiada com sucesso!", "Compartilhe a citação de hoje.");
 });
 
 

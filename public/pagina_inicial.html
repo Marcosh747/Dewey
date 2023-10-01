@@ -29,7 +29,7 @@
 
   <header>
 
-    <div class="barra-superior estilo-blocos">
+    <div class="barra-superior estilo-conteiner-primario">
 
       <button class="selecionado botoes menu-lateral" onclick="menu_lateral()">
 
@@ -40,91 +40,78 @@
 
       </button>
 
-      <aside class="container-menuLateral left estilo-blocos" id="container-menuLateral"> <!-- MENU LATERAL -->
-
+      <aside class="container-menuFlutuante left estilo-conteiner-primario" id="container-menuFlutuante"> <!-- MENU LATERAL -->
+        
         <div class="headline">
           <span class="title">Etec</span>
         </div>
 
-        <div class="section-header-1">
+        <div class="headline">
           <span class="label">Dewey</span>
         </div>
 
+        <ul class="menu-publicaoes flex-direction-column">
 
+          <li class="nav-item conteiner-nav-opcao selecionado" onclick="acessar_pagina_inicial ()">
 
-        <div class="nav-item selecionado" onclick="acessar_pagina_inicial ()">
-
-          <div class="conteiner-opcao">
-
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
             </svg>
 
-            <div class="label3">For You</div>
-            <div class="badge-label-text2">100+</div>
+            <span class="label3">For You</span>
+            <span class="badge-label-text2">100+</span>
 
-          </div>
-        </div>
+          </li>
 
-        <div class="nav-item selecionado" onclick="acessar_album ()">
+          <li class="nav-item conteiner-nav-opcao selecionado" onclick="acessar_album ()">
 
-          <div class="conteiner-opcao">
-
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm40-80h400L545-420 440-280l-65-87-95 127Zm-40 80v-640 640Zm200-360 100-60 100 60-100-60-100 60Z" />
             </svg>
 
-            <div class="label3">Album</div>
-            <div class="badge-label-text2">100+</div>
+            <span class="label3">Album</span>
+            <span class="badge-label-text2">100+</span>
 
-          </div>
+          </li>
 
-        </div>
+          <li class="nav-item conteiner-nav-opcao selecionado">
 
-        <div class="nav-item selecionado">
-
-          <div class="conteiner-opcao">
-
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z" />
             </svg>
 
-            <div class="label3">Biblioteca</div>
-            <div class="badge-label-text2">100+</div>
+            <span class="label3">Biblioteca</span>
+            <span class="badge-label-text2">100+</span>
 
-          </div>
+          </li>
 
-        </div>
+          <li>
+            <svg class="divider-1" width="235" height="1" viewBox="0 0 235 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line x1="16" y1="0.500027" x2="219" y2="0.500027" stroke="#C5C8B9" />
+            </svg>
+          </li>
 
-        <svg class="divider-1" width="235" height="1" viewBox="0 0 235 1" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <line x1="16" y1="0.500027" x2="219" y2="0.500027" stroke="#C5C8B9" />
-        </svg>
+          <li class="nav-item conteiner-nav-opcao selecionado">
 
-        <div class="nav-item selecionado">
-
-          <div class="conteiner-opcao">
-
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
             </svg>
 
-            <div class="label3">Turmas</div>
-            <div class="badge-label-text2">100+</div>
+            <span class="label3">Turmas</span>
+            <span class="badge-label-text2">100+</span>
 
-          </div>
+          </li>
 
-        </div>
+        </ul>
 
       </aside>
 
-
       <div class="manchete-2">Dewey</div>
-
 
       <button class="botoes selecionado" onclick="perfil()">
 
@@ -136,7 +123,7 @@
 
       </button>
 
-      <div class="container-menuLateral right estilo-blocos" id="conteiner_perfil"> <!-- PERFIL -->
+      <div class="container-menuFlutuante right estilo-conteiner-primario" id="conteiner_perfil"> <!-- PERFIL -->
 
         <div class="barra_superior_user">
 
@@ -149,7 +136,8 @@
 
         </div>
 
-        <div class="containerSelecaoExpandido SelecaoExpandidoUP conteinerExpandidoSemBTN">
+        <div
+          class="containerSelecaoExpandido SelecaoExpandidoUP conteinerExpandidoSemBTN justify-content-space-evenly SecundarioVerde">
 
           <p>Dark mode</p>
 
@@ -162,15 +150,13 @@
 
         <div class="containerSelecaoExpandido SelecaoExpandidoDN selecionado">
 
-          <button class="botaoExpandido titulo" onclick="logout()">
+          <button class="botaoExpandido justify-content-space-around titulo SecundarioVerde" onclick="logout()">
 
+            <p>Sair da conta</p>
             <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
             </svg>
-
-
-            Sair da conta
 
           </button>
 
@@ -182,10 +168,11 @@
 
   </header>
 
-
   <main>
 
-    <div class="modal-false">
+
+
+    <div class="modal-false estilo-conteiner-secundario">
 
       <div class="sheet-header">
 
@@ -224,7 +211,7 @@
 
     <div class="sessoes">
 
-      <section class="feed1 estilo-blocos scrool-vertical scrool-estilo"> <!-- CARROSEL -->
+      <section class="feed1 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- CARROSEL -->
 
         <div class="slide-container scrool-estilo">
 
@@ -377,7 +364,7 @@
 
       </section>
 
-      <section class="menu_conteiner_publi estilo-blocos">
+      <section class="menu_conteiner_publi estilo-conteiner-primario">
 
         <nav class="menu_section estilo-conteiner-secundario">
 
@@ -413,7 +400,7 @@
 
           <button class="botoes selecionado" onclick="fechar_post()">
 
-            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path fill="#45483D"
                 d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
             </svg>
@@ -423,13 +410,13 @@
         </div>
 
 
-        <div class="conteiner_card_criar estilo-blocos scrool-estilo">
+        <div class="conteiner_card_criar estilo-conteiner-primario scrool-estilo">
 
           <div class="barra_superior">
 
             <img class="avatar_publi" src="/Images/3d_avatar_21.png" alt="Foto de perfil">
 
-            <h2 class="header2 usuario_name_da_publi">Usuário não registrado</h2>
+            <strong class="header2 usuario_name_da_publi">Usuário não registrado</strong>
 
             <div class="botoes">
 
@@ -437,7 +424,7 @@
 
               <label for="documento-post" class="selecionado container_label">
 
-                <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                   <path fill="#45483D"
                     d="M440-160v-326L336-382l-56-58 200-200 200 200-56 58-104-104v326h-80ZM160-600v-120q0-33 23.5-56.5T240-800h480q33 0 56.5 23.5T800-720v120h-80v-120H240v120h-80Z" />
                 </svg>
@@ -495,7 +482,7 @@
 
                 <label class="header2" for="turmas">Selecione a turma</label>
 
-                <select id="turmas" class="estilo-input">
+                <select id="turmas" class="estilo-input estilo-conteiner-secundario">
 
                   <option disabled value="padrao">Selecione a turma</option>
 
@@ -507,7 +494,7 @@
 
                 <label class="header2" for="sub_titulo_criar">Data final de entrega</label>
 
-                <input class="estilo-input" type="date" id="sub_titulo_criar">
+                <input class="estilo-input estilo-conteiner-secundario" type="date" id="sub_titulo_criar">
 
               </div>
 
@@ -515,7 +502,7 @@
 
                 <label class="header2" for="titulo-criar">Título</label>
 
-                <input class="estilo-input" type="text" id="titulo-criar" placeholder="Título" autocapitalize="on">
+                <input class="estilo-input estilo-conteiner-secundario" type="text" id="titulo-criar" placeholder="Título" autocapitalize="on">
 
               </div>
 
@@ -523,7 +510,7 @@
 
                 <label class="header2" for="descricao-criar">Descrição</label>
 
-                <textarea class="estilo-input scrool-estilo" name="" id="descricao-criar" placeholder="Descrição"
+                <textarea class="estilo-input estilo-conteiner-secundario scrool-estilo" name="" id="descricao-criar" placeholder="Descrição"
                   minlength="10" maxlength="500"></textarea>
 
               </div>
@@ -536,7 +523,7 @@
 
               <label for="enviar-post" class="container_label selecionado">
 
-                <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                   <path fill="#45483D"
                     d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
                 </svg>
@@ -551,53 +538,9 @@
 
       </div>
 
-      <section id="feed2" class="feed2 estilo-blocos scrool-vertical scrool-estilo"> <!-- AVISOS -->
+      <section id="feed2" class="feed2 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- AVISOS -->
 
-        <div class="aviso">
-
-          <div class="card-state-layer-outlined estilo-conteiner-secundario">
-
-            <div class="header-aviso">
-
-              <div class="content">
-
-                <div class="monogram">
-
-                  <div class="background">
-                    <div class="initial">A</div>
-                  </div>
-
-                </div>
-
-                <div class="text">
-                  <div class="header2">Header</div>
-                  <a class="subhead" href="">Acessar</a>
-                </div>
-
-              </div>
-
-              <div class="media estilo-conteiner-secundario">
-                <img class="media2" src="/images/No Man's Sky.jpeg" />
-              </div>
-
-            </div>
-
-          </div>
-
-          <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
-
-          <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
-
-          <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
-            saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
-            possimus? Delectus, rerum cupiditate?</p>
-
-          <hr>
-
-          <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
-        </div>
-
-        <div class="aviso">
+        <div class="aviso estilo-conteiner-secundario SecundarioVerde">
 
           <div class="card-state-layer-outlined estilo-conteiner-secundario">
 
@@ -641,7 +584,51 @@
           <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
         </div>
 
-        <div class="aviso">
+        <div class="aviso estilo-conteiner-secundario SecundarioVerde">
+
+          <div class="card-state-layer-outlined estilo-conteiner-secundario">
+
+            <div class="header-aviso">
+
+              <div class="content">
+
+                <div class="monogram">
+
+                  <div class="background">
+                    <div class="initial">A</div>
+                  </div>
+
+                </div>
+
+                <div class="text">
+                  <div class="header2">Header</div>
+                  <a class="subhead" href="">Acessar</a>
+                </div>
+
+              </div>
+
+              <div class="media estilo-conteiner-secundario">
+                <img class="media2" src="/images/No Man's Sky.jpeg" />
+              </div>
+
+            </div>
+
+          </div>
+
+          <iframe src="https://www.youtube-nocookie.com/embed/Sie--mPjsvo" frameborder="0"></iframe>
+
+          <img class="img-aviso" src="/images/No Man's Sky.jpeg" alt="">
+
+          <p class="texto-de-suporte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora eaque
+            saepe doloremque ipsum placeat, sequi quia eum atque eius consectetur ad delectus nulla, ducimus quis
+            possimus? Delectus, rerum cupiditate?</p>
+
+          <hr>
+
+          <div class="data_hora_aviso">3 de setembro de 2023 às 14:10</div>
+        </div>
+
+        <div class="aviso estilo-conteiner-secundario SecundarioVerde">
 
           <div class="card-state-layer-outlined estilo-conteiner-secundario">
 
@@ -687,9 +674,9 @@
 
       </section>
 
-      <section id="feed3" class="feed3 estilo-blocos scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
+      <section id="feed3" class="feed3 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
 
-        <div class="container-de-conteudo">
+        <div class="container-de-conteudo estilo-conteiner-secundario SecundarioVerde">
 
           <div class="conteudo-de-midia-e-texto">
 

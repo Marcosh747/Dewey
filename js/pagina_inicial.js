@@ -64,11 +64,11 @@ function criar_post() {
     // Cria a estrutura interna
     variadoDiv.innerHTML = `
     <div class="containerSelecaoExpandido SelecaoExpandidoUP">
-        <button class="botaoExpandido cabecalho-2 selecionado">Aviso</button>
+        <button class="botaoExpandido SecundarioVerde cabecalho-2 selecionado">Aviso</button>
     </div>
 
     <div class="containerSelecaoExpandido SelecaoExpandidoDN">
-        <button class="botaoExpandido cabecalho-2 selecionado" onclick="criar_atividade()">Atividade</button>
+        <button class="botaoExpandido cabecalho-2 SecundarioVerde selecionado" onclick="criar_atividade()">Atividade</button>
     </div>
     `;
 

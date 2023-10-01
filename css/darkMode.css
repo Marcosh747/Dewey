@@ -2,7 +2,7 @@ body.dark {
     background: var(--m-3-ref-neutral-neutral-12);
 }
 body.dark * {
-    color: var(--m-3-sys-dark-on-surface-variant);
+    color: var(--m-3-sys-dark-on-surface-variant) !important;
 }
 
 .dark .selecionado:hover {
@@ -14,24 +14,24 @@ body.dark * {
 
 
 .dark .icone > path {
-    fill: var(--m-3-ref-secondary-secondary-95);
+    fill: var(--m-3-sys-dark-on-surface-variant) !important;
 }
 
-.dark .container-login , .dark .conteiner_titulo,
-.dark .estilo-blocos,
-.dark option {
+
+.dark .estilo-conteiner-primario{
     background: var(--m-3-ref-neutral-neutral-30);
 }
 
 
 
-.dark .container_label, .dark .menu-item, .dark .selecionada,
-.dark .container-de-conteudo,
-.dark .container_darkMode,
-.dark .container_logout,
-.dark .aviso {
-    background: var(--m-3-ref-secondary-secondary-40);
-    border-color: var(--m-3-sys-dark-outline-variant);
+
+.dark .SecundarioVerde{
+    background: var(--m-3-ref-secondary-secondary-40) !important;
+   
+}
+
+.dark .menu-item-active{
+    background: var(--m-3-ref-secondary-secondary-40) !important;
 }
 
 .dark #backToTop{
@@ -47,9 +47,9 @@ body.dark * {
 
 
 
-.dark .estilo-conteiner-secundario,.dark .modal-false {
+.dark .estilo-conteiner-secundario {
     background: var(--m-3-sys-dark-surface-container-high);
-    border-color: var(--m-3-sys-dark-outline-variant);
+    border: 0;
 }
 
 .dark .botao-secundario {
@@ -67,8 +67,8 @@ body.dark * {
 
 
 
-
+/* 
 .dark .campo-texto-2,.dark .botao-estendido  {
     background: var(--m-3-sys-dark-surface-container-highest);
-}
+} */
 

@@ -121,27 +121,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .sessoes {
     border-radius: var(--arredondamento-do-cantos);
     display: flex;
@@ -221,12 +200,6 @@
     overflow: hidden;
   }
 
-  section.calendario {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 
 
 
@@ -250,15 +223,6 @@
 
   }
 
-  .supporting-text {
-    color: var(--m-3-sys-light-on-surface-variant, #45483d);
-    text-align: left;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    align-self: stretch;
-    height: 16px;
-
-  }
 
   .calendario {
     border-radius: 28px;
@@ -295,18 +259,6 @@
 
   }
 
-  /* .conteiner_selecao {
-    padding: 4px 12px 4px 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-
-  } */
-
   .conteiner_main_calendario {
     padding: 0px 12px 12px 12px;
     display: flex;
@@ -322,13 +274,9 @@
 
   .dias-da-semana {
     display: flex;
-    /* flex-direction: row; */
-    /* gap: 0px; */
     align-items: flex-start;
     align-self: stretch;
-    /* flex-shrink: 0; */
     height: 48px;
-    /* position: relative; */
     justify-content: center;
   }
 
@@ -369,10 +317,6 @@
     cursor: pointer;
   }
 
-
-
-
-
   .estilo-conteiner-secundario{
     border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
     background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
@@ -397,7 +341,6 @@
     gap: 5px;
     padding: 10px;
     border-radius: 28px;
-    
   }
 
 
@@ -489,8 +432,9 @@
     justify-content: flex-end;
   }
 
-  .acoes_citacao {
+  .barraDeAcoes {
     display: inline-flex;
+    width: 100%;
     gap: 5px;
     justify-content: space-between;
     align-items: center;
@@ -511,18 +455,11 @@
 
   .aviso {
     padding: 10px;
-    /* border-radius: ;
-    border-style: ;
-    border-color: ; */
-
-  
     border-radius: 12px;
     gap: 15px;
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
   }
 
   .card-state-layer-outlined {
@@ -547,16 +484,6 @@
 
   }
 
-
-  .conteiner_citacao-container {
-    border-radius: 12px;
-    border-style: solid;
-    border-color: var(--m-3-sys-light-outline-variant, #c5c8b9);
-    border-width: 1px;
-
-    position: relative;
-
-  }
 
   .header-aviso {
     display: flex;
@@ -678,6 +605,8 @@
 
   .data_hora_aviso {
     font-size: 13px;
+    width: 100%;
+    text-align: left;
   }
 
 
@@ -700,31 +629,8 @@
 
 
 
-  .icon-button {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    max-width: 48px;
-    height: 48px;
-    position: relative;
-  }
 
-
-  .label-text {
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    color: var(--m-3-sys-light-on-surface-variant, #45483d);
-    text-align: center;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
 
   .controls {
     padding: 4px 12px 4px 16px;
@@ -753,9 +659,6 @@
     height: 40px;
     position: relative;
     overflow: hidden;
-
-
-    
   }
 
   .data{
@@ -915,14 +818,9 @@
 
 
   .acoes {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    align-items: flex-end;
     gap: 8px;
-    align-items: flex-start;
-    justify-content: flex-end;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
   }
 
   .botao-secundario {
@@ -941,27 +839,7 @@
     overflow: hidden;
   }
 
-  .camada-de-estado-3 {
-    padding: 10px 24px 10px 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-  }
 
-  .texto-do-rotulo {
-    color: var(--m-3-sys-light-primary, #466800);
-    text-align: center;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .botao-primario {
     background: var(--m-3-sys-light-primary, #466800);
@@ -976,17 +854,9 @@
     position: relative;
     overflow: hidden;
     border: 0;
+    color: #ffffff;
   }
 
-  .texto-do-rotulo-2 {
-    color: var(--m-3-sys-light-on-primary, #ffffff);
-    text-align: center;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 
 

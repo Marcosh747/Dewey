@@ -86,18 +86,7 @@ header {
     flex: 1;
 }
 
-/* .container-botao {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-   
-    position: relative;
-    overflow: hidden;
-    border-color: var(--m-3-sys-dark-on-surface-variant);
-} */
+
 
 .botoes {
     padding: 8px;
@@ -112,6 +101,7 @@ header {
 
 .fundoTransparente {
     display: none;
+    z-index: 999;
 
     position: fixed;
     flex-direction: column;
@@ -132,30 +122,6 @@ header {
 
 
 
-/* PERFIL */
-/* .conteiner_superior_econdido {
-    position: absolute;
-    width: 95.5%;
-    max-width: 800px;
-    display: flex;
-} */
-
-/* .superior_econdido_menu,
-.superior_econdido_perfil {
-    display: flex;
-    flex: auto;
-
-} */
-
-/* .superior_econdido_perfil {
-    justify-content: flex-end;
-
-}
-
-.superior_econdido_menu {
-    justify-content: flex-start;
-
-} */
 
 
 

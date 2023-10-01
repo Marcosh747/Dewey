@@ -1,3 +1,4 @@
-function acessar(){
-    window.location.href = '/public/pagina_inicial.html';
+function acessar() {
+    window.location.href = 'public/album.html';
 }
+  

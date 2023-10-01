@@ -71,7 +71,7 @@ main {
 }
 
 
-form {
+.form {
     width: 80%;
     display: flex;
     flex-direction: column;

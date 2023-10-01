@@ -401,154 +401,20 @@ input:checked+.slider:before {
     flex: 1;
 }
 
-.badge-label-text {
-    color: var(--m-3-sys-light-on-secondary-container, #161e0a);
-    text-align: right;
-    position: relative;
-}
 
 
 
-.icon3 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
-
-.label3 {
-    color: var(--m-3-sys-light-on-surface-variant, #45483d);
-    text-align: left;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-    flex: 1;
-}
-
-.badge-label-text2 {
-    color: var(--m-3-sys-light-on-surface-variant, #45483d);
-    text-align: right;
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
-    position: relative;
-}
-
-
-
-.icon5 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
-
-
-
-.icon7 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
 
 .divider-1 {
-
     padding: 0px 16px 0px 16px;
     display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: flex-start;
     justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
     transform: translate(0px, 0px);
-    overflow: visible;
 }
 
 
-.section-header-2 {
-    border-radius: 100px;
-    padding: 18px 16px 18px 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
-}
 
-.nav-item-5 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
 
-.icon9 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
-
-.nav-item-6 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
-
-.icon11 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
-
-.nav-item-7 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
-
-.icon13 {
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-}
-
-.divider-2 {
-    padding: 0px 16px 0px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-    transform: translate(0px, 0px);
-    overflow: visible;
-}
 
 .estilo-input {
 

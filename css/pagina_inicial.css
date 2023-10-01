@@ -295,7 +295,7 @@
 
   }
 
-  .conteiner_selecao {
+  /* .conteiner_selecao {
     padding: 4px 12px 4px 16px;
     display: flex;
     flex-direction: row;
@@ -305,7 +305,7 @@
     flex-shrink: 0;
     position: relative;
 
-  }
+  } */
 
   .conteiner_main_calendario {
     padding: 0px 12px 12px 12px;
@@ -670,14 +670,6 @@
     margin-bottom: 0;
   }
 
-  .aviso hr {
-    background: var(--m-3-sys-light-secondary-fixed-dim);
-    border: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 50%;
-    height: 1px;
-  }
 
   .data_hora_aviso {
     font-size: 13px;
@@ -730,11 +722,12 @@
   }
 
   .controls {
+    padding: 4px 12px 4px 16px;
     display: flex;
     flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
     flex-shrink: 0;
     position: relative;
   }

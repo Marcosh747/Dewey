@@ -18,7 +18,7 @@ function toggleElementVisibility(element) {
   const fundo = document.querySelector('.fundoTransparente');
 
   if (computedStyle.display === "none") {
-    element.style.display = "block";
+    element.style.display = "flex";
     fundo.style.display = 'flex';
   } else {
     element.style.display = "";

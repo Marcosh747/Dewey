@@ -33,7 +33,7 @@ body * {
 
 
 main {
-    height: calc(100vh - 16px);
+    height: calc(100vh - 20px);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -355,8 +355,7 @@
 
   .data-atual .container2 {
     background: var(--m-3-sys-light-primary, #466800);
-    color: var(--m-3-sys-light-on-primary, #ffffff);
-    font: var(--m-3-label-large, 500 14px/20px "Roboto", sans-serif);
+    color: var(--m-3-sys-light-on-primary, #ffffff) !important;
   }
 
   .container2:hover {
@@ -430,7 +429,7 @@
   .menu-item-active {
     background: var(--m-3-sys-light-secondary-container);
     color: #1b1c18 !important;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15); */
   }
 
 

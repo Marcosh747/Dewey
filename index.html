@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/darkMode.css">
 
 
-    <script src="/js/login.js"></script>
+    <script src="/js/login.js"defer></script>
     <script src="/js/dark_mode.js"defer></script>
 </head>
 
@@ -24,7 +24,7 @@
 
 
             <div class="area-avatar-3d">
-                <img class="avatar-3d" src="/images/3d_avatar_21.png" />
+                <img class="avatar-3d" src="/images/3d_avatar_21.png" alt="Imagem de Perfil" />
             </div>
 
             <h2 class="titulo-texto">Marcos Henrique</h2>
@@ -35,9 +35,9 @@
 
                     <div class="conteudo">
 
-                        <span class="rotulo-texto-2">Entrar como</span>
+                        <label for="entrarComo" class="rotulo-texto-2">Entrar como</label>
 
-                        <select class="estilo-input estilo-conteiner-secundario">
+                        <select id="entrarComo" class="estilo-input estilo-conteiner-secundario">
                             <option class="estilo-conteiner-secundario" value="aluno">Aluno</option>
                             <option class="estilo-conteiner-secundario"  value="professor">Professor</option>
                             <option class="estilo-conteiner-secundario" value="manutencao">Dev</option>
@@ -64,7 +64,7 @@
                 <div class="texto-suporte-2">Texto de suporte</div>
                 
 
-                <button class=" botao-estendido estilo-conteiner-secundario selecionado" onclick="acessar()">
+                <button class=" botao-estendido estilo-conteiner-secundario selecionado">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path

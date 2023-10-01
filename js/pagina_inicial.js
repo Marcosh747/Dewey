@@ -84,7 +84,7 @@ function criar_atividade() {
     const conteiner_fundo_novo_post = document.querySelector('.conteiner_fundo_novo_post');
     conteiner_fundo_novo_post.classList.add('active');
 
-    descerContiner();
+    toggleModalExpand();
     toggleElementVisibility(suspenso_criar, 'flex');
 
 }

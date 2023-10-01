@@ -84,9 +84,6 @@ body.dark * {
     color: var(--m-3-sys-dark-on-primary, #ffffff);
 }
 
-.dark .titulo-texto{
-    color: var(--m-3-ref-secondary-secondary-60);
-}
 
 
 

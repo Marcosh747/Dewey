@@ -14,15 +14,15 @@ if (window.location.pathname === '/public/professor/pagina_inicial.html') {
 }
 // Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
 function selecionarOpcao(element) {
-    const menuItems = document.querySelectorAll('.menu-item');
+    const menuItems = document.querySelectorAll('.nav-link'); // Alterado para .nav-link
 
-    // Remover a classe 'selected' de todos os itens do menu
+    // Remover a classe 'active' de todos os itens do menu
     menuItems.forEach(item => {
-        item.classList.remove('selected');
+        item.classList.remove('menu-item-active');
     });
 
-    // Adicionar a classe 'selected' ao item selecionado
-    element.classList.add('selected');
+    // Adicionar a classe 'menu-item-active' ao item selecionado
+    element.classList.add('menu-item-active');
 
     // Mostra/Esconde os elementos com base na opção selecionada
     const conteinerFeedAvisos = document.getElementById('feed2');
@@ -39,6 +39,8 @@ function selecionarOpcao(element) {
         conteinerFeed2.style.display = 'flex';
     }
 }
+
+
 
 
 

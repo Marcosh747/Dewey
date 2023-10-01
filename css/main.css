@@ -94,6 +94,7 @@ header {
     border: 0;
     border-radius: 100px;
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
 }
@@ -186,13 +187,17 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
+.conteinerExpandidoSemBTN{
+    background: var(--m-3-sys-light-secondary-container);
+}
+
 
 .containerSelecaoExpandido {
     overflow: hidden;
     width: 100%;
     display: inline-flex;
     align-items: center;
-    background: var(--m-3-sys-light-secondary-container);
+    
     justify-content: space-around;
     border-radius: 9px;
 }
@@ -220,6 +225,7 @@ button.botaoExpandido {
     gap: 15px;
     display: inline-flex;
     align-items: center;
+    background: var(--m-3-sys-light-secondary-container);
 }
 
 /* BOTAO DARK MODE */
@@ -372,7 +378,7 @@ input:checked+.slider:before {
     position: relative;
 }
 
-.nav-item {
+/* .nav-item {
 
     border-radius: 100px;
     display: flex;
@@ -385,7 +391,7 @@ input:checked+.slider:before {
     height: 56px;
     position: relative;
     overflow: hidden;
-}
+} */
 
 .conteiner-opcao {
     padding: 16px 24px 16px 16px;

@@ -5,16 +5,15 @@ body.dark * {
     color: var(--m-3-sys-dark-on-surface-variant);
 }
 
-.dark .selecionado :hover {
-    background: var(--m-3-ref-secondary-secondary-24);
+.dark .selecionado:hover {
+    background: var(--m-3-ref-secondary-secondary-24) !important;
     cursor: pointer;
 }
 
 
 
-.dark .icone path,.dark .conteiner-opcao svg,
-.dark .icones-menu-24-px path,
-.dark .icones-conta-circulo-preenchido-24-px path {
+
+.dark .icone > path {
     fill: var(--m-3-ref-secondary-secondary-95);
 }
 
@@ -24,17 +23,7 @@ body.dark * {
     background: var(--m-3-ref-neutral-neutral-30);
 }
 
-.dark .calendario,
-.dark .entrada-texto-2, 
-.dark .cabecalho-2,
-.dark .subcabecalho,
-.dark .titulo,
-.dark .manchete-2,
-.dark .ola-usuario,
-.dark p,
-.dark span {
-    color: var(--m-3-sys-dark-on-surface);
-}
+
 
 .dark .container_label, .dark .menu-item, .dark .selecionada,
 .dark .container-de-conteudo,
@@ -52,21 +41,13 @@ body.dark * {
 
 
 
-.dark .menu-item.selected {
-    background: var(--m-3-ref-tertiary-tertiary-35); 
-}
 
 
 
-.dark .citacao_do_dia, .dark .header2,
-.dark .subhead,
-.dark .date {
-    color: var(--m-3-sys-dark-on-surface);
-}
 
 
 
-.dark .calendario,.dark .modal-false {
+.dark .estilo-conteiner-secundario,.dark .modal-false {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

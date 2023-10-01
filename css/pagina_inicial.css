@@ -32,7 +32,7 @@
       height: 258px;
     }
 
-    
+
   }
 
   @media (max-width: 991px) {
@@ -44,9 +44,6 @@
       align-items: center;
     }
 
-    section.menu_conteiner_publi {
-      display: inline-flex;
-    }
 
     section.feed3 {
       display: none;
@@ -173,8 +170,9 @@
 
 
   section.feed1,
-  .feed3,
-  .feed2 {
+  section.feed3,
+  section.feed2,
+  section.menu_conteiner_publi {
     min-height: 400px;
     max-height: 100%;
     /* max-width: 480px; */
@@ -284,7 +282,6 @@
     justify-content: flex-start;
     width: 100%;
     position: relative;
-
   }
 
   .cabecalho_calendario {
@@ -395,53 +392,58 @@
 
 
   /* MENU */
-  section.menu_conteiner_publi {
 
-    justify-content: flex-end;
+  section.menu_conteiner_publi{
+    min-height: min-content;
     width: 100%;
-    padding: 15px;
-
-    min-width: 315px;
+    max-width: 480px;
   }
+
 
   .menu_section {
     display: inline-flex;
     align-items: center;
     width: 100%;
-    padding: 8px 10px;
-    border-radius: 12px;
-    border: solid 1px var(--m-3-sys-light-outline-variant, #c5c8b9);
-    background: var(--m-3-sys-light-surface-container-high);
+    gap: 5px;
+    padding: 10px;
+    border-radius: 28px;
   }
 
 
   .menu-publicaoes {
-
-
-    white-space: nowrap;
-    width: max-content;
-    gap: 10px;
     width: 100%;
-    justify-content: space-evenly;
-
-    display: inline-flex;
+    gap: 3px;
+    padding: 0.25rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
   }
 
-  .menu-item {
-    padding: 5px 10px;
-    border-radius: 12px;
-    border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+
+  .nav-link{
+    border-radius: 2rem;
     cursor: pointer;
-    width: min-content;
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    font-size: large;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
-
-  .menu-item.selected {
-
-
+  .menu-item-active {
     background: var(--m-3-sys-light-secondary-container);
+    color: #1b1c18 !important;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-    /* Cor de destaque para a opção selecionada */
   }
 
 
@@ -456,7 +458,10 @@
     width: 100%;
     background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
     border-radius: 28px;
-    padding: 10px;
+    padding: 10px 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
   }
 
@@ -467,7 +472,10 @@
   }
 
   .citacao .conteiner_citacao {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
   }
 
   .conteiner_citacao .textoCitacao-area {
@@ -484,7 +492,6 @@
   .conteiner_citacao .nomeAutor {
     display: flex;
     font-size: 18px;
-    margin-top: 20px;
     font-style: italic;
     justify-content: flex-end;
   }
@@ -493,7 +500,6 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;
     width: 100%;
   }
 
@@ -924,13 +930,6 @@
   }
 
 
-  .texto-de-suporte {
-    color: var(--m-3-sys-light-on-surface-variant, #49454f);
-    text-align: left;
-    font: var(--m-3-body-medium, 400 14px/20px "Roboto", sans-serif);
-    position: relative;
-    align-self: stretch;
-  }
 
   .acoes {
     display: flex;
@@ -1197,7 +1196,7 @@
     align-items: flex-end;
   }
 
-  .conteiner_fechar_post button{
+  .conteiner_fechar_post button {
     background: buttonface;
   }
 
@@ -1236,7 +1235,7 @@
 
 
   .input_escondido {
-    display: none;
+    display: none !important;
   }
 
 
@@ -1284,12 +1283,12 @@
   }
 
 
-.estilo-input {
- 
+  .estilo-input {
+
     border-radius: 9px;
     outline: 0;
     background: var(--m-3-ref-neutral-neutral-98);
- 
+
     display: inline-block;
     width: 100%;
     height: calc(2.25rem + 2px);
@@ -1298,7 +1297,7 @@
     color: #495057;
     vertical-align: middle;
     border: 1px solid #ced4da;
-   
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1306,15 +1305,12 @@
     margin: 0;
     font-size: inherit;
 
+
   }
 
-  select.SelectTurma {
-    cursor: pointer;
-  }
 
-  .listaDeTurmas {
-    display: inline-block;
-  }
+
+
 
 
   .barra_superior {
@@ -1334,10 +1330,9 @@
     background: var(--cor-avatar);
   }
 
-  .usuario_name_da_publi {
-    margin: 0;
-    width: 100%;
-    padding-left: 10px;
+
+  textarea.estilo-input {
+    flex: 1 1 auto;
   }
 
 

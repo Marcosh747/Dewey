@@ -33,8 +33,7 @@
 
       <button class="selecionado botoes menu-lateral" onclick="menu_lateral()">
 
-        <svg class="icones-menu-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
             fill="#45483D" />
         </svg>
@@ -129,8 +128,7 @@
 
       <button class="botoes selecionado" onclick="perfil()">
 
-        <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM8.5 9.5C8.5 7.56 10.06 6 12 6C13.94 6 15.5 7.56 15.5 9.5C15.5 11.44 13.94 13 12 13C10.06 13 8.5 11.44 8.5 9.5Z"
             fill="#45483D" />
@@ -151,7 +149,7 @@
 
         </div>
 
-        <div class="containerSelecaoExpandido SelecaoExpandidoUP">
+        <div class="containerSelecaoExpandido SelecaoExpandidoUP conteinerExpandidoSemBTN">
 
           <p>Dark mode</p>
 
@@ -166,8 +164,7 @@
 
           <button class="botaoExpandido titulo" onclick="logout()">
 
-            <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-              viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
             </svg>
@@ -213,15 +210,13 @@
 
       <button id="backToTop" class="botoes selecionado">
 
-        <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-          viewBox="0 -960 960 960" width="24">
+        <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
           <path fill="#45483D" d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" />
         </svg>
 
       </button>
 
     </div>
-
 
     <div class="container-ola-usuario">
       <h2 class="ola-usuario">Olá, Marcos.</h2>
@@ -253,97 +248,93 @@
           </div>
         </div>
 
-        <section class="calendario"> <!-- CALENDARIO -->
+
+        <div class="calendario estilo-conteiner-secundario"> <!-- CALENDARIO -->
+
+          <div class="cabecalho_calendario">
+
+            <div class="label-and-date">
+
+              <div class="supporting-text">Data</div>
+              <span class="mes" id="mes"></span>
+
+            </div>
+
+            <div class="icon-button">
 
 
-          <div class="calendario">
 
-            <div class="cabecalho_calendario">
+              <button class="botoes reiniciar selecionado">
 
-              <div class="label-and-date">
+                <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#45483D"
+                    d="M393-132q-103-29-168-113.5T160-440q0-57 19-108.5t54-94.5q11-12 27-12.5t29 12.5q11 11 11.5 27T290-586q-24 31-37 68t-13 78q0 81 47.5 144.5T410-209q13 4 21.5 15t8.5 24q0 20-14 31.5t-33 6.5Zm174 0q-19 5-33-7t-14-32q0-12 8.5-23t21.5-15q75-24 122.5-87T720-440q0-100-70-170t-170-70h-3l16 16q11 11 11 28t-11 28q-11 11-28 11t-28-11l-84-84q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l84-84q11-11 28-11t28 11q11 11 11 28t-11 28l-16 16h3q134 0 227 93t93 227q0 109-65 194T567-132Z" />
+                </svg>
 
-                <div class="supporting-text">Data</div>
-                <span class="mes" id="mes"></span>
+              </button>
+
+
+
+            </div>
+
+          </div>
+
+
+          <div class="conteiner_selecao">
+
+            <div class="controls">
+
+              <div class="icon-button">
+
+                <button class="botoes selecionado" id="voltarMes">
+
+                  <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z"
+                      fill="#45483D" />
+                  </svg>
+
+                </button>
 
               </div>
 
               <div class="icon-button">
 
+                <button class="botoes selecionado" id="proximoMes">
 
-
-                <button class="botoes reiniciar selecionado">
-
-                  <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                    viewBox="0 -960 960 960" width="24">
-                    <path fill="#45483D"
-                      d="M393-132q-103-29-168-113.5T160-440q0-57 19-108.5t54-94.5q11-12 27-12.5t29 12.5q11 11 11.5 27T290-586q-24 31-37 68t-13 78q0 81 47.5 144.5T410-209q13 4 21.5 15t8.5 24q0 20-14 31.5t-33 6.5Zm174 0q-19 5-33-7t-14-32q0-12 8.5-23t21.5-15q75-24 122.5-87T720-440q0-100-70-170t-170-70h-3l16 16q11 11 11 28t-11 28q-11 11-28 11t-28-11l-84-84q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l84-84q11-11 28-11t28 11q11 11 11 28t-11 28l-16 16h3q134 0 227 93t93 227q0 109-65 194T567-132Z" />
+                  <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z"
+                      fill="#45483D" />
                   </svg>
 
                 </button>
 
-
-
               </div>
 
-            </div>
-
-
-            <div class="conteiner_selecao">
-
-              <div class="controls">
-
-                <div class="icon-button">
-
-                  <button class="botoes selecionado" id="voltarMes">
-
-                    <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z"
-                        fill="#45483D" />
-                    </svg>
-
-                  </button>
-
-                </div>
-
-                <div class="icon-button">
-
-                  <button class="botoes selecionado" id="proximoMes">
-
-                    <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z"
-                        fill="#45483D" />
-                    </svg>
-
-                  </button>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="conteiner_main_calendario">
-              <div class="dias-da-semana">
-                <div>D</div>
-                <div>S</div>
-                <div>T</div>
-                <div>Q</div>
-                <div>Q</div>
-                <div>S</div>
-                <div>S</div>
-              </div>
-              <div class="dias_do_calendario"></div>
             </div>
 
           </div>
 
-        </section>
+          <div class="conteiner_main_calendario">
+            <div class="dias-da-semana">
+              <div>D</div>
+              <div>S</div>
+              <div>T</div>
+              <div>Q</div>
+              <div>Q</div>
+              <div>S</div>
+              <div>S</div>
+            </div>
+            <div class="dias_do_calendario"></div>
+          </div>
 
-        <div class="citacao estilo-conteiner-secundario">
+        </div>
 
-          <h2 class="citacao_do_dia">Citação do dia</h2>
+
+        <div class="citacao estilo-conteiner-secundario"> <!--CITACAO -->
+
+          <h2>Citação do dia</h2>
 
           <div class="conteiner_citacao">
 
@@ -354,20 +345,17 @@
 
             </div>
 
-            <div class="nomeAutor">
-              <span>_</span>
-              <span class="nomeAutor">Mary Kay Ash</span>
-            </div>
+            <span class="nomeAutor">- Mary Kay Ash</span>
 
           </div>
 
           <div class="acoes_citacao">
+
             <span class="subcabecalho" id="proximaCitacao"></span>
 
-
             <button class="botoes botaoCopia selecionado">
-              <svg class="icones-conta-circulo-preenchido-24-px" fill="#45483D" xmlns="http://www.w3.org/2000/svg"
-                height="24" viewBox="0 -960 960 960" width="24">
+              <svg class="icone" fill="#45483D" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                width="24">
                 <path
                   d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Zm160-240v-480 480Z" />
               </svg>
@@ -376,13 +364,12 @@
 
 
             <button class="botoes botaoFala selecionado">
-              <svg class="icones-conta-circulo-preenchido-24-px" fill="#45483D" xmlns="http://www.w3.org/2000/svg"
-                height="24" viewBox="0 -960 960 960" width="24">
+              <svg class="icone" fill="#45483D" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                width="24">
                 <path
                   d="M160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h320q17 0 28.5 11.5T520-840q0 17-11.5 28.5T480-800H160v640h440v-80q0-17 11.5-28.5T640-280q17 0 28.5 11.5T680-240v80q0 33-23.5 56.5T600-80H160Zm120-160q-17 0-28.5-11.5T240-280q0-17 11.5-28.5T280-320h200q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240H280Zm0-120q-17 0-28.5-11.5T240-400q0-17 11.5-28.5T280-440h120q17 0 28.5 11.5T440-400q0 17-11.5 28.5T400-360H280Zm286-34L440-520h-80q-17 0-28.5-11.5T320-560v-120q0-17 11.5-28.5T360-720h80l126-126q10-10 22-5t12 19v424q0 14-12 19t-22-5Zm114-88v-276q36 21 58 57t22 81q0 45-22 81t-58 57Zm160-138q0-68-34.5-123.5T715-830q-14-8-20.5-23.5T694-884q6-16 21.5-22.5T745-905q78 40 126.5 115.5T920-620q0 94-48.5 169.5T745-335q-14 8-29.5 1.5T694-356q-6-15 .5-30.5T715-410q56-31 90.5-86.5T840-620Z" />
               </svg>
             </button>
-
 
           </div>
 
@@ -394,17 +381,22 @@
 
         <nav class="menu_section estilo-conteiner-secundario">
 
-          <div class="menu-publicaoes">
+          <ul class="menu-publicaoes">
 
-            <button class="menu-item  cabecalho-2 selected" onclick="selecionarOpcao(this)">Avisos</button>
-            <button class="menu-item  cabecalho-2" onclick="selecionarOpcao(this)">Atividades</button>
+            <li class="nav-item ">
+              <button onclick="selecionarOpcao(this)" class="nav-link menu-item-active" id="home-tab2">Avisos</button>
+            </li>
 
-          </div>
+            <li class="nav-item">
+              <button onclick="selecionarOpcao(this)" class="nav-link" id="contact-tab2">Atividades</button>
+            </li>
+
+          </ul>
 
 
           <button class="botoes selecionado" onclick="criar_post()">
 
-            <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill="#45483D" d="M20 13H13V20H11V13H4V11H11V4H13V11H20V13Z"></path>
             </svg>
@@ -421,8 +413,7 @@
 
           <button class="botoes selecionado" onclick="fechar_post()">
 
-            <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-              viewBox="0 -960 960 960" width="24">
+            <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path fill="#45483D"
                 d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
             </svg>
@@ -440,15 +431,14 @@
 
             <h2 class="header2 usuario_name_da_publi">Usuário não registrado</h2>
 
-
-
             <div class="botoes">
+
+              <input class="input_escondido estilo-input" type="file" id="documento-post" name="img">
 
               <label for="documento-post" class="selecionado container_label">
 
-                <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                  viewBox="0 -960 960 960" width="24">
-                  <path
+                <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#45483D"
                     d="M440-160v-326L336-382l-56-58 200-200 200 200-56 58-104-104v326h-80ZM160-600v-120q0-33 23.5-56.5T240-800h480q33 0 56.5 23.5T800-720v120h-80v-120H240v120h-80Z" />
                 </svg>
 
@@ -463,44 +453,38 @@
 
             <div class="midia-criar">
 
-              <input class="input_escondido" type="file" id="documento-post" name="img">
-
               <div id="imagem-preview" class="scrool-estilo">
 
               </div>
 
-              <div id="documento-preview">
+              <div id="documento-preview estilo-conteiner-secundario">
 
-                <div class="card-state-layer-outlined estilo-conteiner-secundario">
+                <!-- <div class="header-aviso">
 
-                  <div class="header-aviso">
+                  <div class="content">
 
-                    <div class="content">
+                    <div class="monogram">
 
-                      <div class="monogram">
-
-                        <div class="background">
-                          <div class="initial">A</div>
-                        </div>
-
-                      </div>
-
-                      <div class="text">
-                        <div class="header2">Header</div>
-                        <a class="subhead" href="">Acessar</a>
+                      <div class="background">
+                        <div class="initial">A</div>
                       </div>
 
                     </div>
 
-                    <div class="media estilo-conteiner-secundario">
-                      <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
+                    <div class="text">
+                      <div class="header2">Header</div>
+                      <a class="subhead" href="">Acessar</a>
                     </div>
 
                   </div>
 
-                </div>
-              </div>
+                  <div class="media estilo-conteiner-secundario">
+                    <img id="media2" class="media2" src="/images/No Man's Sky.jpeg" />
+                  </div>
 
+                </div> -->
+
+              </div>
 
             </div>
 
@@ -509,51 +493,59 @@
 
               <div class="conteiner_input">
 
-                <label class="listaDeTurmas header2" for="turmas"> Selecione a turma: </label>
+                <label class="header2" for="turmas">Selecione a turma</label>
 
+                <select id="turmas" class="estilo-input">
 
-                <select id="turmas" class="estilo-input SelectTurma">
+                  <option disabled value="padrao">Selecione a turma</option>
 
                 </select>
 
               </div>
 
               <div class="conteiner_input">
-                <label class="listaDeTurmas header2" for="sub_titulo_criar"> Data final de entrega:</label>
 
-                <input class="estilo-input texto-de-suporte  sub_titulo_criar" type="date" id="sub_titulo_criar">
+                <label class="header2" for="sub_titulo_criar">Data final de entrega</label>
+
+                <input class="estilo-input" type="date" id="sub_titulo_criar">
+
               </div>
 
+              <div class="conteiner_input">
 
-              <input class="estilo-input texto-de-suporte titulo-criar" type="text" id="titulo-criar"
-                placeholder="Título" autocapitalize="on">
+                <label class="header2" for="titulo-criar">Título</label>
 
-              <textarea class="estilo-input scrool-estilo texto-de-suporte" name="" id="descricao-criar" rows="5"
-                placeholder="Descrição" minlength="10" maxlength="500"></textarea>
+                <input class="estilo-input" type="text" id="titulo-criar" placeholder="Título" autocapitalize="on">
 
+              </div>
+
+              <div class="conteiner_input">
+
+                <label class="header2" for="descricao-criar">Descrição</label>
+
+                <textarea class="estilo-input scrool-estilo" name="" id="descricao-criar" placeholder="Descrição"
+                  minlength="10" maxlength="500"></textarea>
+
+              </div>
 
             </div>
 
+            <div class="botoes">
 
-            <div class="conteiner_sumit">
+              <input class="input_escondido estilo-input" id="enviar-post" type="submit">
 
-              <label for="enviar-post" class="selecionado container_label">
+              <label for="enviar-post" class="container_label selecionado">
 
-                <svg class="icones-conta-circulo-preenchido-24-px" xmlns="http://www.w3.org/2000/svg" height="24"
-                  viewBox="0 -960 960 960" width="24">
-                  <path
+                <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#45483D"
                     d="M792-443 176-183q-20 8-38-3.5T120-220v-520q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37ZM200-280l474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
                 </svg>
 
               </label>
 
-              <input class="input_escondido" id="enviar-post" type="submit">
-
             </div>
 
           </form>
-
-
 
         </div>
 
@@ -726,8 +718,8 @@
 
                 <button class="botoes selecionado">
 
-                  <svg class="icones-conta-circulo-preenchido-24-px" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM10 18C10 16.9 10.9 16 12 16C13.1 16 14 16.9 14 18C14 19.1 13.1 20 12 20C10.9 20 10 19.1 10 18Z"
                       fill="#75786C" />

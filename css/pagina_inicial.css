@@ -748,6 +748,13 @@
     height: 40px;
     position: relative;
     overflow: hidden;
+
+
+    
+  }
+
+  .data{
+    font-size: medium;
   }
 
 

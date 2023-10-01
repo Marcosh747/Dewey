@@ -450,7 +450,7 @@ input:checked+.slider:before {
 
 .modal-false {
     position: fixed;
-    bottom: 0;
+    bottom: -5px;
     z-index: 1;
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
     height: 0;

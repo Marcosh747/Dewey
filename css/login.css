@@ -190,7 +190,7 @@ option, .campo-texto-2{
     overflow: hidden;
 }
 
-.container {
+.container-botao {
     border-radius: 100px;
     display: flex;
     flex-direction: row;

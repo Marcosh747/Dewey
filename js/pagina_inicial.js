@@ -59,24 +59,18 @@ function criar_post() {
     variadoDiv.innerHTML = '';
 
 
-    // Cria um elemento div com a classe "conteiner_suspenso_criar estilo-blocos"
-    const conteinerSuspenso = document.createElement("div");
-    conteinerSuspenso.className = "escolhas_criar";
-
     // Cria a estrutura interna
-    conteinerSuspenso.innerHTML = `
-      
-        <div class="container_aviso selecionado">
-          <button class="cabecalho-2">Aviso</button>
-        </div>
-        <div class="container_atividade selecionado">
-          <button class="cabecalho-2" onclick="criar_atividade()">Atividade</button>
-        </div>
+    variadoDiv.innerHTML = `
+    <div class="containerSelecaoExpandido SelecaoExpandidoUP">
+        <button class="botaoExpandido cabecalho-2 selecionado">Aviso</button>
+    </div>
 
+    <div class="containerSelecaoExpandido SelecaoExpandidoDN">
+        <button class="botaoExpandido cabecalho-2 selecionado" onclick="criar_atividade()">Atividade</button>
+    </div>
     `;
 
     // Insere o elemento criado dentro de <div id="variado"></div>
-    variadoDiv.appendChild(conteinerSuspenso);
     toggleModalExpand();
 }
 

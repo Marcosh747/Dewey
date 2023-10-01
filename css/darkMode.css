@@ -18,7 +18,7 @@ body.dark * {
     fill: var(--m-3-ref-secondary-secondary-95);
 }
 
-.dark .container-login , .dark .conteiner_titulo, .dark .navigation-drawer,
+.dark .container-login , .dark .conteiner_titulo,
 .dark .estilo-blocos,
 .dark option {
     background: var(--m-3-ref-neutral-neutral-30);
@@ -31,13 +31,12 @@ body.dark * {
 .dark .titulo,
 .dark .manchete-2,
 .dark .ola-usuario,
-.dark .nome_inteiro,
 .dark p,
 .dark span {
     color: var(--m-3-sys-dark-on-surface);
 }
 
-.dark .container_atividade, .dark .container_aviso, .dark .fechar_novo_post, .dark .container_label, .dark .menu-item, .dark .selecionada,
+.dark .container_label, .dark .menu-item, .dark .selecionada,
 .dark .container-de-conteudo,
 .dark .container_darkMode,
 .dark .container_logout,
@@ -67,7 +66,7 @@ body.dark * {
 
 
 
-.dark .calendario,.dark .modal-false, .dark .estilo-conteiner-secundario {
+.dark .calendario,.dark .modal-false {
     background: var(--m-3-sys-dark-surface-container-high);
     border-color: var(--m-3-sys-dark-outline-variant);
 }

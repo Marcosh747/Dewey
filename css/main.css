@@ -42,9 +42,10 @@ header {
 
 
 
-.selecionado :hover {
-    background: var(--m-3-sys-light-secondary-container);
+.selecionado:hover {
+    background: var(--m-3-sys-light-secondary-container) !important;
     cursor: pointer;
+    
 }
 
 
@@ -55,15 +56,11 @@ header {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #backToTop {
-
     display: none;
-
-    border-radius: var(--arredondamento-do-cantos);
-
-    border: 1.7px solid var(--m-3-sys-light-secondary-fixed);
     background-color: var(--m-3-ref-neutral-neutral-98);
 }
 
@@ -78,6 +75,7 @@ header {
     width: 100%;
     max-width: 800px;
     margin-top: 10px;
+    position: relative;
 }
 
 .manchete-2 {
@@ -88,29 +86,27 @@ header {
     flex: 1;
 }
 
-.container {
+/* .container-botao {
     border-radius: 100px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+   
     position: relative;
     overflow: hidden;
     border-color: var(--m-3-sys-dark-on-surface-variant);
-}
+} */
 
 .botoes {
     padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: transparent;
     border: 0;
-    cursor: pointer;
-
-    border-radius: 50%;
+    border-radius: 100px;
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 
@@ -137,21 +133,21 @@ header {
 
 
 /* PERFIL */
-.conteiner_superior_econdido {
+/* .conteiner_superior_econdido {
     position: absolute;
     width: 95.5%;
     max-width: 800px;
     display: flex;
-}
+} */
 
-.superior_econdido_menu,
+/* .superior_econdido_menu,
 .superior_econdido_perfil {
     display: flex;
     flex: auto;
 
-}
+} */
 
-.superior_econdido_perfil {
+/* .superior_econdido_perfil {
     justify-content: flex-end;
 
 }
@@ -159,18 +155,11 @@ header {
 .superior_econdido_menu {
     justify-content: flex-start;
 
-}
-
-.conteiner_perfil {
-
-    background: var(--m-3-sys-light-surface, #FBFAF2);
-    border-radius: var(--arredondamento-do-cantos);
-}
+} */
 
 
-.conteiner_perfil .perfil {
-    height: min-content;
-}
+
+
 
 
 .info-user {
@@ -180,7 +169,7 @@ header {
     gap: 5px;
 }
 
-.perfil .barra_superior_user img {
+.barra_superior_user img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -194,6 +183,7 @@ header {
     padding: 8px;
     margin-bottom: 5px;
     align-items: center;
+
 }
 
 .barra_superior_user h3 {
@@ -231,22 +221,29 @@ header {
 }
 
 
-.container_darkMode,
-.container_logout {
+.containerSelecaoExpandido {
     overflow: hidden;
     width: 100%;
     display: inline-flex;
     align-items: center;
     background: var(--m-3-sys-light-secondary-container);
     justify-content: space-around;
+    border-radius: 9px;
 }
 
-.container_darkMode {
+.SelecaoExpandidoUP{
     border-radius: 20px 20px 0 0;
     margin-bottom: 2px;
 }
 
-.container_logout button {
+.SelecaoExpandidoDN{
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2px;
+}
+
+
+
+button.botaoExpandido {
     width: 100%;
     padding: 12px;
     background: transparent;
@@ -335,33 +332,33 @@ input:checked+.slider:before {
 
 /* Barra Lateral */
 /* MENU */
-aside.container-menuLateral,
-.conteiner_perfil {
+.container-menuLateral {
 
-    margin-top: 80px;
     position: absolute;
-    z-index: 5;
+    top: 100%;
+    z-index: 1000;
     display: none;
-    max-height: 0px;
-    opacity: 0;
+    float: left;
+    min-width: 10rem;
+    padding: 0.6rem;
+    margin: 0.6rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
 
-    transition: opacity 0.2s ease 0.04s;
-}
-
-.navigation-drawer,
-.perfil {
 
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 455px;
-    position: relative;
-    overflow: hidden;
 }
+
+.left{
+    left: 0 !important;
+}
+
+.right{
+    right:0 !important;
+}
+
 
 .headline {
     padding: 8px 8px 8px 16px;
@@ -401,15 +398,7 @@ aside.container-menuLateral,
     overflow: hidden;
 }
 
-.left {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
+
 
 .label {
     color: var(--m-3-sys-light-on-surface-variant, #45483d);
@@ -417,7 +406,7 @@ aside.container-menuLateral,
     position: relative;
 }
 
-.nav-item-1 {
+.nav-item {
 
     border-radius: 100px;
     display: flex;
@@ -463,19 +452,7 @@ aside.container-menuLateral,
     position: relative;
 }
 
-.nav-item-2 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
+
 
 .icon3 {
     flex-shrink: 0;
@@ -498,19 +475,7 @@ aside.container-menuLateral,
     position: relative;
 }
 
-.nav-item-3 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
+
 
 .icon5 {
     flex-shrink: 0;
@@ -518,19 +483,7 @@ aside.container-menuLateral,
     overflow: visible;
 }
 
-.nav-item-4 {
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-}
+
 
 .icon7 {
     flex-shrink: 0;
@@ -729,17 +682,12 @@ aside.container-menuLateral,
     bottom: 0;
     z-index: 1;
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
-    padding: 0 8px 0 8px;
     height: 0;
     overflow: hidden;
-    max-width: 480px;
+    max-width: 468px;
     width: 100%;
     transition: height 0.5s ease, height 0.5s ease;
-    max-height: min-content;
-
     border-radius: 28px 28px 0px 0px;
-
-
 
     box-shadow: var(--m-3-elevation-light-3-box-shadow,
             0px 1px 3px 0px rgba(0, 0, 0, 0.3),
@@ -752,17 +700,22 @@ aside.container-menuLateral,
 
 
 /* Adicione uma classe para ativar a animação */
+#variado{
+    margin-top: 20px;
+}
+
+#variado .botaoExpandido {
+    justify-content:center;
+}
+
 .modal-expand {
-    height: 350px;
+    height: calc(100vh - 65%);
+    padding: 15px;
 }
 
 .sheet-header {
-    padding: 16px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .drag-handle {

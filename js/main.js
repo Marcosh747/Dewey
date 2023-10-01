@@ -1,70 +1,50 @@
-// MENU LATERAL
+
+// MENU LATERAL FLUTUANTE
 function menu_lateral() {
-  const aside = document.getElementsByClassName("container-menuLateral")[0];
-
-  var computedStyle = window.getComputedStyle(aside);
-
-  if (computedStyle.opacity === "0") {
-    toggleElementVisibility(aside, 'flex');
-  }
-
+  const aside = document.getElementById("container-menuLateral");
+  toggleElementVisibility(aside);
 }
-
-
-// PERFIL
+// PERFIL FLUTUANTE
 function perfil() {
-
-  const perfil = document.getElementsByClassName("conteiner_perfil")[0];
-
-  var computedStyle = window.getComputedStyle(perfil);
-
-  if (computedStyle.opacity === "0") {
-    toggleElementVisibility(perfil, 'flex');
-
-  }
-  
+  const perfil = document.getElementById("conteiner_perfil");
+  toggleElementVisibility(perfil);
 }
+
+
 
 // FUNDO TRANSPARENTE
-function toggleElementVisibility(element, displayValue = 'block') {
+function toggleElementVisibility(element) {
   const computedStyle = window.getComputedStyle(element);
   const fundo = document.querySelector('.fundoTransparente');
 
-  if (computedStyle.opacity === "0") {
-      element.style.display = displayValue;
-      element.style.maxHeight = "326px";
-      element.style.opacity = "1";
-      
-      fundo.style.display = 'flex';
+  if (computedStyle.display === "none") {
+    element.style.display = "block";
+    fundo.style.display = 'flex';
   } else {
-      element.style.maxHeight = "0px";
-      element.style.opacity = "0";
-      element.style.display = 'none';
-      fundo.style.display = 'none';
+    element.style.display = "";
+    fundo.style.display = 'none';
   }
 
   fundo.addEventListener('click', () => {
-      element.style.maxHeight = "0px";
-      element.style.opacity = "0";
-      element.style.display = 'none';
-      fundo.style.display = 'none';
+    element.style.display = "";
+    fundo.style.display = 'none';
   });
 }
 
 
 // SAIR DA CONTA
-function logout(){
+function logout() {
   localStorage.removeItem('darkMode');
   window.location.href = '/'
 }
 
 // PAGINA ALBUM
-function acessar_album (){
+function acessar_album() {
   window.location.href = '/public/album.html';
 }
 
 // PAGINA INICIAL
-function acessar_pagina_inicial (){
+function acessar_pagina_inicial() {
   window.location.href = '/public/pagina_inicial.html';
 }
 
@@ -73,7 +53,7 @@ function acessar_pagina_inicial (){
 // Define a função scrollToTop fora do escopo DOMContentLoaded
 function scrollToTop(duration) {
   const scrollStep = -window.scrollY / (duration / 15);
-  const scrollInterval = setInterval(function() {
+  const scrollInterval = setInterval(function () {
     if (window.scrollY !== 0) {
       window.scrollBy(0, scrollStep);
     } else {
@@ -82,9 +62,9 @@ function scrollToTop(duration) {
   }, 15);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Mostra ou esconde o botão de "Voltar ao Topo" com base no scroll da página
-  window.onscroll = function() {
+  window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("backToTop").style.display = "flex";
     } else {
@@ -93,13 +73,12 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   // Função para rolar suavemente até o topo da página
-  document.getElementById("backToTop").addEventListener("click", function() {
+  document.getElementById("backToTop").addEventListener("click", function () {
     scrollToTop(500); // 500ms para a rolagem suave
   });
 });
 
 // CONTEINER CENTRAL 
-const expandButton = document.getElementById("expandButton");
 const modal = document.querySelector(".modal-false");
 
 function toggleModalExpand() {

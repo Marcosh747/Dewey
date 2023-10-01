@@ -352,6 +352,11 @@
     transition: transform 0.3s ease;
   }
 
+  .dias_do_calendario button {
+    background: transparent;
+    border: 0;
+  }
+
 
   .data-atual .container2 {
     background: var(--m-3-sys-light-primary, #466800);

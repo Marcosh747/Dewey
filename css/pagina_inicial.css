@@ -409,6 +409,8 @@
   .nav-item {
     flex: 1 1 auto;
     text-align: center;
+    border-radius: var(--arredondamento-do-cantos);
+    overflow: hidden;
   }
 
 

@@ -239,6 +239,8 @@ header {
     width: 60px;
     height: 34px;
     margin: 10px 0 10px 0;
+    overflow: hidden;
+    border-radius: 28px;
 }
 
 /* Estilize a caixa do switch */

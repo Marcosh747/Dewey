@@ -25,4 +25,3 @@ selectElement.addEventListener('change', function modoDeEntrada() {
   }
 });
 
-modoDeEntrada();

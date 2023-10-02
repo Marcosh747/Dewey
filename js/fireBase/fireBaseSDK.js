@@ -1,21 +1,17 @@
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 // Referência para o banco de dados
-const database = firebase.database();
+const databaseRef = database().ref(); // Obtenha a referência raiz do banco de dados
 
 // Função para criar um aviso
 function criarAviso(serie, professorId, avisoData) {
-  const avisosRef = database.ref(`/escola/Filomena/séries/${serie}/avisos`);
+  const avisosRef = databaseRef.child(`/escola/Filomena/séries/${serie}/avisos`);
   const novoAvisoRef = avisosRef.push();
   novoAvisoRef.set(avisoData);
 }
 
 // Função para criar uma atividade
 function criarAtividade(serie, professorId, atividadeData) {
-  const atividadesRef = database.ref(`/escola/Filomena/séries/${serie}/atividades`);
+  const atividadesRef = databaseRef.child(`/escola/Filomena/séries/${serie}/atividades`);
   const novaAtividadeRef = atividadesRef.push();
   novaAtividadeRef.set(atividadeData);
 }

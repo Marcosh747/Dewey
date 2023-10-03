@@ -53,9 +53,11 @@
     }
 
     .slide-container::-webkit-scrollbar {
-      height: 0px;
+      width: 0px;
+      height: 5px;
+  
       /* Largura da barra de rolagem */
-    }
+  }
 
   }
 

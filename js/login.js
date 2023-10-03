@@ -95,6 +95,6 @@ selectElement.addEventListener('change', function modoDeEntrada() {
   }
 
   if (selectElement.value === 'dev') {
-    emailSpan.innerHTML = "";
+    emailSpan.innerHTML = " ";
   }
 });

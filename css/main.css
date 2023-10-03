@@ -136,6 +136,10 @@ header {
     gap: 5px;
 }
 
+.info-user span {
+    text-align: center;
+}
+
 .barra_superior_user img {
     width: 80px;
     height: 80px;

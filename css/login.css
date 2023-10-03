@@ -52,7 +52,7 @@ main {
     background: var(--m-3-sys-light-surface-container-lowest, #ffffff);
     border-radius: 28px;
 
-    padding: 50px 0 40px 0;
+    padding: 50px 0 50px 0;
 
     display: flex;
     overflow: hidden;

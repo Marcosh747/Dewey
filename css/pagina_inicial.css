@@ -10,7 +10,7 @@
       height: calc(100% - 70px);
     }
 
-    section.menu_conteiner_publi{
+    section.menu_conteiner_publi {
       display: none !important;
     }
 
@@ -51,6 +51,11 @@
     .fab {
       display: none !important;
     }
+
+    .slide-container.scrool-estilo::-webkit-scrollbar {
+      height: 0px;
+      /* Largura da barra de rolagem */
+  }
 
   }
 
@@ -317,18 +322,18 @@
     cursor: pointer;
   }
 
-  .estilo-conteiner-secundario{
+  .estilo-conteiner-secundario {
     border: 1px solid var(--m-3-sys-light-outline-variant, #c5c8b9);
     background: var(--m-3-sys-light-surface-container-high, #e9e8e1);
   }
-  
+
 
 
 
 
   /* MENU */
 
-  section.menu_conteiner_publi{
+  section.menu_conteiner_publi {
     min-height: min-content;
     width: 100%;
   }
@@ -362,7 +367,7 @@
   }
 
 
-  .nav-link{
+  .nav-link {
     border-radius: 2rem;
     cursor: pointer;
     width: 100%;
@@ -373,7 +378,7 @@
     background: 0 0;
     border: 0;
     font-size: large;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   }
 
   .menu-item-active {
@@ -392,13 +397,13 @@
 
   .citacao {
     width: 100%;
-   
+
     border-radius: 28px;
     padding: 10px 25px;
     gap: 20px;
     display: flex;
     flex-direction: column;
-   
+
   }
 
   .citacao h2 {
@@ -581,17 +586,30 @@
     border-radius: 12px;
   }
 
+  .conteiner-video{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
   img.media2 {
     height: 100%;
     max-height: 80px;
   }
 
   .aviso iframe {
-    /* height: 258px; */
-    /* max-height: 345px; */
+    /*width: 100%;
+    height: calc(100vh - 470px);*/
+max-width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: calc(100vh - 470px);
+    height: 100%;
+    border: 0;
   }
+
+
 
   img.img-aviso {
     display: none;
@@ -630,7 +648,7 @@
 
 
 
- 
+
 
   .controls {
     padding: 4px 12px 4px 16px;
@@ -661,7 +679,7 @@
     overflow: hidden;
   }
 
-  .data{
+  .data {
     font-size: medium;
   }
 
@@ -857,9 +875,9 @@
     color: #ffffff;
   }
 
-  .icone_picture{
-    width: 30px; 
-    height: 30px;
+  .icone_picture {
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
   }
 
@@ -1140,7 +1158,7 @@
   }
 
 
-  
+
 
 
 
@@ -1164,7 +1182,7 @@
     background: var(--cor-avatar);
   }
 
-  .barra_superior strong{
+  .barra_superior strong {
     width: 100%;
   }
 

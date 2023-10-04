@@ -1,17 +1,18 @@
-// MENU DE POSTS
-// Verifica a largura da janela quando a página é carregada
-if (window.location.pathname === '/public/professor/pagina_inicial.html') {
-    window.addEventListener('load', function () {
-        selecionarOpcao(document.querySelector('.menu-item'));
+// // MENU DE POSTS
+// // Verifica a largura da janela quando a página é carregada
+// if (window.location.pathname === '/public/pagina_inicial.html') {
+//     window.addEventListener('load', function () {
+//         selecionarOpcao(document.querySelector('.nav-item'));
 
 
-    });
+//     });
 
-    window.addEventListener('resize', function () {
-        selecionarOpcao(document.querySelector('.menu-item'));
+//     window.addEventListener('resize', function () {
+//         selecionarOpcao(document.querySelector('.nav-item'));
 
-    });
-}
+//     });
+// }
+
 // Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
 function selecionarOpcao(element) {
     const menuItems = document.querySelectorAll('.nav-link'); // Alterado para .nav-link

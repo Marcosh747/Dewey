@@ -355,7 +355,7 @@ section.menu_conteiner_publi {
   /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15); */
 }
 
-.nav-item-texto{
+.nav-item-texto {
   display: flex;
   flex: auto;
   justify-content: space-between;
@@ -929,8 +929,8 @@ img.img-aviso {
   align-items: flex-end;
 }
 
-.conteiner_fechar_post button {
-  background: buttonface;
+.conteiner_fechar_post button{
+  background: var(--m-3-ref-secondary-secondary-80);
 }
 
 .conteiner_suspenso_criar {
@@ -1040,7 +1040,9 @@ img.img-aviso {
   background: var(--cor-avatar);
 }
 
-.barra_superior strong {
+
+
+.usuario_name_da_publi {
   width: 100%;
 }
 
@@ -1135,12 +1137,13 @@ textarea.estilo-input {
 
 
 /* CARROSEL */
-.wrapper{
+.wrapper {
   display: flex;
   /* max-width: 1200px; */
   position: relative;
 }
-.wrapper button{
+
+.wrapper button {
   top: 50%;
   color: #343F4F;
   cursor: pointer;
@@ -1153,58 +1156,65 @@ textarea.estilo-input {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper button:active{
+
+.wrapper button:active {
   transform: translateY(-50%) scale(0.9);
 }
 
 
-.wrapper button:first-child{
+.wrapper button:first-child {
   left: 5px;
   display: none;
 }
-.wrapper button:last-child{
+
+.wrapper button:last-child {
   right: 5px;
 }
-.wrapper .carousel{
+
+.wrapper .carousel {
   font-size: 0px;
-  cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
   border-radius: 28px;
 }
-.carousel.dragging{
+
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+
+.carousel.dragging img {
   pointer-events: none;
 }
-.carousel img{
+
+.carousel img {
   height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 1.2);
-
+  cursor: pointer;
   transition: 0.5s;
   border-radius: 28px;
 }
-.carousel img:first-child{
+
+.carousel img:first-child {
   margin-left: 0px;
 }
 
-.carousel img:active{
+.carousel img:active {
   width: calc(100% / 1);
 }
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel img {
     width: calc(100% / 1.2);
   }
 }
+
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel img {
     width: calc(100% / 1.2);
   }
 }

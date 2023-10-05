@@ -32,11 +32,6 @@ function toggleElementVisibility(element) {
 }
 
 
-// SAIR DA CONTA
-function logout() {
-  localStorage.removeItem('darkMode');
-  window.location.href = '/'
-}
 
 // PAGINA ALBUM
 function acessar_album() {
@@ -49,6 +44,13 @@ function acessar_pagina_inicial() {
   window.location.href = '/public/pagina_inicial.html';
 }
 
+// ENCERRAR SESSÃO (LOGOUT)
+function logout() {
+  localStorage.removeItem('user');
+  localStorage.removeItem('accessToken');
+  localStorage.removeItem('darkMode');
+  window.location.href = '/';
+}
 
 // Função para rolar suavemente até o topo da página
 // Define a função scrollToTop fora do escopo DOMContentLoaded
@@ -98,14 +100,14 @@ function createPopup(title, content) {
   const containerPopup = document.querySelector('.popup'); // Use .popup para selecionar por classe
 
   if (containerPopup === null) { // Use === para verificar igualdade
-    CriarcontainerPopup ();
+    CriarcontainerPopup();
   } else {
     containerPopup.remove(); // Remova o pop-up existente, não o "popup"
-    CriarcontainerPopup ();
+    CriarcontainerPopup();
   }
 
-  function CriarcontainerPopup () {
-     // Cria os elementos do pop-up
+  function CriarcontainerPopup() {
+    // Cria os elementos do pop-up
     const popup = document.createElement('div');
     popup.className = 'popup';
 

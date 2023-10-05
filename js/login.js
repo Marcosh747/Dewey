@@ -3,11 +3,12 @@ function checkAndRedirect() {
   const storedAccessToken = localStorage.getItem('accessToken');
   
   if (storedAccessToken) {
-    redirectToHomePage();
+    redirectToHomePage(); // Redireciona diretamente se o token estiver presente
   } else {
-    client.requestAccessToken();
+    client.requestAccessToken(); // Se não houver um token no localStorage, solicita o token
   }
 }
+
 
 // Função para redirecionar para a página inicial
 function redirectToHomePage() {
@@ -79,28 +80,22 @@ const client = google.accounts.oauth2.initTokenClient({
 
 
 
-function acessar() {
-  window.location.href = 'public/pagina_inicial.html';
-}
-
+// INPUT SELECT
 // Seleciona o elemento <select>
 const selectElement = document.getElementById('tipoUsuario');
 
 // Seleciona o elemento <span> que deve ser mostrado/ocultado
 const emailSpan = document.getElementById('emailAdequando');
 
-// Adicione um ouvinte de evento ao elemento <select>
 selectElement.addEventListener('change', function modoDeEntrada() {
-  // Verifica o valor botao-selecionado
+  // Verifica o valor da opção selecionada
   if (selectElement.value === 'aluno') {
-    emailSpan.innerHTML = "@al.educacao.sp.gov.br";
-  }
-
-  if (selectElement.value === 'professor') {
-    emailSpan.innerHTML = "@professor.educacao.sp.gov.br";
-  }
-
-  if (selectElement.value === 'dev') {
-    emailSpan.innerHTML = " ";
+    emailSpan.textContent = "@al.educacao.sp.gov.br";
+  } else if (selectElement.value === 'professor') {
+    emailSpan.textContent = "@professor.educacao.sp.gov.br";
+  } else if (selectElement.value === 'manutencao') {
+    // Remove o conteúdo, independentemente da opção anterior
+    emailSpan.textContent = "";
   }
 });
+

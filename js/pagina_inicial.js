@@ -1,17 +1,3 @@
-// // MENU DE POSTS
-// // Verifica a largura da janela quando a página é carregada
-// if (window.location.pathname === '/public/pagina_inicial.html') {
-//     window.addEventListener('load', function () {
-//         selecionarOpcao(document.querySelector('.nav-item'));
-
-
-//     });
-
-//     window.addEventListener('resize', function () {
-//         selecionarOpcao(document.querySelector('.nav-item'));
-
-//     });
-// }
 
 // Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
 function selecionarOpcao(element) {
@@ -274,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// CALENDARIO
+// CARROSEL 
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper button");

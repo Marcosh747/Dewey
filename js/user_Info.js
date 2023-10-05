@@ -30,13 +30,12 @@ function recuperarInformacoesDoLocalStorage() {
       // Obtendo todos os elementos com a classe 'primeiro_nome'
       const primeiroNomeElements = document.getElementsByClassName('primeiro_nome');
 
-      // Atribuindo o valor do primeiro nome (user.given_name) a todos os elementos com a classe 'primeiro_nome'
       for (const element of primeiroNomeElements) {
         element.textContent = user.given_name;
 
-        // Verificar se o elemento é um <input> e, se for, definir o atributo 'placeholder'
-        if (element.tagName.toLowerCase() === 'input') {
-          element.placeholder = 'Olá, ' + user.given_name + '!';
+        // Verifica se o elemento possui a classe 'ola-usuario'
+        if (element.classList.contains('ola-usuario')) {
+          element.textContent = 'Olá, ' + user.given_name + '!';
         }
       }
 

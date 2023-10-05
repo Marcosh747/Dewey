@@ -40,7 +40,8 @@ function logout() {
 
 // PAGINA ALBUM
 function acessar_album() {
-  window.location.href = '/public/album.html';
+  alert("Em desenvolvimento")
+  // window.location.href = '/public/album.html';
 }
 
 // PAGINA INICIAL

@@ -349,7 +349,7 @@ input:checked+.slider:before {
 
 
 .conteiner-nav-opcao {
-    padding: 16px 24px 16px 16px;
+    /* padding: 16px 24px 16px 16px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -358,6 +358,13 @@ input:checked+.slider:before {
     justify-content: flex-start;
     align-self: stretch;
     flex: 1;
+    position: relative; */
+
+    padding: 16px 24px 16px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
     position: relative;
 }
 

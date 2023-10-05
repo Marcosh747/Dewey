@@ -780,7 +780,7 @@ img.img-aviso {
   text-align: center;
   font: var(--m-3-body-medium, 400 14px/20px "Roboto", sans-serif);
   position: relative;
-  width: 56.81px;
+  overflow: hidden;
 }
 
 .botao-de-icone {
@@ -911,127 +911,6 @@ img.img-aviso {
 
 
 
-
-.slide-container {
-  width: 100%;
-  min-height: 303px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  overflow-x: scroll;
-  /*Adiciona a rolagem horizontal*/
-}
-
-.image-slider {
-  /* height: 265px; */
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-  /* left: 1%; */
-}
-
-.slides-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-  height: 100%;
-}
-
-.img {
-  position: relative;
-  width: 240px;
-  height: 100%;
-  transition: 0.5s;
-  object-fit: cover;
-  border-radius: 28px;
-
-}
-
-
-.button {
-  position: absolute;
-  width: 240px;
-  height: 100%;
-  transition: 0.5s;
-  border-radius: 28px;
-  background-color: rgba(65, 65, 78, 0.39);
-  z-index: 2;
-}
-
-.img:hover {
-  transform: scale(1.1);
-}
-
-/* #slider-span1:target~.image-slider #img1,
-#slider-span1:target~.image-slider #button-1 {
-
-  transform: scale(1.1);
-  background-color: transparent;
-}
-
-#slider-span2:target~.image-slider #img2,
-#slider-span2:target~.image-slider #button-2 {
-
-  transform: scale(1.1);
-
-  background-color: transparent;
-}
-
-#slider-span3:target~.image-slider #img3,
-#slider-span3:target~.image-slider #button-3 {
-
-  transform: scale(1.1);
-
-  background-color: transparent;
-}
-
-/* Adicione a transição para todos os elementos dentro de .image-slider */
-.image-slider * {
-  transition: 0.5s;
-}
-
-/* Atualize as regras de destino para animações */
-/* #slider-span1:target~.image-slider {
-  width: 0px;
-}
-
-#slider-span2:target~.image-slider {
-  left: -32%;
-
-}
-
-#slider-span3:target~.image-slider {
-  left: -80%;
-  
-}  */
-
-/* 
-@keyframes slide {
-  0% {
-    left: calc(width - 0%);
-  }
-
-  25% {
-    left: calc(width - 0%);
-  }
-
-  50% {
-    left: calc(width - 30%);
-  }
-
-  75% {
-    left: calc(width - 30%);
-  }
-
-  100% {
-    left: calc(width - 100vh);
-  }
-} */
 
 
 
@@ -1264,4 +1143,88 @@ textarea.estilo-input {
   transition: 1s;
   /* left: 1%; */
 
+}
+
+
+
+
+
+
+
+
+
+
+/* CARROSEL */
+.wrapper{
+  display: flex;
+  /* max-width: 1200px; */
+  position: relative;
+}
+.wrapper button{
+  top: 50%;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: var(--m-3-sys-light-surface-container-high);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper button:active{
+  transform: translateY(-50%) scale(0.9);
+}
+
+
+.wrapper button:first-child{
+  left: 5px;
+  display: none;
+}
+.wrapper button:last-child{
+  right: 5px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  border-radius: 28px;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 1.2);
+
+  transition: 0.5s;
+  border-radius: 28px;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+.carousel img:active{
+  width: calc(100% / 1);
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 1.2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: calc(100% / 1.2);
+  }
 }

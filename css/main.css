@@ -42,7 +42,7 @@ header {
 
 
 
-.selecionado:hover {
+.botao-selecionado:hover {
     background: var(--m-3-sys-light-secondary-container) !important;
     cursor: pointer;
 
@@ -273,7 +273,7 @@ input:checked+.slider:before {
 
 
 
-.estilo-conteiner-primario {
+.conteiner-primario {
     background: var(--m-3-sys-light-on-primary);
     border-radius: var(--arredondamento-do-cantos);
 }

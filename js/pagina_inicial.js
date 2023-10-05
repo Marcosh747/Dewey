@@ -22,7 +22,7 @@ function selecionarOpcao(element) {
         item.classList.remove('menu-item-active');
     });
 
-    // Adicionar a classe 'menu-item-active' ao item selecionado
+    // Adicionar a classe 'menu-item-active' ao item botao-selecionado
     element.classList.add('menu-item-active');
 
     // Mostra/Esconde os elementos com base na opção selecionada
@@ -65,11 +65,11 @@ function criar_post() {
     // Cria a estrutura interna
     variadoDiv.innerHTML = `
     <div class="containerSelecaoExpandido SelecaoExpandidoUP">
-        <button class="botaoExpandido SecundarioVerde cabecalho-2 selecionado">Aviso</button>
+        <button class="botaoExpandido SecundarioVerde cabecalho-2 botao-selecionado">Aviso</button>
     </div>
 
     <div class="containerSelecaoExpandido SelecaoExpandidoDN">
-        <button class="botaoExpandido cabecalho-2 SecundarioVerde selecionado" onclick="criar_atividade()">Atividade</button>
+        <button class="botaoExpandido cabecalho-2 SecundarioVerde botao-selecionado" onclick="criar_atividade()">Atividade</button>
     </div>
     `;
 

@@ -34,9 +34,9 @@
 
   <header>
 
-    <div class="barra-superior estilo-conteiner-primario">
+    <div class="barra-superior conteiner-primario">
 
-      <button class="selecionado botoes menu-lateral" onclick="menu_lateral()">
+      <button class="botao-selecionado botoes menu-lateral" onclick="menu_lateral()">
 
         <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
@@ -45,7 +45,7 @@
 
       </button>
 
-      <aside class="container-menuFlutuante left estilo-conteiner-primario" id="container-menuFlutuante">
+      <aside class="container-menuFlutuante left conteiner-primario" id="container-menuFlutuante">
         <!-- MENU LATERAL -->
 
         <div class="headline">
@@ -58,7 +58,7 @@
 
         <ul class="menu-publicaoes flex-direction-column">
 
-          <li class="nav-item conteiner-nav-opcao selecionado" onclick="acessar_pagina_inicial ()">
+          <li class="nav-item conteiner-nav-opcao botao-selecionado" onclick="acessar_pagina_inicial ()">
 
             <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
@@ -74,7 +74,7 @@
 
           </li>
 
-          <li class="nav-item conteiner-nav-opcao selecionado" onclick="acessar_album ()">
+          <li class="nav-item conteiner-nav-opcao botao-selecionado" onclick="acessar_album ()">
 
             <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
@@ -88,7 +88,7 @@
 
           </li>
 
-          <li class="nav-item conteiner-nav-opcao selecionado">
+          <li class="nav-item conteiner-nav-opcao botao-selecionado">
 
             <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
@@ -109,7 +109,7 @@
             </svg>
           </li>
 
-          <li class="nav-item conteiner-nav-opcao selecionado">
+          <li class="nav-item conteiner-nav-opcao botao-selecionado">
 
             <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
@@ -129,7 +129,7 @@
 
       <div class="tituloSite">Dewey</div>
 
-      <button class="botoes selecionado" onclick="perfil()">
+      <button class="botoes botao-selecionado" onclick="perfil()">
 
         <img class="icone_picture picture" src="/Images/3d_avatar_21.png" alt="Foto de perfil ">
 
@@ -141,14 +141,14 @@
 
       </button>
 
-      <div class="container-menuFlutuante right estilo-conteiner-primario" id="conteiner_perfil"> <!-- PERFIL -->
+      <div class="container-menuFlutuante right conteiner-primario" id="conteiner_perfil"> <!-- PERFIL -->
 
         <div class="barra_superior_user">
 
           <img class="picture" src="/Images/3d_avatar_21.png" alt="Foto de perfil ">
 
           <div class="info-user">
-            <span class="header2 nome_inteiro">Usuário não registrado</span>
+            <span class="header2 nome-completo">Usuário não registrado</span>
             <span class="header2 email">Gmail inválido</span>
           </div>
 
@@ -166,7 +166,7 @@
 
         </div>
 
-        <div class="containerSelecaoExpandido SelecaoExpandidoDN selecionado">
+        <div class="containerSelecaoExpandido SelecaoExpandidoDN botao-selecionado">
 
           <button class="botaoExpandido justify-content-space-around titulo SecundarioVerde" onclick="logout()">
 
@@ -202,7 +202,7 @@
 
     <div class="conteiner-flutuante">
 
-      <button class="fab selecionado" onclick="criar_post()">
+      <button class="fab botao-selecionado" onclick="criar_post()">
 
         <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 13H13V20H11V13H4V11H11V4H13V11H20V13Z" fill="#161E0A" />
@@ -211,7 +211,7 @@
       </button>
 
 
-      <button id="backToTop" class="botoes selecionado">
+      <button id="backToTop" class="botoes botao-selecionado">
 
         <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
           <path fill="#45483D" d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" />
@@ -227,11 +227,11 @@
 
     <div class="sessoes">
 
-      <section class="feed1 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- CARROSEL -->
+      <section class="feed1 conteiner-primario scrool-vertical scrool-estilo"> <!-- CARROSEL -->
 
         <div class="wrapper">
 
-          <button id="left" class="botoes selecionado">
+          <button id="left" class="botoes botao-selecionado">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="m432-480 156 156q11 11 11 28t-11 28q-11 11-28 11t-28-11L348-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 28-11t28 11q11 11 11 28t-11 28L432-480Z" />
@@ -244,7 +244,7 @@
             <img src="/images/3.jpg" alt="img" draggable="false">
           </div>
 
-          <button id="right" class="botoes selecionado">
+          <button id="right" class="botoes botao-selecionado">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path
                 d="M504-480 348-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L404-268q-11 11-28 11t-28-11q-11-11-11-28t11-28l156-156Z" />
@@ -265,7 +265,7 @@
             </div>
 
 
-            <button class="botoes reiniciar selecionado">
+            <button class="botoes reiniciar botao-selecionado">
 
               <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                 <path fill="#45483D"
@@ -281,7 +281,7 @@
 
           <div class="controls">
 
-            <button class="botoes selecionado" id="voltarMes">
+            <button class="botoes botao-selecionado" id="voltarMes">
 
               <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +291,7 @@
 
             </button>
 
-            <button class="botoes selecionado" id="proximoMes">
+            <button class="botoes botao-selecionado" id="proximoMes">
 
               <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +341,7 @@
 
             <span class="subcabecalho" id="proximaCitacao"></span>
 
-            <button class="botoes botaoCopia selecionado">
+            <button class="botoes botaoCopia botao-selecionado">
               <svg class="icone" fill="#45483D" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                 width="24">
                 <path
@@ -351,7 +351,7 @@
 
 
 
-            <button class="botoes botaoFala selecionado">
+            <button class="botoes botaoFala botao-selecionado">
               <svg class="icone" fill="#45483D" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                 width="24">
                 <path
@@ -365,7 +365,7 @@
 
       </section>
 
-      <section class="menu_conteiner_publi estilo-conteiner-primario">
+      <section class="menu_conteiner_publi conteiner-primario">
 
         <nav class="menu_section estilo-conteiner-secundario">
 
@@ -382,7 +382,7 @@
           </ul>
 
 
-          <button class="botoes selecionado" onclick="criar_post()">
+          <button class="botoes botao-selecionado" onclick="criar_post()">
 
             <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -399,7 +399,7 @@
 
         <div class="conteiner_fechar_post">
 
-          <button class="botoes selecionado" onclick="fechar_post()">
+          <button class="botoes botao-selecionado" onclick="fechar_post()">
 
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
               <path fill="#45483D"
@@ -411,19 +411,19 @@
         </div>
 
 
-        <div class="conteiner_card_criar estilo-conteiner-primario scrool-estilo">
+        <div class="conteiner_card_criar conteiner-primario scrool-estilo">
 
           <div class="barra_superior">
 
             <img class="avatar_publi picture" src="/Images/3d_avatar_21.png" alt="Foto de perfil">
 
-            <span class="header2 usuario_name_da_publi nome_inteiro">Usuário não registrado</span>
+            <span class="header2 usuario_name_da_publi nome-completo">Usuário não registrado</span>
 
             <div class="botoes">
 
               <input class="input_escondido estilo-input" type="file" id="documento-post" name="img">
 
-              <label for="documento-post" class="selecionado container_label">
+              <label for="documento-post" class="botao-selecionado container_label">
 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                   <path fill="#45483D"
@@ -523,7 +523,7 @@
 
               <input class="input_escondido estilo-input" id="enviar-post" type="submit">
 
-              <label for="enviar-post" class="container_label selecionado">
+              <label for="enviar-post" class="container_label botao-selecionado">
 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                   <path fill="#45483D"
@@ -540,7 +540,7 @@
 
       </div>
 
-      <section id="feed2" class="feed2 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- AVISOS -->
+      <section id="feed2" class="feed2 conteiner-primario scrool-vertical scrool-estilo"> <!-- AVISOS -->
 
         <div class="aviso estilo-conteiner-secundario SecundarioVerde">
 
@@ -661,7 +661,7 @@
 
       </section>
 
-      <section id="feed3" class="feed3 estilo-conteiner-primario scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
+      <section id="feed3" class="feed3 conteiner-primario scrool-vertical scrool-estilo"> <!-- ATIVIDADES -->
 
         <div class="container-de-conteudo estilo-conteiner-secundario SecundarioVerde">
 
@@ -690,7 +690,7 @@
 
               <div class="botao-de-icone">
 
-                <button class="botoes selecionado">
+                <button class="botoes botao-selecionado">
 
                   <svg class="icone" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -756,11 +756,7 @@
   </main>
 
 
-  <footer>
 
-    <div class="fundoTransparente"></div>
-
-  </footer>
 
 </body>
 

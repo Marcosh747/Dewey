@@ -5,7 +5,7 @@ body.dark * {
     color: var(--m-3-sys-dark-on-surface-variant) !important;
 }
 
-.dark .selecionado:hover {
+.dark .botao-selecionado:hover {
     background: var(--m-3-ref-secondary-secondary-24) !important;
     cursor: pointer;
 }
@@ -18,7 +18,7 @@ body.dark * {
 }
 
 
-.dark .estilo-conteiner-primario{
+.dark .conteiner-primario{
     background: var(--m-3-ref-neutral-neutral-30);
 }
 

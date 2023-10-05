@@ -1,72 +1,68 @@
 // Função para verificar o token de acesso e redirecionar
-function checkAndRedirect() {
-  const storedAccessToken = localStorage.getItem('accessToken');
+function verificarEredirecionar() {
+  const accessTokenArmazenado = localStorage.getItem('accessToken');
   
-  if (storedAccessToken) {
-    redirectToHomePage(); // Redireciona diretamente se o token estiver presente
+  if (accessTokenArmazenado) {
+    redirecionarParaPaginaInicial(); // Redireciona diretamente se o token estiver presente
   } else {
-    client.requestAccessToken(); // Se não houver um token no localStorage, solicita o token
+    cliente.requestAccessToken(); // Se não houver um token no localStorage, solicita o token
   }
 }
 
-
 // Função para redirecionar para a página inicial
-function redirectToHomePage() {
+function redirecionarParaPaginaInicial() {
   window.location.href = 'public/pagina_inicial.html';
 }
 
 // Função para obter informações do perfil do usuário
-async function getProfileInformation(accessToken) {
-  const profileEndpoint = 'https://www.googleapis.com/oauth2/v2/userinfo';
+async function obterInformacoesDoPerfil(accessToken) {
+  const endpointPerfil = 'https://www.googleapis.com/oauth2/v2/userinfo';
 
   try {
-    const response = await fetch(profileEndpoint, {
+    const resposta = await fetch(endpointPerfil, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
     });
 
-    if (!response.ok) {
+    if (!resposta.ok) {
       throw new Error('Erro ao obter informações do perfil');
     }
 
-    return await response.json();
-  } catch (error) {
-    handleProfileError(error);
+    return await resposta.json();
+  } catch (erro) {
+    lidarComErroNoPerfil(erro);
   }
 }
 
 // Função para lidar com erros ao obter informações do perfil
-function handleProfileError(error) {
+function lidarComErroNoPerfil(erro) {
   localStorage.removeItem('accessToken');
-  throw error;
+  throw erro;
 }
 
 // Função para inicializar o cliente e redirecionar para a próxima página
-const client = google.accounts.oauth2.initTokenClient({
+const cliente = google.accounts.oauth2.initTokenClient({
   client_id: '333702500691-rb1g1hnlmi05pq1jf7ve0ab1cu55k1iu.apps.googleusercontent.com',
   scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
-  callback: async (tokenResponse) => {
-    if (google.accounts.oauth2.hasGrantedAllScopes(tokenResponse,
+  callback: async (respostaToken) => {
+    if (google.accounts.oauth2.hasGrantedAllScopes(respostaToken,
       'https://www.googleapis.com/auth/userinfo.profile',
       'https://www.googleapis.com/auth/userinfo.email')) {
       console.log('Todos os escopos concedidos! Redirecionando para a próxima página...');
-      const accessToken = tokenResponse.access_token;
+      const accessToken = respostaToken.access_token;
       localStorage.setItem('accessToken', accessToken);
 
       // Depois de obter as informações do perfil do usuário
-      const profileData = await getProfileInformation(accessToken);
+      const dadosPerfil = await obterInformacoesDoPerfil(accessToken);
 
       // Salvar as informações do usuário no localStorage
-      localStorage.setItem('user', JSON.stringify(profileData));
+      localStorage.setItem('user', JSON.stringify(dadosPerfil));
 
-      redirectToHomePage();
+      redirecionarParaPaginaInicial();
     }
   },
 });
-
-
-
 
 
 

@@ -52,6 +52,11 @@ function logout() {
   window.location.href = '/';
 }
 
+
+
+
+
+
 // Função para rolar suavemente até o topo da página
 // Define a função scrollToTop fora do escopo DOMContentLoaded
 function scrollToTop(duration) {
@@ -80,6 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToTop(500); // 500ms para a rolagem suave
   });
 });
+
+
+
+
+
+
 
 // CONTEINER CENTRAL 
 const modal = document.querySelector(".modal-false");

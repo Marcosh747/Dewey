@@ -1,6 +1,8 @@
 
 // // INFORMAÇÕES DO USUARIO
 
+recuperarInformacoesDoLocalStorage();
+
 function recuperarInformacoesDoLocalStorage() {
   // Recupera o objeto de usuário do localStorage
   const userString = localStorage.getItem('user');
@@ -54,5 +56,4 @@ function recuperarInformacoesDoLocalStorage() {
   }
 }
 
-recuperarInformacoesDoLocalStorage();
 

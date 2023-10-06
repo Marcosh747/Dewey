@@ -14,7 +14,7 @@ body * {
     justify-content: center;
     margin-bottom: 28px;
 
-    border-radius: 28px;
+    border-radius: var(--arredondamento-do-cantos);
     background: var(--m-3-sys-light-surface-container-lowest, #ffffff);
     color: #466800;
     display: flex;
@@ -50,7 +50,7 @@ main {
 
 .container-login {
     background: var(--m-3-sys-light-surface-container-lowest, #ffffff);
-    border-radius: 28px;
+    border-radius: var(--arredondamento-do-cantos);
 
     padding: 50px 0 50px 0;
 

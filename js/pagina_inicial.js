@@ -1,5 +1,5 @@
 
-// Função para selecionar a opção e ajustar a exibição com base no tamanho da tela
+// Função menu avisos e atividades
 function selecionarOpcao(element) {
     const menuItems = document.querySelectorAll('.nav-link'); // Alterado para .nav-link
 
@@ -75,8 +75,8 @@ function criar_atividade() {
 
     toggleModalExpand();
     toggleElementVisibility(suspenso_criar, 'flex');
-
 }
+
 
 function fechar_post() {
     const conteiner_fundo_novo_post = document.querySelector('.conteiner_fundo_novo_post');
@@ -90,6 +90,8 @@ function fechar_post() {
     const imagemPreviewDiv = document.getElementById('imagem-preview');
     imagemPreviewDiv.innerHTML = '';
 }
+
+
 
 
 // ENVIO DE POST

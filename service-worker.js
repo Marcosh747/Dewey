@@ -58,6 +58,10 @@ self.addEventListener('fetch', event => {
 
 // This is the "Offline copy of pages" service worker
 
+
+import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
+precacheAndRoute(self.__WB_MANIFEST);
+
 const CACHE = "pwabuilder-offline";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');

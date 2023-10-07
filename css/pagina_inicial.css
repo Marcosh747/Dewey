@@ -132,6 +132,8 @@ section.menu_conteiner_publi {
   display: flex;
   /* max-width: 1200px; */
   position: relative;
+  overflow: hidden;
+  border-radius: var(--arredondamento-do-cantos);
 }
 
 .wrapper button {
@@ -163,11 +165,8 @@ section.menu_conteiner_publi {
 }
 
 .wrapper .carousel {
-  font-size: 0px;
-  overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  border-radius: var(--arredondamento-do-cantos);
 }
 
 .carousel.dragging {
@@ -185,7 +184,6 @@ section.menu_conteiner_publi {
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 1.2);
-  cursor: pointer;
   transition: 0.5s;
   border-radius: var(--arredondamento-do-cantos);
 }

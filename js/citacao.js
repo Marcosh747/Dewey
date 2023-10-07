@@ -57,8 +57,22 @@ function buscarEExibirCitacao() {
     exibirCitacao(citacao);
     salvarCitacaoNoLocalStorage(citacao);
     atualizarTempoAteProximaCitacao();
+
+    // Agendar uma notificação para quando o tempo se esgotar
+    if ('serviceWorker' in navigator && 'PushManager' in window) {
+      navigator.serviceWorker.ready.then(function(registration) {
+        const tempoAteProximaCitacaoEmSegundos = tempoAteProximaCitacao / 1000;
+        setTimeout(function() {
+          registration.showNotification('Tempo Esgotado', {
+            body: 'Clique para ver a nova citação.',
+            icon: '/images/3d_avatar_21.png', 
+          });
+        }, tempoAteProximaCitacaoEmSegundos * 1000);
+      });
+    }
   });
 }
+
 
 function atualizarTempoAteProximaCitacao() {
   const dataProximaCitacao = new Date();
@@ -122,4 +136,15 @@ carregarCitacaoDoLocalStorage();
 
 // Inicialize a atualização em tempo real do tempo restante a cada segundo (1000 ms)
 setInterval(atualizarTempoReal, 1000);
+
+
+
+
+
+
+
+
+
+
+
 

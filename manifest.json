@@ -21,7 +21,6 @@
             "type": "image/png",
             "purpose": "any"
         },
-        
         {
             "src": "/images/android/android-launchericon-512-512.png",
             "sizes": "512x512",
@@ -35,5 +34,5 @@
             "purpose": "maskable"
         }
     ]
-   
-}
+     
+} 

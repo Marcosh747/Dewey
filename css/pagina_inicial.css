@@ -165,6 +165,8 @@ section.menu_conteiner_publi {
 }
 
 .wrapper .carousel {
+  font-size: 0px;
+  overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }

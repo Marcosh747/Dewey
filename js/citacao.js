@@ -56,20 +56,7 @@ function buscarEExibirCitacao() {
   buscarCitacaoAleatoria().then((citacao) => {
     exibirCitacao(citacao);
     salvarCitacaoNoLocalStorage(citacao);
-    atualizarTempoAteProximaCitacao();
-
-    // Agendar uma notificação para quando o tempo se esgotar
-    if ('serviceWorker' in navigator && 'PushManager' in window) {
-      navigator.serviceWorker.ready.then(function(registration) {
-        const tempoAteProximaCitacaoEmSegundos = tempoAteProximaCitacao / 1000;
-        setTimeout(function() {
-          registration.showNotification('Tempo Esgotado', {
-            body: 'Clique para ver a nova citação.',
-            icon: '/images/3d_avatar_21.png', 
-          });
-        }, tempoAteProximaCitacaoEmSegundos * 1000);
-      });
-    }
+    atualizarTempoAteProximaCitacao();   
   });
 }
 
@@ -148,3 +135,61 @@ setInterval(atualizarTempoReal, 1000);
 
 
 
+
+
+
+
+
+
+
+
+
+
+// // Crie uma função para enviar uma notificação
+// function enviarNotificacao() {
+//   // Verifica se o navegador suporta notificações
+//   if ('Notification' in window) {
+//     // Solicita permissão para exibir notificações
+//     Notification.requestPermission().then(function (permission) {
+//       if (permission === 'granted') {
+//         // Permissão concedida, crie e exiba a notificação
+//         const notificacao = new Notification('Nova citação disponível', {
+//           body:  textoCitacao.innerText,
+//           icon: '/images/3d_avatar_21.png',
+//           // sound: '/sounds/notification_sound.mp3',
+//           // vibrate: [100, 200, 300, 400, 500],
+//         });
+
+//         notificacao.onclick = function () {
+//           // Lida com o clique na notificação (por exemplo, redireciona para uma página)
+//           window.location.href = '/public/pagina_inicial.html';
+//         };
+//       } else {
+//         console.log('Permissão para notificações negada.');
+//       }
+//     });
+//   } else {
+//     console.log('Notificações não suportadas neste navegador.');
+//   }
+// }
+
+
+
+// Chame a função `enviarNotificacao()` quando o usuário clicar no botão
+document.querySelector(".botaoEnviarNotificacao").addEventListener("click", enviarNotificacao);
+
+// Crie uma função para atualizar o tempo restante
+function atualizarTempoReall() {
+  tempoAteProximaCitacao = 5000;
+  tempoAteProximaCitacao -= 1000; // Subtrai 1 segundo do tempo restante
+  if (tempoAteProximaCitacao <= 0) {
+    // O tempo acabou, envie uma notificação
+    enviarNotificacao();
+  } else {
+    // Atualize o tempo restante no elemento HTML
+    exibirTempoAteProximaCitacao();
+  }
+}
+
+// Chame a função `atualizarTempoReal()` a cada segundo
+// setInterval(atualizarTempoReall, 1000);

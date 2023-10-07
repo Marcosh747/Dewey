@@ -168,6 +168,7 @@ section.menu_conteiner_publi {
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
+  border-radius: var(--arredondamento-do-cantos);
 }
 
 .carousel.dragging {

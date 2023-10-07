@@ -132,7 +132,6 @@ section.menu_conteiner_publi {
   display: flex;
   /* max-width: 1200px; */
   position: relative;
-  overflow: hidden;
   border-radius: var(--arredondamento-do-cantos);
 }
 

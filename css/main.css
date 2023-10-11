@@ -322,6 +322,7 @@ input:checked+.slider:before {
 /* MENU DE ACOE RAPIDAS */
 .modal-false {
     position: fixed;
+    padding: 15px;
     bottom: -5px;
     z-index: 1;
     background: var(--m-3-sys-light-surface-container-low, #f5f4ec);
@@ -348,7 +349,7 @@ input:checked+.slider:before {
 
 .modal-expand {
     height: calc(100vh - 65%);
-    padding: 15px;
+
 }
 
 .sheet-header {

@@ -349,7 +349,7 @@ input:checked+.slider:before {
 
 .modal-expand {
     height: calc(100vh - 65%);
-
+    bottom: -30px;
 }
 
 .sheet-header {

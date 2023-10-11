@@ -577,6 +577,7 @@ section.menu_conteiner_publi {
   position: relative;
 
   display: flex;
+  flex: auto;
 
   align-items: center;
 
@@ -599,7 +600,7 @@ img.img-aviso {
 
 img.media2 {
   height: 100%;
-  max-height: 80px;
+  width: 100%;
 }
 
 .aviso iframe {

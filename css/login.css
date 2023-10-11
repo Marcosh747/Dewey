@@ -199,7 +199,6 @@ option,
     border: 0;
 }
 
-
 .botao-selecionado:hover {
     background: var(--m-3-sys-light-secondary-container);
     cursor: pointer;

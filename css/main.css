@@ -384,6 +384,7 @@ input:checked+.slider:before {
     position: fixed;
     bottom: 0;
     margin: 12px 8px;
+    z-index: 3;
 }
 
 .popup-conteudo {

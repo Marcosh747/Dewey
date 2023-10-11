@@ -576,13 +576,12 @@ section.menu_conteiner_publi {
   flex-shrink: 0;
   position: relative;
 
-  flex: auto;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
   border-radius: 12px;
-
+  height: 80px;
 }
 
 

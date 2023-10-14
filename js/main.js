@@ -125,8 +125,8 @@ function createPopup(title, content) {
     const popupContent = document.createElement('div');
     popupContent.className = 'popup-conteudo conteiner-primario';
 
-    const popupTitle = document.createElement('strong');
-    popupTitle.className = 'header2';
+    const popupTitle = document.createElement('span');
+    popupTitle.className = 'texto-de-suporte';
     popupTitle.innerText = title;
 
     const popupContentText = document.createElement('p');

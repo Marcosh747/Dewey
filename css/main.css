@@ -44,6 +44,8 @@ body * {
     gap: 15px;
     flex-direction: column;
     align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 #backToTop {
@@ -66,14 +68,13 @@ header {
     border-radius: var(--arredondamento-do-cantos);
     padding: 8px 4px 8px 4px;
     display: flex;
-    flex-direction: row;
     gap: 6px;
     align-items: center;
-    justify-content: flex-start;
     width: 100%;
     max-width: 800px;
     margin-top: 10px;
     position: relative;
+    justify-content: space-between;
 }
 
 .tituloSite {

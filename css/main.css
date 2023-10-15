@@ -308,6 +308,7 @@ input:checked+.slider:before {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    width: 100%;
 }
 
 .nav-item {

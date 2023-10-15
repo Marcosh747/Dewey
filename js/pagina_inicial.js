@@ -263,6 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // CARROSEL 
+document.addEventListener('DOMContentLoaded', function () {
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper button");
@@ -336,3 +337,4 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+});

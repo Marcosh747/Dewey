@@ -1,0 +1,106 @@
+body * {
+    box-sizing: border-box;
+}
+
+main {
+    height: calc(100% - 70px);
+    padding-top: 15px;
+}
+
+/* Album Fotos */
+
+.conteiner_albumFotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    padding: 15px;
+    border-radius: var(--arredondamento-do-cantos);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--arredondamento-do-cantos);
+}
+
+.box:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.box:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+@media (max-width: 480px) {
+    /* Regras de estilo para dispositivos móveis */
+    .conteiner_albumFotos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Regras de estilo para dispositivos extrapequenos */
+    .conteiner_albumFotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box:nth-child(2) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(2) {
+        grid-column-start: span 1;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Regras de estilo para tablets pequenos */
+    .conteiner_albumFotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Regras de estilo para tablets grandes/laptops */
+    .conteiner_albumFotos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+}
+
+@media (min-width: 1201px) {
+    /* Regras de estilo para desktops */
+    .conteiner_albumFotos {
+        grid-template-columns: repeat(5, 1fr);
+        /* grid-template-rows: 480px; */
+    }
+    .box:nth-child(2) {
+        grid-column-start: span 1;
+    }
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+}

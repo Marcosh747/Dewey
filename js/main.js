@@ -36,7 +36,7 @@ function toggleElementVisibility(element) {
 // PAGINA ALBUM
 function acessar_album() {
   alert("Em desenvolvimento")
-  // window.location.href = '/public/album.html';
+  window.location.href = '/public/album.html';
 }
 
 // PAGINA INICIAL

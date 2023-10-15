@@ -41,6 +41,7 @@ body * {
     right: 20px;
     z-index: 2;
     display: flex;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
 }
@@ -83,7 +84,11 @@ header {
     flex: 1;
 }
 
-
+.icone_picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
 
 
 
@@ -93,6 +98,13 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+}
+
+.titulo {
+    color: var(--m-3-sys-light-on-surface, #1b1c18);
+    text-align: left;
+    font: var(--m-3-body-large, 400 16px/24px "Roboto", sans-serif);
+    position: relative;
 }
 
 .info-user span {
@@ -258,7 +270,7 @@ input:checked+.slider:before {
 
 
 .headline {
-    padding: 8px 8px 8px 16px;
+    padding: 16px 8px 8px 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -266,7 +278,7 @@ input:checked+.slider:before {
     justify-content: center;
     align-self: stretch;
     flex-shrink: 0;
-    height: 56px;
+    /* height: 56px; */
     position: relative;
 }
 
@@ -285,6 +297,23 @@ input:checked+.slider:before {
     color: var(--m-3-sys-light-on-surface-variant, #45483d);
     text-align: left;
     position: relative;
+}
+
+
+.menu-publicaoes {
+    gap: 3px;
+    padding: 0.25rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+    border-radius: var(--arredondamento-do-cantos);
+    overflow: hidden;
 }
 
 .conteiner-nav-opcao {
@@ -319,7 +348,7 @@ input:checked+.slider:before {
 
 
 
-/* MENU DE ACOE RAPIDAS */
+/* MENU DE ACOES RAPIDAS */
 .modal-false {
     position: fixed;
     padding: 15px;
@@ -406,8 +435,20 @@ input:checked+.slider:before {
 }
 
 
+/* ACOES FLUTUANTES */
+.fab {
+    border-radius: 16px;
+    background: var(--m-3-sys-light-secondary-container, #dde6c6);
+    border: 0;
+    padding: 16px;
+    display: flex;
+}
 
-
+.fab:hover {
+    box-shadow: var(--m-3-elevation-light-3-box-shadow,
+            0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+            0px 4px 8px 3px rgba(0, 0, 0, 0.15));
+}
 
 
 

@@ -932,6 +932,9 @@ img.img-aviso {
 }
 
 .conteiner_input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 100%;
 }
 
@@ -976,7 +979,7 @@ textarea.estilo-input {
 
 .container_label {
   padding: 8px 15px;
-  border-radius: 12px;
+  border-radius: var(--arredondamento-do-cantos-interno);
   display: flex;
   background: var(--m-3-ref-secondary-secondary-80);
 }

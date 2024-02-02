@@ -503,7 +503,7 @@ input:checked+.slider:before {
 }
 
 .estilo-input {
-    border-radius: 9px;
+    border-radius: var(--arredondamento-do-cantos-interno);
     outline: 0;
     background: var(--m-3-ref-neutral-neutral-98);
 

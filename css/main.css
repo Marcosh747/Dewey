@@ -44,7 +44,7 @@ body * {
     gap: 15px;
     flex-direction: column;
     align-items: center;
-    border-radius: 16px;
+    border-radius: var(--arredondamento-do-cantos-interno);
     overflow: hidden;
 }
 

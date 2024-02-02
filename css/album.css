@@ -9,12 +9,35 @@ main {
 
 /* Album Fotos */
 
+section.conteiner-primario{
+    padding: 15px;
+}
+
+.conteiner_upload{
+    display: flex;
+    width: 100%;
+    height: min-content;
+
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.upload_arquivo_botao{
+    align-items: center;
+    gap: 5px;
+    font-size: medium;
+}
+
+.upload_arquivo_botao label{
+    cursor: pointer;
+}
+
 .conteiner_albumFotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
     grid-gap: 20px;
-    padding: 15px;
+
     border-radius: var(--arredondamento-do-cantos);
 }
 

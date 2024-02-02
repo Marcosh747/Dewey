@@ -164,3 +164,37 @@ function createPopup(title, content) {
 
 
 
+// TESTE
+function exibirImagem(src) {
+  // Cria a div de fundo transparente dinamicamente
+  var fundoTransparente = document.createElement('div');
+  fundoTransparente.className = 'fundoTransparente';
+  fundoTransparente.id = 'fundoTransparente_imagemAmpliada';
+
+  // Cria a imagem dentro da div
+  var imagemAmpliada = document.createElement('img');
+  imagemAmpliada.id = 'imagemAmpliada';
+  imagemAmpliada.alt = 'Imagem Ampliada';
+  imagemAmpliada.src = src;
+
+  // Adiciona a imagem à div
+  fundoTransparente.appendChild(imagemAmpliada);
+
+  // Adiciona a div ao corpo do documento
+  document.body.appendChild(fundoTransparente);
+
+  // Exibe a div de fundo transparente
+  fundoTransparente.style.display = 'flex';
+
+  // Verifica se a largura da imagem é maior que a largura da tela
+  if (imagemAmpliada.width > window.innerWidth) {
+    // Aplica rotação se necessário
+    imagemAmpliada.style.transform = 'rotate(90deg)';
+  }
+
+  // Adiciona um evento de clique para fechar a imagem
+  fundoTransparente.addEventListener('click', function() {
+    // Remove a div ao ser fechada
+    document.body.removeChild(this);
+  });
+}

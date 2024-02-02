@@ -21,8 +21,25 @@ body * {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0 0 0 / 0%);
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+
+#fundoTransparente_imagemAmpliada {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#fundoTransparente_imagemAmpliada img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    border-radius: var(--arredondamento-do-cantos-externo);
+}
+
+
 
 .botoes {
     padding: 8px;

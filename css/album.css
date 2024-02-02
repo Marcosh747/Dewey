@@ -30,6 +30,7 @@ section.conteiner-primario{
 
 .upload_arquivo_botao label{
     cursor: pointer;
+    
 }
 
 .conteiner_albumFotos {
@@ -37,15 +38,13 @@ section.conteiner-primario{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
     grid-gap: 20px;
-
-    border-radius: var(--arredondamento-do-cantos);
 }
 
 .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--arredondamento-do-cantos);
+    border-radius: var(--arredondamento-do-cantos-interno);
 }
 
 .box:nth-child(1) {

@@ -1,6 +1,8 @@
 /* Figma Styles of your File */
 :root {
-        --arredondamento-do-cantos: 28px;
+        --arredondamento-do-cantos-externo: 24px;
+        --arredondamento-do-cantos-interno: 16px;
+        --padding-interno: 10px;
 
         /* Colors */
         --m-3-white: #ffffff;

@@ -11,7 +11,7 @@ body * {
 
 .fundoTransparente {
     display: none;
-    z-index: 999;
+    z-index: 500;
 
     position: fixed;
     flex-direction: column;
@@ -27,18 +27,25 @@ body * {
 
 
 #fundoTransparente_imagemAmpliada {
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     background-color: rgba(0, 0, 0, .5);
+    transition: transform 0.5s ease; /* Adiciona uma transição suave para a rotação */
 }
 
 #fundoTransparente_imagemAmpliada img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: calc(100% - 15px);
+    max-height: calc(100% - 15px);
     display: block;
     border-radius: var(--arredondamento-do-cantos-externo);
 }
 
+#btnGirar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--m-3-sys-light-secondary-container, #dde6c6);
+}
 
 
 .botoes {
